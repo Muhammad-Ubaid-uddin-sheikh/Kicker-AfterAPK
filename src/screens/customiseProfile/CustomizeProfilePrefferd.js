@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Fonts } from '../style';
 import { View, Text, StyleSheet, StatusBar, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import Button from '../../components/Button';
-// import  ScrollView  from '';
+
 import { useDispatch } from 'react-redux';
 const CustomizeProfilePrefferd = ({ navigation }) => {
     const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
     };
 
     const handleNavigate = () => {
-        // Check if the jersey number is not '00' before navigating
+      
         if (jerseyNumber !== '0') {
             dispatch({
                 type: 'SET_JARASEY_ROLE',
@@ -36,7 +36,7 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
     };
 
     return (
-        <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ backgroundColor: 'white' }}>
+       
             <View style={styles.container}>
                 <StatusBar backgroundColor={'white'}  barStyle="dark-content"/>
 
@@ -77,7 +77,7 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
                 </View>
 
             </View>
-        </ScrollView>
+
 
     )
 }
@@ -152,7 +152,6 @@ const styles = StyleSheet.create({
     inputField: {
         borderWidth: 1,
         borderColor: 'black',
-        // width: 100,
         textAlign: 'center',
         marginBottom: 10,
     },
@@ -163,21 +162,21 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     nextButton: {
-        // position: 'absolute',
-        // bottom: 0,
+        
         marginTop: 70,
+        marginBottom:20,
         width:320
     },
     ShoeCon: {
         flex: 1,
-        // marginTop: 130
+
         justifyContent: 'center',
         alignItems: 'center'
 
     },
     container: {
         flex: 1,
-        // Other container styles
+
         backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center'
@@ -189,6 +188,7 @@ const styles = StyleSheet.create({
         width: 'auto',
         paddingLeft: 5,
         paddingRight: 5
+        
     },
     MainHeading: {
         fontSize: 28,
@@ -207,12 +207,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#666'
     },
-    //   modalContainer: {
-    //     backgroundColor: 'white',
-    //     padding: 20,
-    //     borderRadius: 10,
-    //     alignItems: 'center',
-    //   },
     inputField: {
         width: 100,
         borderColor: 'gray',

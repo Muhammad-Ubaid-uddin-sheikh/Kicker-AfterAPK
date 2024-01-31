@@ -21,26 +21,28 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
   const hideLogoutModal = () => {
     setLogoutModalVisible(false);
   };
-
+  const handleTokenConform= async () => {
+   
+    try {
+  
+      await AsyncStorage.removeItem('AccessToken');
+     
+      navigation.navigate('Home');
+    } catch (error) {
+      console.error('Error deleting data:', error);
+    }
+  }
+        
   const handleLogout = async () => {
-    // try {
-    //   // Remove token from AsyncStorage
-    //   // await AsyncStorage.removeItem('token');
-    //   // Redirect the user to the login page or perform any other actions
-    //   navigation.navigate('Login');
-    // } catch (error) {
-    //   console.error('Logout failed:', error);
-    // }
+  
     
     
     setIsLoggingOut(true);
 
     setTimeout(() => {
-      // Hide spinner
+      
       setIsLoggingOut(false);
-
-
-      navigation.navigate('Home')
+      handleTokenConform()
     }, 500);
     hideLogoutModal();
    

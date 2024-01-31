@@ -20,10 +20,10 @@ const Sigup = ({ navigation }) => {
     const [dateOfBirth, setDateOfBirth] = useState('');
     let payload = {
         username:Username,
-    password:Feildpassword,
-    email:email,
-    dob:dateOfBirth,
-    name:name
+        password:Feildpassword,
+        email:email,
+        dob:dateOfBirth,
+        name:name
     
     }
 
@@ -49,44 +49,37 @@ const Sigup = ({ navigation }) => {
         setDateOfBirth(formattedDateString);
 
     };
-
-
-    const handleNavigate = ()=>{
+    const handleNavigate = async () => {
         if (!name || !email || !Username || !Feildpassword || !dateOfBirth) {
-            Alert.alert('Incomplete Details', 'Please fill in all fields.');
-        }
-        
+                    Alert.alert('Incomplete Details', 'Please fill in all fields.');
+                }
+                else{
         dispatch({
-            type: 'SET_SIGNUP_DATA',
-            payload: { name, email, Username, Feildpassword ,dateOfBirth},
-        });
-        navigation.navigate('CustomizeProfile');
-    
-    }
-    // const handleNavigate = async () => {
-    //     dispatch({
-    //                 type: 'SET_SIGNUP_DATA',
-    //                 payload: { name, email, Username, Feildpassword },
-    //             });
-    //     try {
-    //         const response = await axios.post(API_URL, {
-    //           ...payload
-    //         });
-    //         const token = response.data.token;
-    //         await AsyncStorage.setItem('token', token);
-    //         return true;
+                    type: 'SET_SIGNUP_DATA',
+                    payload: { name, email, Username, Feildpassword },
+                });
+        try {
+            const response = await axios.post(API_URL, {
+              ...payload
+            });
+            // const token = response.data.token;
+            // await AsyncStorage.setItem('token', token);
+            // return true;
       
-    //         if (response.status === 200) {
-    //           Alert.alert(JSON.stringify(response.data));
-    //           navigation.navigate('CustomizeProfile');
+            if (response.data.status) {
+                const token = response.data.data;
+                await AsyncStorage.setItem('AccessToken', token);
+              Alert.alert(JSON.stringify(response.data));
+              navigation.navigate('CustomizeProfile');
             
-    //           // Navigate to home page or set authentication state
-    //         }
-    //       } catch (error) {
-    //         // Alert.alert(JSON.stringify(error.response));  
-    //         Alert.alert(JSON.stringify(error.response));  
-    //       }
-    //   };
+              // Navigate to home page or set authentication state
+            }
+          } catch (error) {
+            // Alert.alert(JSON.stringify(error.response));  
+            Alert.alert(JSON.stringify(error.response));  
+          }
+        }
+      };
     
 
     const [isDatePickerVisible, setDatePickerVisibility] = useState(false);

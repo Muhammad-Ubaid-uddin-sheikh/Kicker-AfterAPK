@@ -1,12 +1,24 @@
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { useEffect } from 'react'
 import { Image, StatusBar, StyleSheet, View ,ImageBackground} from 'react-native'
 
 const SplashScreen = ({ navigation }) => {
     useEffect(() => {
         setTimeout(() => {
-            navigation.replace('Home')
+            // navigation.replace('Home')
+            handleTokenConform()
         }, 3000)
     }, [])
+
+    const handleTokenConform= async () => {
+const dataToken = await AsyncStorage.getItem('AccessToken')
+if(!dataToken){
+    navigation.replace('Home')
+}else{
+    navigation.replace('Dashboard')
+}
+    }
+
     return (
        
             <ImageBackground

@@ -1,7 +1,5 @@
-// reducers/index.js
-
 import { combineReducers } from 'redux';
-import userReducer from '../userReducer';
+import userReducer from './reducers/userReducer';
 
 const rootReducer = combineReducers({
     user: userReducer,

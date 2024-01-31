@@ -137,6 +137,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        
     },
     countryItem: {
         flexDirection: 'row',
@@ -165,10 +166,6 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        // Other container styles
-        backgroundColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center'
     },
     MainContainer: {
         flex: 1,

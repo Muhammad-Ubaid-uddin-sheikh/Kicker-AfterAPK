@@ -4,7 +4,7 @@ import { StatusBar, StyleSheet, ScrollView} from 'react-native';
 import AppNavigator from './src/routes/AppNavigator';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './reduxfolder/reducers/index';
+import rootReducer from './reduxfolder/index';
 const store = createStore(rootReducer);
 const App = () => {
     return ( 

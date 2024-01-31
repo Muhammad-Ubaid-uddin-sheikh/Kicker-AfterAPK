@@ -6,12 +6,12 @@ import { ScrollView } from 'react-native-gesture-handler';
 const App = ({ navigation }) => {
 
     return (
-        <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ backgroundColor: 'white' }}>
-            <StatusBar backgroundColor={'white'} barStyle="light-content" />
+        // <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ backgroundColor: 'white' }}>
+        //     <StatusBar backgroundColor={'white'} barStyle="light-content" />
             <View style={styles.container}>
 
-                <Image source={require('../../assets/splashSec.png')} width={20} height={50} />
-                <StatusBar translucent={true} backgroundColor={'transparent'}  />
+                <Image style={styles.imageStyle} source={require('../../assets/splashSec.png')} width={20} height={50} />
+                <StatusBar translucent={true} backgroundColor={'transparent'} barStyle="light-content"  />
                 <View style={styles.Widthcontainer}>
 
                     <Text style={styles.heading}>Disfruta al máximo el mundo del fútbol cerca de ti</Text>
@@ -28,11 +28,17 @@ const App = ({ navigation }) => {
 
                 </View>
             </View>
-        </ScrollView>
+        // </ScrollView>
     )
 };
 
 const styles = StyleSheet.create({
+    imageStyle:{
+        flex: 1,
+    width: '100%',
+    resizeMode: 'cover',
+
+    },
     linkText: {
         backgroundColor: 'white'
     },
@@ -58,11 +64,11 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        position: 'relative',
-        marginTop: 0,
-        padding: 0,
-        backgroundColor: 'white',
-        alignItems: 'center'
+        // position: 'relative',
+        // marginTop: 0,
+        // padding: 0,
+        // backgroundColor: 'white',
+        // alignItems: 'center'
 
     },
     heading: {

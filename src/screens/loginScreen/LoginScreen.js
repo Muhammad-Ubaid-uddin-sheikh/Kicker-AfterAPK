@@ -1,43 +1,40 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, StatusBar,Alert} from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, StatusBar, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import Button from '../../components/Button';
 import { Fonts } from '../style';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-// const API_URL = 'http://192.168.100.5:5000/register';
+
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/logIn';
-const App = ({navigation}) => {
+const App = ({ navigation }) => {
   const [email, setemail] = useState('');
   const [Feildpassword, setFeildpassword] = useState('');
   let payload = {
-    email: "",
-  username:email,
-  password:Feildpassword
-}
+    identifier: email,
+    password: Feildpassword
+  }
 
   const handleLogin = async () => {
     try {
       const response = await axios.post(API_URL, {
         ...payload
       });
-      const token = response.data.token;
-      await AsyncStorage.setItem('token', token);
-      return true;
-      if (response.status === 200) {
+
+      if (response.data.status) {
+        const token = response.data.data;
+        await AsyncStorage.setItem('AccessToken', token);
         Alert.alert(JSON.stringify(response.data));
         navigation.navigate('Dashboard');
-      
-        // Navigate to home page or set authentication state
+
       }
+
     } catch (error) {
-      Alert.alert(JSON.stringify(error.response));  
-      // alert('error')
+      Alert.alert(JSON.stringify(error.response));
+
     }
   };
-  // const handleNavigate = () => {
-  //     navigation.navigate('Dashboard');  
-  //   }
+
   const [password, setPassword] = useState('');
   const [isPasswordVisible, setPasswordVisibility] = useState(false);
 
@@ -47,41 +44,41 @@ const App = ({navigation}) => {
   return (
 
     <View style={styles.form}>
-      <StatusBar  barStyle="dark-content"/>
+      <StatusBar barStyle="dark-content" />
       <View>
-      <Text style={styles.heading}>Inicia sesión</Text>
-      {/* <Text style={styles.headingSub}>Court Owner </Text> */}
-      <Text style={styles.paragraphs}>
-      Reserva canchas, encuentra partidos, conéctate con la comunidad y más.
-      </Text>
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Username / email"
-          keyboardType="email-address"
-          placeholderTextColor="rgba(33, 33, 33, 0.60)"
-          letterSpacing={0.2}
-          onChangeText={(text) => setemail(text)}
-        />
+        <Text style={styles.heading}>Inicia sesión</Text>
+        {/* <Text style={styles.headingSub}>Court Owner </Text> */}
+        <Text style={styles.paragraphs}>
+          Reserva canchas, encuentra partidos, conéctate con la comunidad y más.
+        </Text>
+        <View style={styles.inputContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Username / email"
+            keyboardType="email-address"
+            placeholderTextColor="rgba(33, 33, 33, 0.60)"
+            letterSpacing={0.2}
+            onChangeText={(text) => setemail(text)}
+          />
 
-      </View>
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Contraseña"
-          placeholderTextColor="rgba(33, 33, 33, 0.60)"
-          secureTextEntry={!isPasswordVisible}
-          // value={password}
-          letterSpacing={0.2}
-          value={Feildpassword}
-          onChangeText={(text) => setFeildpassword(text)}
-        />
-        <TouchableOpacity style={styles.eyeIcon} onPress={togglePasswordVisibility}>
-          <Text style={styles.eyeText}>{isPasswordVisible ? <Icon name="eye" style={styles.eyeIcon} size={17} /> : <Icon name="eye-slash" style={styles.eyeIcon} size={17} />}</Text>
-        </TouchableOpacity>
-      </View>
+        </View>
+        <View style={styles.inputContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Contraseña"
+            placeholderTextColor="rgba(33, 33, 33, 0.60)"
+            secureTextEntry={!isPasswordVisible}
+            // value={password}
+            letterSpacing={0.2}
+            value={Feildpassword}
+            onChangeText={(text) => setFeildpassword(text)}
+          />
+          <TouchableOpacity style={styles.eyeIcon} onPress={togglePasswordVisibility}>
+            <Text style={styles.eyeText}>{isPasswordVisible ? <Icon name="eye" style={styles.eyeIcon} size={17} /> : <Icon name="eye-slash" style={styles.eyeIcon} size={17} />}</Text>
+          </TouchableOpacity>
+        </View>
 
-      <Button text='Inicia sesión' Link={ handleLogin } />
+        <Button text='Inicia sesión' Link={handleLogin} />
       </View>
       <Text style={styles.informationText}>¿Olvidaste tu contraseña ?</Text>
       <View style={styles.SinupText}>
@@ -94,7 +91,7 @@ const App = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
- 
+
   TextLink: {
     fontSize: 13,
     lineHeight: 24,
@@ -108,7 +105,7 @@ const styles = StyleSheet.create({
     bottom: 25,
     fontFamily: 'Satoshi-Medium',
     textAlign: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
 
   },
   image: {
@@ -118,14 +115,14 @@ const styles = StyleSheet.create({
   },
   form: {
     backgroundColor: '#fff',
-    flex:1,
-     position: 'relative',
-     paddingTop: 15,
-     justifyContent:'center',
-     paddingLeft: 12,
+    flex: 1,
+    position: 'relative',
+    paddingTop: 15,
+    justifyContent: 'center',
+    paddingLeft: 12,
     paddingRight: 12,
-    alignItems:'center'
-    
+    alignItems: 'center'
+
 
   },
   heading: {
@@ -149,25 +146,25 @@ const styles = StyleSheet.create({
   inputContainer: {
     position: 'relative',
     marginBottom: 8,
-    
+
 
   },
   input: {
-   
-     marginTop: 12,
-        paddingLeft: 12,
-        padding: 16,
-        fontSize: 14,
-        lineHeight: 20,
-        borderRadius: 12,
-        borderWidth: 0.25,
-        borderColor: 'rgba(0, 0, 0, 0.25)',
-        shadowOffset: { width: 0, height: 1 },
-        shadowRadius: 2,
-        shadowOpacity: 1,
-        color: '#212121',
-        fontFamily: 'Satoshi-Medium',
-        backgroundColor: 'rgba(64, 134, 57, 0.05)'
+
+    marginTop: 12,
+    paddingLeft: 12,
+    padding: 16,
+    fontSize: 14,
+    lineHeight: 20,
+    borderRadius: 12,
+    borderWidth: 0.25,
+    borderColor: 'rgba(0, 0, 0, 0.25)',
+    shadowOffset: { width: 0, height: 1 },
+    shadowRadius: 2,
+    shadowOpacity: 1,
+    color: '#212121',
+    fontFamily: 'Satoshi-Medium',
+    backgroundColor: 'rgba(64, 134, 57, 0.05)'
   },
   iconContainer: {
     position: 'absolute',
@@ -194,7 +191,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.9,
     marginTop: 15,
     fontFamily: 'Satoshi-Medium',
-    justifyContent:'center',
+    justifyContent: 'center',
 
 
   },
