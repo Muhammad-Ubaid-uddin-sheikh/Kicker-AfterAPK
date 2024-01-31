@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "232919226709",
+    "project_id": "kickers-586e5",
+    "storage_bucket": "kickers-586e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232919226709:android:db9f6f85afd618ca4a37dc",
+        "android_client_info": {
+          "package_name": "com.kickers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpK79jBwPbP4wkNGXDrG0ti0EgpV7jtEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
