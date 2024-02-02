@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import Home from '../screens/home/Home';
@@ -34,10 +34,48 @@ import ReservaFeild from '../screens/reservaFeild/ReservaFeild'
 import EncuentraFeild from '../screens/encuentraFeild/EncuentraFeild'
 import Payment from '../screens/particularGroundScreen/feildNavigations/Payment'
 import SlipPage from '../screens/particularGroundScreen/feildNavigations/SlipPage'
-import { useSelector } from 'react-redux';
+import CourtOwnerSetting from '../screens/courtScreenDashboard/courteditprofile/Courteditprofile'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import Profile from '../screens/setting/Profile'
+const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getProfile';
 const AppNavigator = () => {
-  const userData = useSelector(state => state.user);
+  // const userData = useSelector(state => state.user);
+  const [userData, setUserData] = useState(null);
+  const [name, setName] = useState('');
+
+  useEffect(() => {
+    const fetchDataAndStore = async () => {
+      try {
+        const token = await AsyncStorage.getItem('accessToken');
+
+        if (token) {
+          const response = await fetch(API_URL, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+
+            },
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            setUserData(data.data); 
+            setName(data.data.name);
+          
+          } else {
+            console.error('Error fetching user data:', response.statusText);
+          }
+        }
+        // } else {
+        //   console.error('Token not available');
+        // }
+      } catch (error) {
+        console.error('Error fetching and storing user data:', error);
+      }
+    };
+    fetchDataAndStore();
+  }, []);
+
+
 
 
   
@@ -156,7 +194,7 @@ const navigation= useNavigation()
         </TouchableOpacity>
         </View>
       ),
-        title: `Hola, ${userData.name}`,
+        title: `Hola, ${name}`,
         headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
            color: 'rgba(0, 0, 0, 1)', fontSize: 27,fontFamily: Fonts.BOLD, marginLeft: 0 // You can customize the style further
         },
@@ -252,7 +290,13 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Setting" component={Setting} />
-
+      <Stack.Screen options={{
+        title: 'Ajustes Court',
+        headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="CourtOwnerSetting" component={CourtOwnerSetting} />
+{/* CourtOwnerSetting */}
 <Stack.Screen options={{ headerShown: false }}  name="CourtDashboard" component={CourtDashboard} />
 <Stack.Screen options={{
         title: 'Horario',

@@ -10,6 +10,7 @@ const Dashboard = ({navigation}) => {
     // const handleInputChange = (text) => {
     //     setInputValue(text);
     //   };
+    const [loading, setLoading] = useState(false);
     const Hora = [
         {id:1, name:'1:00 PM'},
         {id:2, name:'1:30 PM'},
@@ -77,7 +78,12 @@ const Dashboard = ({navigation}) => {
         finalizacionVisibleVisible(false);
       };
       const handleNavigate = () => {
-        navigation.navigate('Paymnet',{Canchaval,Fechaval,Horainicio,finalizacion});
+        setLoading(true);
+        setTimeout(() => {
+            navigation.navigate('Paymnet',{Canchaval,Fechaval,Horainicio,finalizacion});
+            setLoading(false);
+          }, 2000);
+       
        };
     //    { inputData: inputValue },
  
@@ -140,7 +146,7 @@ const Dashboard = ({navigation}) => {
             </ScrollView>
             <View style={styles.nextButton}>
                 
-                <Button text="Reservar" Link={handleNavigate} />
+                <Button loading={loading} text="Reservar" Link={handleNavigate} />
             </View>
         </View>
 

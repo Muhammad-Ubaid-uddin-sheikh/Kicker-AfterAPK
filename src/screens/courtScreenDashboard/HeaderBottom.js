@@ -7,14 +7,52 @@ import SettingIcon from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
 import { Fonts } from '../style';
 import IconName from 'react-native-vector-icons/Entypo'
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
+const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/court/getProfile';
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
     const navigation= useNavigation()
-  const handleNavigate = () => {
-    navigation.navigate('Setting');
-}
+  const handleNavigate = ()=> {
+    navigation.navigate('CourtOwnerSetting');
+  }
+
+  const [userData, setUserData] = useState(null);
+  const [name, setName] = useState('');
+
+  useEffect(() => {
+    const fetchDataAndStore = async () => {
+      try {
+        const token = await AsyncStorage.getItem('accessTokenCourt');
+
+        if (token) {
+          const response = await fetch(API_URL, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+
+            },
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            setUserData(data.data); 
+            setName(data.data.name);
+          
+          } else {
+            console.error('Error fetching user data:', response.statusText);
+          }
+        }
+        // } else {
+        //   console.error('Token not available');
+        // }
+      } catch (error) {
+        console.error('Error fetching and storing user data:', error);
+      }
+    };
+    fetchDataAndStore();
+  }, []);
+
   return (
     <Tab.Navigator screenOptions={{ headerStyle: {
         backgroundColor: 'white',shadowColor: 'white',} }} tabBarOptions={{
@@ -25,7 +63,8 @@ function MyTabs() {
         },
       }}
       >
-      <Tab.Screen options={{title:'Hola, John',
+      <Tab.Screen options={{
+        title:`Hola, ${name}`,
        headerRight: () => (
         <View style={{flexDirection:'row',gap:-10}}>
 

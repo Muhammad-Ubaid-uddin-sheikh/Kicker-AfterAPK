@@ -11,6 +11,7 @@ const CustomizeProfile = ({ navigation }) => {
     const [filteredCountries, setFilteredCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(null);
     const [searchText, setSearchText] = useState('');
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all?fields=name,flags')
             .then((response) => response.json())
@@ -27,8 +28,12 @@ const CustomizeProfile = ({ navigation }) => {
                 type: 'SET_COUNTRY_ROLE',
                 payload: {selectedCountry},
             });
-          
-            navigation.navigate('CustomizeProfilePrefferd', { country: selectedCountry });
+            setLoading(true);
+            setTimeout(() => {
+                navigation.navigate('CustomizeProfilePrefferd', { country: selectedCountry });
+              setLoading(false);
+            }, 200);
+           
         } else {
 
             console.warn('Please select a country before navigating.');
@@ -93,7 +98,7 @@ const CustomizeProfile = ({ navigation }) => {
                 </View>
                 <View style={styles.nextButton}>
 
-                    <Button text="Next" Link={navigateToNextScreen} />
+                    <Button loading={loading} text="Next" Link={navigateToNextScreen} />
                 </View>
             </View>
         </View>

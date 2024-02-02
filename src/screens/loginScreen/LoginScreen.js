@@ -14,16 +14,19 @@ const App = ({ navigation }) => {
     identifier: email,
     password: Feildpassword
   }
-
+  const [loading, setLoading] = useState(false);
   const handleLogin = async () => {
+    setLoading(true);
     try {
+     
       const response = await axios.post(API_URL, {
         ...payload
       });
 
       if (response.data.status) {
-        const token = response.data.data;
-        await AsyncStorage.setItem('AccessToken', token);
+        const { accessToken, user } = response.data.data;
+        await AsyncStorage.setItem('accessToken', accessToken);
+        await AsyncStorage.setItem('user', JSON.stringify(user));
         Alert.alert(JSON.stringify(response.data));
         navigation.navigate('Dashboard');
 
@@ -33,6 +36,10 @@ const App = ({ navigation }) => {
       Alert.alert(JSON.stringify(error.response));
 
     }
+    setTimeout(() => {
+     
+          setLoading(false);
+        }, 2000);
   };
 
   const [password, setPassword] = useState('');
@@ -78,7 +85,7 @@ const App = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <Button text='Inicia sesión' Link={handleLogin} />
+        <Button loading={loading} text='Inicia sesión' Link={handleLogin} />
       </View>
       <Text style={styles.informationText}>¿Olvidaste tu contraseña ?</Text>
       <View style={styles.SinupText}>

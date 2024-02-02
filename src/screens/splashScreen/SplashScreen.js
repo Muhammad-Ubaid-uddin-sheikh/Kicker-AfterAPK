@@ -11,11 +11,18 @@ const SplashScreen = ({ navigation }) => {
     }, [])
 
     const handleTokenConform= async () => {
-const dataToken = await AsyncStorage.getItem('AccessToken')
-if(!dataToken){
-    navigation.replace('Home')
-}else{
+const dataToken = await AsyncStorage.getItem('accessToken')
+const courtToken = await AsyncStorage.getItem('accessTokenCourt')
+// const Userdata = await AsyncStorage.getItem('user')
+if(courtToken){
+  
+    navigation.replace('CourtDashboard')
+}
+else if (dataToken){
     navigation.replace('Dashboard')
+}
+else {
+    navigation.replace('Home')
 }
     }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { Text, View, StatusBar, StyleSheet, ScrollView,TouchableOpacity } from 'react-native'
 import Spinner from 'react-native-loading-spinner-overlay';
 import CheckPlayer from '../../components/CustomButton'
@@ -8,9 +8,8 @@ import Modal from 'react-native-modal';
 import Button from '../../components/ButtonTransparentBlack';
 import { Fonts } from '../style';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useSelector } from 'react-redux';
+const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getProfile';
 const Setting = ({navigation}) => {
-  const userData = useSelector(state => state.user);
     const [isLoggingOut, setIsLoggingOut] = useState(false);
 const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
 
@@ -26,7 +25,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
     try {
   
       await AsyncStorage.removeItem('AccessToken');
-     
+      await AsyncStorage.removeItem('accessToken');
       navigation.navigate('Home');
     } catch (error) {
       console.error('Error deleting data:', error);
@@ -48,6 +47,44 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
    
    
   };
+
+
+
+  const [name, setName] = useState('');
+  const [email, setemail] = useState('');
+  const [userData, setUserData] = useState(null);
+  useEffect(() => {
+    const fetchDataAndStore = async () => {
+      try {
+        const token = await AsyncStorage.getItem('accessToken');
+
+        if (token) {
+          const response = await fetch(API_URL, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+
+            },
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            setUserData(data.data); 
+            setName(data.data.name);
+            setemail(data.data.email)
+          
+          } else {
+            console.error('Error fetching user data:', response.statusText);
+          }
+        }
+        // } else {
+        //   // console.error('Token not available');
+        // }
+      } catch (error) {
+        console.error('Error fetching and storing user data:', error);
+      }
+    };
+    fetchDataAndStore();
+  }, []);
   return (
 
         <ScrollView backgroundColor={'white'}>
@@ -68,8 +105,8 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
                             </TouchableOpacity>
                             <View style={styles.ShoeConText} >
                             <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
-                                <Text style={styles.textPoints} >{userData.name}</Text>
-                                {/* <Text style={styles.paragraph} >Disponible</Text> */}
+                                <Text style={styles.textPoints} >{name}</Text>
+                                <Text style={styles.paragraph} >{email}</Text>
                                 </TouchableOpacity>
                             </View>
                         </View>

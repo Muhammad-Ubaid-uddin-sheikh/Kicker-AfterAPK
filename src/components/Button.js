@@ -1,14 +1,14 @@
 import React from 'react'
-import { Text, View ,StyleSheet, TouchableOpacity} from 'react-native'
+import { Text, View ,StyleSheet, TouchableOpacity,ActivityIndicator} from 'react-native'
 import Icons from 'react-native-vector-icons/MaterialIcons'
-import { useNavigation } from '@react-navigation/native';
 import { Fonts } from '../screens/style';
-export const Button = ({text,Link}) => {
-    const navigation = useNavigation()
+export const Buttons = ({text,Link,loading}) => {
+   
   return (
 <View>
-<TouchableOpacity style={styles.button}  onPress={Link}>
-              <Text style={styles.buttonText}>{text}</Text><Icons name='arrow-forward-ios' style={styles.eyeIconButoon} size={17}  />
+<TouchableOpacity style={styles.button}  onPress={Link}  disabled={loading}>
+              <Text style={styles.buttonText}>{loading ? 'Loading...' : text}</Text><Icons name='arrow-forward-ios' style={styles.eyeIconButoon} size={17}  />
+            
             </TouchableOpacity>
 </View>
   )
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
  button: {
     backgroundColor: '#212121',
     padding: 15,
-    // marginTop:10,
     borderRadius:12,
     borderColor:'#212121',
     borderWidth: 0.5, // Set the border width
@@ -37,4 +36,4 @@ const styles = StyleSheet.create({
       }, 
     })
 
-export default Button
+export default Buttons

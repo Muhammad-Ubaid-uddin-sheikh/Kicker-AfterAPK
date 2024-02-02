@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import MatchPlayerDetails from '../../components/MatchesPlayerDetails'
 import { Fonts } from '../style'
 import Button from '../../components/Button';
 const FindGames = ({navigation}) => {
+  const [loading, setLoading] = useState(false);
   const handleNavigate = () => {
-    navigation.navigate('CustomizeProfile');
+    // setLoading(false);
+    // setTimeout(() => {
+    //   navigation.navigate('CustomizeProfile');
+    //   setLoading(false);
+    // }, 500);
+    navigation.navigate('CustomizeProfile')
 }
   return (
     
@@ -55,7 +61,7 @@ const FindGames = ({navigation}) => {
   </View>
   </ScrollView>
   <View style={styles.nextButton}>
-                    <Button text="Comenzar un partido" Link={handleNavigate} />
+                    <Button  text="Comenzar un partido" Link={handleNavigate} />
                 </View>
  </View>
 

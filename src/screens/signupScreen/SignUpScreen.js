@@ -8,11 +8,8 @@ import Button from '../../components/Button';
 import { Fonts } from '../style';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useDispatch } from 'react-redux';
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/signUp';
 const Sigup = ({ navigation }) => {
-
-    const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [Username, setUsername] = useState('');
@@ -49,35 +46,36 @@ const Sigup = ({ navigation }) => {
         setDateOfBirth(formattedDateString);
 
     };
+    const [loading, setLoading] = useState(false);
     const handleNavigate = async () => {
+        // setLoading(true);
         if (!name || !email || !Username || !Feildpassword || !dateOfBirth) {
                     Alert.alert('Incomplete Details', 'Please fill in all fields.');
+                
                 }
+                
                 else{
-        dispatch({
-                    type: 'SET_SIGNUP_DATA',
-                    payload: { name, email, Username, Feildpassword },
-                });
+                    setLoading(true);
+        
         try {
             const response = await axios.post(API_URL, {
               ...payload
             });
-            // const token = response.data.token;
-            // await AsyncStorage.setItem('token', token);
-            // return true;
-      
             if (response.data.status) {
-                const token = response.data.data;
-                await AsyncStorage.setItem('AccessToken', token);
+                const { accessToken, user } = response.data.data;
+                await AsyncStorage.setItem('accessToken', accessToken);
+                await AsyncStorage.setItem('user', JSON.stringify(user));
               Alert.alert(JSON.stringify(response.data));
               navigation.navigate('CustomizeProfile');
-            
-              // Navigate to home page or set authentication state
             }
           } catch (error) {
-            // Alert.alert(JSON.stringify(error.response));  
+            
             Alert.alert(JSON.stringify(error.response));  
           }
+          setTimeout(() => {
+     
+            setLoading(false);
+          }, 2000);
         }
       };
     
@@ -209,7 +207,7 @@ const Sigup = ({ navigation }) => {
                     <Text style={styles.eyeText}>{isRePasswordVisible ? <Icon name="eye" style={styles.eyeIcon} size={17} /> : <Icon name="eye-slash" style={styles.eyeIcon} size={17} />}</Text>
                 </TouchableOpacity>
             </View>
-            <Button text="Registrate " 
+            <Button loading={loading} text="Registrate " 
             Link={handleNavigate} 
             // Link={()=>navigation.navigate('CustomizeProfile')
         
@@ -310,18 +308,13 @@ const styles = StyleSheet.create({
     inputContainer: {
         position: 'relative',
         marginBottom: 8,
-        // width: 320,
-        // marginLeft: 22,
-        // marginRight: 30
     },
     input: {
         marginTop: 12,
         paddingLeft: 12,
         padding: 16,
-        // paddingRight: 40,
         fontSize: 14,
         lineHeight: 20,
-        // width: 345,
         borderRadius: 12,
         borderWidth: 0.25,
         borderColor: 'rgba(0, 0, 0, 0.25)',

@@ -11,6 +11,7 @@ import Button from '../../components/Button';
 import { useDispatch } from 'react-redux';
 const CustomizeProfile = ({ navigation }) => {
     const dispatch = useDispatch();
+    const [loading, setLoading] = useState(false);
     const [selectedText, setSelectedText] = useState(null);
 
     const [selectedImage, setSelectedImage] = useState(DefualtImage);
@@ -44,7 +45,12 @@ const CustomizeProfile = ({ navigation }) => {
                 type: 'SET_USER_ROLE',
                 payload: {selectedText},
             });
-            navigation.navigate('CustomizeProfileFoot');
+            setLoading(true);
+            setTimeout(() => {
+                navigation.navigate('CustomizeProfileFoot');
+              setLoading(false);
+            }, 200);
+            
         } else {
             console.warn('Please select an item before navigating.');
         }
@@ -62,8 +68,8 @@ const CustomizeProfile = ({ navigation }) => {
                     <View style={styles.colm}>
                         <TouchableOpacity style={[
                             styles.buttonSelect,
-                            selectedText === 'Attack' && styles.selectedTextTouchable,
-                        ]} onPress={() => handleTextClick('attackImage', 'Attack')}>
+                            selectedText === 'Delantero' && styles.selectedTextTouchable,
+                        ]} onPress={() => handleTextClick('attackImage', 'Delantero')}>
                             <Text style={styles.textSelectProfile}>Delantero</Text>
                         </TouchableOpacity>
                     </View>
@@ -71,8 +77,8 @@ const CustomizeProfile = ({ navigation }) => {
                     <View style={styles.colm}>
                         <TouchableOpacity style={[
                             styles.buttonSelect,
-                            selectedText === 'Defend' && styles.selectedTextTouchable,
-                        ]} onPress={() => handleTextClick('defendImage', 'Defend')}>
+                            selectedText === 'Defensa' && styles.selectedTextTouchable,
+                        ]} onPress={() => handleTextClick('defendImage', 'Defensa')}>
                             <Text style={styles.textSelectProfile}>Defensa</Text>
                         </TouchableOpacity>
                     </View>
@@ -82,8 +88,8 @@ const CustomizeProfile = ({ navigation }) => {
                     <View style={styles.colm}>
                         <TouchableOpacity style={[
                             styles.buttonSelect,
-                            selectedText === 'Midfield' && styles.selectedTextTouchable,
-                        ]} onPress={() => handleTextClick('midfieldImage', 'Midfield')}>
+                            selectedText === 'Medio' && styles.selectedTextTouchable,
+                        ]} onPress={() => handleTextClick('midfieldImage', 'Medio')}>
                             <Text style={styles.textSelectProfile}>Medio</Text>
                         </TouchableOpacity>
                     </View>
@@ -91,15 +97,15 @@ const CustomizeProfile = ({ navigation }) => {
                         {/* Text 4 */}
                         <TouchableOpacity style={[
                             styles.buttonSelect,
-                            selectedText === 'Goalkeeper' && styles.selectedTextTouchable,
-                        ]} onPress={() => handleTextClick('goalkeeperImage', 'Goalkeeper')}>
+                            selectedText === 'Portero' && styles.selectedTextTouchable,
+                        ]} onPress={() => handleTextClick('goalkeeperImage', 'Portero')}>
                             <Text style={styles.textSelectProfile}>Portero</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
 
                 <View style={styles.nextButton}>
-                    <Button text='Siguiente' Link={handleNavigate} />
+                    <Button loading={loading} text='Siguiente' Link={handleNavigate} />
 
                 </View>
             </View>

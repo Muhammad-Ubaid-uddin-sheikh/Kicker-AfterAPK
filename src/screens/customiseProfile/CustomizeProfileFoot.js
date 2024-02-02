@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 const CustomizeProfile = ({navigation}) => {
   const dispatch = useDispatch();
     const [selectedItem, setSelectedItem] = useState(null);
-
+    const [loading, setLoading] = useState(false);
   const handleImageClick = (item) => {
 
     setSelectedItem(item === selectedItem ? null : item);
@@ -20,7 +20,12 @@ const CustomizeProfile = ({navigation}) => {
         type: 'SET_USER_FOOT',
         payload: {selectedItem},
     });
-      navigation.navigate('CustomizeProfileNationlity');
+    setLoading(true);
+            setTimeout(() => {
+              navigation.navigate('CustomizeProfileNationlity');
+              setLoading(false);
+            }, 200);
+      
     } else {
       console.warn('Please select the foot do you play.');
     }
@@ -38,15 +43,15 @@ const CustomizeProfile = ({navigation}) => {
                         <View style={styles.ShoeCon}>
 
                           
-                          <TouchableOpacity onPress={() => handleImageClick('Left Foot')}>
+                          <TouchableOpacity onPress={() => handleImageClick('Zurdo')}>
         <Image
-          source={selectedItem === 'Left Foot' ? require('../../assets/leftGreen.png') : require('../../assets/left.png')}
+          source={selectedItem === 'Zurdo' ? require('../../assets/leftGreen.png') : require('../../assets/left.png')}
           style={{ width: 130, height: 130 }}
         />
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleImageClick('Left Foot')}>
-        <Text style={[styles.textPoints, selectedItem === 'Left Foot' && styles.selectedText]}>
-          {selectedItem === 'Left Foot' ? 'Left Foot' : 'Left Foot'}
+      <TouchableOpacity onPress={() => handleImageClick('Zurdo')}>
+        <Text style={[styles.textPoints, selectedItem === 'Zurdo' && styles.selectedText]}>
+          {selectedItem === 'Zurdo' ? 'Zurdo' : 'Zurdo'}
         </Text>
       </TouchableOpacity>
 
@@ -55,15 +60,15 @@ const CustomizeProfile = ({navigation}) => {
                             
                         </View>
                         <View style={styles.ShoeCon}>
-                        <TouchableOpacity onPress={() => handleImageClick('Right Foot')}>
+                        <TouchableOpacity onPress={() => handleImageClick('Diestro')}>
         <Image
-          source={selectedItem === 'Right Foot' ? require('../../assets/rightGreen.png') : require('../../assets/right.png')}
+          source={selectedItem === 'Diestro' ? require('../../assets/rightGreen.png') : require('../../assets/right.png')}
           style={{ width: 130, height: 130 }}
         />
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleImageClick('Right Foot')}>
-        <Text style={[styles.textPoints, selectedItem === 'Right Foot' && styles.selectedText]}>
-          {selectedItem === 'Right Foot' ? 'Right Foot' : 'Right Foot'}
+      <TouchableOpacity onPress={() => handleImageClick('Diestro')}>
+        <Text style={[styles.textPoints, selectedItem === 'Diestro' && styles.selectedText]}>
+          {selectedItem === 'Diestro' ? 'Diestro' : 'Diestro'}
         </Text>
       </TouchableOpacity>
                        
@@ -72,7 +77,7 @@ const CustomizeProfile = ({navigation}) => {
 
                 </View>
                 <View style={styles.nextButton}>
-    <Button Link={handleNavigate} text="Siguiente"/>
+    <Button loading={loading} Link={handleNavigate} text="Siguiente"/>
                   
                 </View>
             </View>

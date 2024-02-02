@@ -3,14 +3,58 @@ import ColoredLine from '../../components/LineComponet';
 import Icons from 'react-native-vector-icons/MaterialIcons'
 import { useState } from 'react';
 import { Fonts } from '../style';
-import { View, Text, StyleSheet, StatusBar, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, StatusBar, TextInput, TouchableOpacity, Alert } from 'react-native';
 import Button from '../../components/Button';
-
-import { useDispatch } from 'react-redux';
+const API_URL_POST = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/createProfile'
+import {  useSelector } from 'react-redux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
 const CustomizeProfilePrefferd = ({ navigation }) => {
-    const dispatch = useDispatch();
-
+   ;
+    const userData = useSelector(state => state.user);
+    const [loading, setLoading] = useState(false);
     const [jerseyNumber, setJerseyNumber] = useState('0'); // Start with '00' as a string
+    
+    let payload = {
+        foot:userData.selectedItem,
+        position:userData.selectedText,
+        jerseyNo:jerseyNumber,
+        country:userData.selectedCountry.name.common,
+    }
+    
+    const [responseData, setResponseData] = useState(null);
+
+    const handleButtonClick = async () => {  
+            try {
+                if (jerseyNumber === '0') {
+                    Alert.alert('Please fill select the Número de dorsal');
+                }  
+                else{
+                     setLoading(true);
+                  setTimeout(() => {
+                      
+                    setLoading(false);
+                  }, 200);
+                const accessToken = await AsyncStorage.getItem('accessToken'); // Replace with your actual access token
+              const apiUrl = API_URL_POST; // Replace with your actual API endpoint
+              const response = await axios.post(apiUrl, payload, {
+                headers: {
+                  Authorization: `Bearer ${accessToken}`,
+                  'Content-Type': 'application/json',
+                },
+              });
+              setResponseData(response.data);
+              console.log('Data posted successfully:', response.data);
+              navigation.navigate('Dashboard');
+            }
+                   
+            } catch (error) {
+              console.error('Error posting data:', error);
+            }
+            }
+    
+        
+      
 
     const handleIncrement = () => {
         const incrementedNumber = parseInt(jerseyNumber, 10) + 1;
@@ -22,19 +66,6 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
         setJerseyNumber(decrementedNumber >= 0 ? `${decrementedNumber}` : jerseyNumber);
     };
 
-    const handleNavigate = () => {
-      
-        if (jerseyNumber !== '0') {
-            dispatch({
-                type: 'SET_JARASEY_ROLE',
-                payload: {jerseyNumber},
-            });
-            navigation.navigate('Dashboard');
-        } else {
-            console.warn('Please select a valid jersey number before navigating.');
-        }
-    };
-
     return (
        
             <View style={styles.container}>
@@ -42,7 +73,9 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
 
                 <View style={styles.MainContainer}>
                     <ColoredLine flex={0} />
-                    <Text style={styles.MainHeading} >¿Cuál es el número que utilizas?</Text>
+                    <Text style={styles.MainHeading} >¿Cuál es el número que utilizas?
+                   
+                    </Text>
                     <View style={styles.ShoeCon}>
 
                         <View style={styles.jerseyNumberContainer}>
@@ -73,7 +106,7 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
 
                 </View>
                 <View style={styles.nextButton}>
-                    <Button text='Terminar' Link={handleNavigate} />
+                    <Button loading={loading} text='Terminar' Link={handleButtonClick} />
                 </View>
 
             </View>

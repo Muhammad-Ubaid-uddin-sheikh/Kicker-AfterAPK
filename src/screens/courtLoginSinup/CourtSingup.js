@@ -6,42 +6,75 @@ import FaIcon from 'react-native-vector-icons/MaterialIcons'
 import Button from '../../components/Button';
 import { Fonts } from '../style';
 import axios from 'axios';
-  const API_URL = 'http://192.168.100.5:5000/register';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/court/signUp';
 const Sigup = ({ navigation }) => {
-  
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [mobileNumber, setMobileNumber] = useState('');
+    const [Username, setUsername] = useState('');
     const [Feildpassword, setFeildpassword] = useState('');
+    const [dateOfBirth, setDateOfBirth] = useState('');
+    let payload = {
+        username:Username,
+        password:Feildpassword,
+        email:email,
+        dob:dateOfBirth,
+        name:name
+    
+    }
 
+
+
+    const handleDateChange = (text) => {
+        // Assuming the input format is DDMMYYYY
+        const formattedDate = text.replace(/[^0-9]/g, '');
+
+        // Format the date string as DD/MM/YYYY
+        let formattedDateString = '';
+        for (let i = 0; i < formattedDate.length; i++) {
+            if (i === 2 || i === 4) {
+                formattedDateString += '/';
+            }
+            if (i === 6 && formattedDate.length >= 7) {
+                formattedDateString += formattedDate.substring(6, 10); // Ensure year is four digits
+                break;
+            }
+            formattedDateString += formattedDate[i];
+        }
+
+        setDateOfBirth(formattedDateString);
+
+    };
+    const [loading, setLoading] = useState(false);
     const handleNavigate = async () => {
+        // setLoading(true);
+        if (!name || !email || !Username || !Feildpassword || !dateOfBirth) {
+                    Alert.alert('Incomplete Details', 'Please fill in all fields.');
+                
+                }
+                
+                else{
+                    setLoading(true);
+        
         try {
-          // Check if any field is empty
-          if (!name || !email || !mobileNumber || !Feildpassword) {
-            Alert.alert('All fields are required');
+            const response = await axios.post(API_URL, {
+              ...payload
+            });
+            if (response.data.status) {
+                const { accessToken, user } = response.data.data;
+                await AsyncStorage.setItem('accessTokenCourt', accessToken);
+                await AsyncStorage.setItem('user', JSON.stringify(user));
+              Alert.alert(JSON.stringify(response.data));
+              navigation.navigate('CourtDashboard');
+            }
+          } catch (error) {
             
-            return;
+            Alert.alert(JSON.stringify(error.response));  
           }
-    
-          // Make a POST request to your backend with form data
-          const response = await axios.post(API_URL, {
-            name,
-            email,
-            mobileNumber,
-            Feildpassword,
-          });
-    
-          // Handle the response from the server
-          if (response.data.success) {
-            Alert.alert('Registration successful!');
-            navigation.navigate('CustomizeProfile')
-            // You can navigate to another screen or perform any other action here
-          } else {
-            Alert.alert('Registration failed. Please try again.');
-          }
-        } catch (error) {
-          console.error(error);
-          Alert.alert('An error occurred. Please try again later.');
+          setTimeout(() => {
+     
+            setLoading(false);
+          }, 2000);
         }
       };
     
@@ -81,7 +114,7 @@ const Sigup = ({ navigation }) => {
     return (
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
              <StatusBar backgroundColor={'white'} barStyle="dark-content" />
-            <Text style={styles.heading}>In Cancha Registrate</Text>
+            <Text style={styles.heading}>Registrate</Text>
             {/* <Text style={styles.headingSub}>Court Owner </Text> */}
 
             <View style={styles.inputContainer}>
@@ -91,7 +124,9 @@ const Sigup = ({ navigation }) => {
                     placeholderTextColor="rgba(33, 33, 33, 0.60)"
                     letterSpacing={0.1}
                     value={name}
+                 
                     onChangeText={(text) => setName(text)}
+                    
                 />
 
 
@@ -104,7 +139,9 @@ const Sigup = ({ navigation }) => {
                     placeholderTextColor="rgba(33, 33, 33, 0.60)"
                     letterSpacing={0.1}
                     value={email}
+                
         onChangeText={(text) => setEmail(text)}
+
                 />
 
             </View>
@@ -115,8 +152,10 @@ const Sigup = ({ navigation }) => {
                     keyboardType="default"
                     placeholderTextColor="rgba(33, 33, 33, 0.60)"
                     letterSpacing={0.1}
-                    value={mobileNumber}
-        onChangeText={(text) => setMobileNumber(text)}
+                    value={Username}
+                    
+        onChangeText={setUsername}
+   
                 />
                 
             </View>
@@ -125,8 +164,8 @@ const Sigup = ({ navigation }) => {
                 <TextInput
                     style={styles.input}
                     placeholder="Fecha de nacimiento"
-                    value={selectedDate}
-                    onFocus={showDatePicker}
+                    value={dateOfBirth}
+                onChangeText={handleDateChange}
                     letterSpacing={0.1}
                     placeholderTextColor="rgba(33, 33, 33, 0.60)"
                 />
@@ -167,8 +206,8 @@ const Sigup = ({ navigation }) => {
                     <Text style={styles.eyeText}>{isRePasswordVisible ? <Icon name="eye" style={styles.eyeIcon} size={17} /> : <Icon name="eye-slash" style={styles.eyeIcon} size={17} />}</Text>
                 </TouchableOpacity>
             </View>
-            <Button text="Registrate " 
-            Link={()=> navigation.navigate('CourtDashboard')} 
+            <Button loading={loading} text="Registrate " 
+            Link={handleNavigate} 
             // Link={()=>navigation.navigate('CustomizeProfile')
         
             />
@@ -268,18 +307,13 @@ const styles = StyleSheet.create({
     inputContainer: {
         position: 'relative',
         marginBottom: 8,
-        // width: 320,
-        // marginLeft: 22,
-        // marginRight: 30
     },
     input: {
         marginTop: 12,
         paddingLeft: 12,
         padding: 16,
-        // paddingRight: 40,
         fontSize: 14,
         lineHeight: 20,
-        // width: 345,
         borderRadius: 12,
         borderWidth: 0.25,
         borderColor: 'rgba(0, 0, 0, 0.25)',

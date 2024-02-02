@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Text, View, StatusBar, StyleSheet, Image, ScrollView, TouchableOpacity} from 'react-native'
 import { Fonts } from '../style';
 import Button from '../../components/Button';
@@ -7,9 +7,16 @@ import CheckPlayer from '../../components/CustomButton'
 import ButtonEditDashboard from '../../components/ButtonEditDashboard'
 import { useSelector } from 'react-redux';
 const Dashboard = ({navigation}) => {
-    const userData = useSelector(state => state.user);
+    // const [loading, setLoading] = useState(false);
+    
     const handleNavigate = () => {
-        navigation.navigate('FindGames');
+
+    //     setLoading(true);
+    // setTimeout(() => {
+    //     navigation.navigate('FindGames');
+    //   setLoading(false);
+    // }, 2000);
+    navigation.navigate('FindGames')
     }
     const handlePrefrences = () => {
         navigation.navigate('CustomizeProfile');
@@ -21,17 +28,7 @@ const Dashboard = ({navigation}) => {
         <ScrollView style={styles.scrollEdit}  backgroundColor={'white'}>
         <View style={styles.rowContainer}>
         <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
-        {/* <Text style={styles.paragraphs}> */}
-        {/* <Text>Name: {userData.name}</Text>
-            <Text>Email: {userData.email}</Text>
-            <Text>Username: {userData.Username}</Text>
-            <Text>Password: {userData.Feildpassword}</Text>
-            <Text>Feild select: {userData.selectedText}</Text>
-            <Text>Feild select: {userData.selectedItem}</Text>
-            <Text>select countery: {userData.selectedCountry.name.common}</Text>
-            <Text>Number: {userData.jerseyNumber}</Text>
-            <Text>Date: {userData.dateOfBirth}</Text> */}
-     {/* </Text> */}
+        
     
      <View style={styles.ShoeContainer}>
                     <View style={styles.row}>
@@ -74,7 +71,7 @@ const Dashboard = ({navigation}) => {
 
                 
                 <View style={styles.nextButton}>
-                    <Button text="Comenzar un partido" Link={handleNavigate} />
+                    <Button  text="Comenzar un partido" Link={handleNavigate} />
                 </View>
     </View>
   
