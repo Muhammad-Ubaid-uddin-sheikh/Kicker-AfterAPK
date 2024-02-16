@@ -10,13 +10,11 @@ import StarIcons from 'react-native-vector-icons/Fontisto'
 const ParticularGroundScreen = ({ route }) => {
   const { item } = route.params;
   const navigation = useNavigation();
-
  const [color , SetColor] = useState(false)
  const handlePress=()=>{
   SetColor(!color)
  }
-
-  const [availability, setAvailability] = useState(true);
+ const [availability, setAvailability] = useState(true);
 
   return (
     
@@ -27,7 +25,6 @@ const ParticularGroundScreen = ({ route }) => {
       source={{ uri: item.source }}
       style={styles.backgroundImage}
    />
-    <StatusBar translucent={true} backgroundColor={'transparent'}  />
       <View style={{ flexDirection: 'row', justifyContent:"space-between", padding: 16 ,width:'100%',alignItems:'center',position:'absolute',top:25}}>
       
         <TouchableOpacity onPress={()=>navigation.goBack()} >
@@ -43,7 +40,6 @@ const ParticularGroundScreen = ({ route }) => {
 <Text style={[styles.buttonText, { color: item.available ? 'green' : '#A0A0A0' }]}>
                         {item.available ? 'Disponible' : 'No disponible'}
                     </Text>
- {/* <Text style={ [styles.buttonText,{ color: availability ? '#408639' : '#A0A0A0' }]}>{availability ? 'Disponible' : 'No Disponible'}</Text> */}
 
 </View>
 <View style={styles.locationTextContainer}>
@@ -57,11 +53,6 @@ const ParticularGroundScreen = ({ route }) => {
   )
 }
 const styles = StyleSheet.create({
-  // button: {
-  //   paddingHorizontal: 20,
-  //   paddingVertical: 10,
-  //   borderRadius: 5,
-  // },
   locationTextContainer:{
     flexDirection: 'row',
     justifyContent: "flex-start",

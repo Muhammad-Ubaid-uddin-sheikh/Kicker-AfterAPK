@@ -12,7 +12,7 @@ const FindGames = ({ navigation }) => {
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
             <View style={styles.MainContainer}>
 
-                <StatusBar translucent={true} backgroundColor={'transparent'} />
+                {/* <StatusBar translucent={true} backgroundColor={'transparent'} /> */}
                 <View style={styles.rowContainer}>
                     <View style={styles.searchbarContainer}>
                         <Icons name='location-outline' style={styles.Searchicon} size={25} />

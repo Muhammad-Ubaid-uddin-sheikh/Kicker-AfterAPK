@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, StatusBar,Image, StyleSheet, Text, TouchableOpacity, View, TextInput,FlatList ,} from 'react-native'
+import { ScrollView, StatusBar, Image, StyleSheet, Text, TouchableOpacity, View, TextInput, FlatList, } from 'react-native'
 import MatchPlayerDetails from '../../components/MatchesPlayerDetails'
 import { Fonts } from '../style'
 import Icons from 'react-native-vector-icons/Ionicons'
@@ -7,60 +7,64 @@ import SearchICon from 'react-native-vector-icons/EvilIcons'
 import ClockICon from 'react-native-vector-icons/AntDesign'
 import LocationIcon from 'react-native-vector-icons/FontAwesome6'
 import StarIcons from 'react-native-vector-icons/Fontisto'
-const FindGames = ({ navigation  }) => {
+const FindGames = ({ navigation }) => {
     const [searchText, setSearchText] = useState('');
-  const [filteredData, setFilteredData] = useState([]);
-  const data = [
-    { id: 1, name: 'Jefferson Park', rating:'4.5', available: true, address: 'E. 112th St & First Ave', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' },
-    { id: 2, name: 'Ben Vitale Fields', rating:'4.8' , available: false , address: 'D. 112th St & First Ave', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg' },
-    { id: 3, name: 'Ground 3', rating:'4.2' , available: true, address: 'F. 112th St & First Ave',source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg' },
-    { id: 4, name: 'Ground 4', rating:'4.2' , available: true, address: 'F. 112th St & First Ave',source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg' },
-    // Add more data as needed
-  ];
-  const handleItemClick = (item) => {
-    navigation.navigate('ParticularGroundScreen', { item });
-    
-  };
-  const handleSearch = (text) => {
-    setSearchText(text);
-    const filtered = data.filter(
-      (item) =>
-        item.name.toLowerCase().includes(text.toLowerCase()) ||
-        item.address.toString().includes(text)
-    );
-    setFilteredData(filtered);
-  };
+    const [filteredData, setFilteredData] = useState([]);
+    const data = [
+        { id: 1, name: 'Jefferson Park', rating: '4.5', available: true, address: 'E. 112th St & First Ave', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' },
+        { id: 2, name: 'Ben Vitale Fields', rating: '4.8', available: false, address: 'D. 112th St & First Ave', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg' },
+        { id: 3, name: 'Ground 3', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg' },
+        { id: 4, name: 'Ground 4', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjBzdGFkaXVtfGVufDB8fDB8fHww' },
+        { id: 5, name: 'Ground 5', rating: '4.2', available: true, address: 'F. 112th St & First Aase', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyk2rqCaUDs1ygXLLxjlymyBGe-fZtvZtqVTdAdpsq4eeyRjPRtbGKS4OgFMAXug10vI&usqp=CAU' },
+        { id: 6, name: 'Ground 6', rating: '4.2', available: true, address: 'F. 112th St & First Aveaaa', source: 'https://www.pommietravels.com/wp-content/uploads/2023/11/camp-nou-spain.jpg' },
+        { id: 7, name: 'Ground 7', rating: '4.2', available: true, address: 'F. 112th St & First Aveasdas', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtrdH13yvwwmZ5rcStztHz8lfEPyft5SAH5nBAYqjzBQVi9S4MN0LhCaWb2gZQvk02lY&usqp=CAU' },
 
-  const renderItem = ({ item }) => (
-    <TouchableOpacity onPress={() => handleItemClick(item)} style={{ marginBottom: 20 }}>
-      <Image source={{ uri: item.source }} style={{ width: 355, height: 170,borderRadius:15,objectFit:'cover' }} />
-      <View style={styles.TextContainerImage}>
-      <Text style={styles.GroundName}>{item.name}</Text>
-      <Text style={[styles.availability, { color: item.available ? 'green' : '#A0A0A0' }]}>
-                        {item.available ? 'Disponible' : 'No disponible'}
-                    </Text>
-      {/* <Text style={styles.GroundPrice}>{item.available}</Text> */}
-      </View>
-      <View style={styles.locationTextContainer}>
-<LocationIcon name='location-dot' style={{color:'#408639'}} size={15} />
-<Text style={styles.textLocation}> {item.address}</Text>
-<StarIcons name='star' style={{color:'#FCC767',marginLeft:10}} size={12} />
-<Text style={styles.textLocation}> {item.rating}</Text>
-</View>
-    </TouchableOpacity>
-  );
+        // Add more data as needed
+    ];
+    const handleItemClick = (item) => {
+        navigation.navigate('ParticularGroundScreen', { item });
+
+    };
+    const handleSearch = (text) => {
+        setSearchText(text);
+        const filtered = data.filter(
+            (item) =>
+                item.name.toLowerCase().includes(text.toLowerCase()) ||
+                item.address.toString().includes(text)
+        );
+        setFilteredData(filtered);
+    };
+
+    const renderItem = ({ item }) => (
+        <TouchableOpacity onPress={() => handleItemClick(item)} style={{ marginBottom: 20 }}>
+            <Image source={{ uri: item.source }} style={{ width: 355, height: 170, borderRadius: 15, objectFit: 'cover' }} />
+            <View style={styles.TextContainerImage}>
+                <Text style={styles.GroundName}>{item.name}</Text>
+                <Text style={[styles.availability, { color: item.available ? 'green' : '#A0A0A0' }]}>
+                    {item.available ? 'Disponible' : 'No disponible'}
+                </Text>
+                {/* <Text style={styles.GroundPrice}>{item.available}</Text> */}
+            </View>
+            <View style={styles.locationTextContainer}>
+                <LocationIcon name='location-dot' style={{ color: '#408639' }} size={15} />
+                <Text style={styles.textLocation}> {item.address}</Text>
+                <StarIcons name='star' style={{ color: '#FCC767', marginLeft: 10 }} size={12} />
+                <Text style={styles.textLocation}> {item.rating}</Text>
+            </View>
+        </TouchableOpacity>
+    );
 
     return (
 
         <View style={styles.form}>
-        <StatusBar translucent={true} backgroundColor={'transparent'} />
-        <View style={styles.MainContainer}>
-            <View style={styles.rowContainer}>
-                {/* Your other components */}
+            {/* <StatusBar translucent={true} backgroundColor={'transparent'} /> */}
+            <View style={styles.MainContainer}>
+                <View style={styles.rowContainer}>
+                    {/* Your other components */}
 
-                <View style={styles.searchbarContainer}>
+                    <View style={styles.searchbarContainer}>
                         <Icons name='location-outline' style={styles.Searchicon} size={25} />
-                    <TextInput
+                        <TextInput
                             style={styles.input}
                             placeholder="Ubicación"
 
@@ -98,57 +102,56 @@ const FindGames = ({ navigation  }) => {
                     </View>
                     <Text style={styles.MainHeading}>Canchas cercanas</Text>
 
-                <View style={{height:520,  alignItems: 'center', justifyContent: 'center' ,paddingTop:20}}>
-                    
-                    <FlatList
-                   
-                    showsVerticalScrollIndicator={false}
-                        data={searchText ? filteredData : data}
-                        renderItem={renderItem}
-                        keyExtractor={(item) => item.id.toString()}
-                        contentContainerStyle={{ flexGrow: 1, paddingBottom: 10,  }}
-                    />
+                    <View style={{height:600, paddingTop: 20,paddingBottom:20 }}>
+
+                        <FlatList
+                               showsVerticalScrollIndicator={false}
+                            data={searchText ? filteredData : data}
+                            renderItem={renderItem}
+                            keyExtractor={(item) => item.id.toString()}
+                            contentContainerStyle={{ flexGrow: 1, paddingBottom: 10, }}
+                        />
+                    </View>
                 </View>
             </View>
         </View>
-    </View>
-   
+
 
 
 
     )
 }
 const styles = StyleSheet.create({
-    GroundName:{
+    GroundName: {
         fontSize: 17,
-    color: 'black',
-    letterSpacing: 0.1,
-    lineHeight: 36,
-    fontFamily: Fonts.MEDIUM,
-   
-    paddingTop: 2
+        color: 'black',
+        letterSpacing: 0.1,
+        lineHeight: 36,
+        fontFamily: Fonts.MEDIUM,
+
+        paddingTop: 2
     },
-    TextContainerImage:{
+    TextContainerImage: {
         flexDirection: 'row',
         justifyContent: "space-between",
-        alignItems:"center",
+        alignItems: "center",
         paddingLeft: 3,
-        paddingRight:15
+        paddingRight: 15
     },
-    locationTextContainer:{
+    locationTextContainer: {
         flexDirection: 'row',
         justifyContent: "flex-start",
-        alignItems:"center",
+        alignItems: "center",
         paddingLeft: 3,
-      
-      },
-      textLocation:{
-        fontSize:14,
-        fontFamily:Fonts.REGULAR,
-        color:'#A0A0A0',
-        alignItems:'center',
-        flexDirection:'row'
-      },
+
+    },
+    textLocation: {
+        fontSize: 14,
+        fontFamily: Fonts.REGULAR,
+        color: '#A0A0A0',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
     ColmInput: {
         width: "50%",
 
@@ -172,7 +175,7 @@ const styles = StyleSheet.create({
 
     },
     MainGroundContainer: {
-flex:1,
+        flex: 1,
         // paddingBottom: 15
     },
     GroundContainer: {
@@ -205,14 +208,10 @@ flex:1,
 
     },
     form: {
-        backgroundColor: '#fff',
-        flex:1,
-
+        backgroundColor: 'white',
+        flex: 1,
         position: 'relative',
-        // height: 'auto',
         paddingBottom: 10
-
-
     },
     Searchicon: {
         position: 'absolute',

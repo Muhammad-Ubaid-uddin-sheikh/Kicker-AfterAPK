@@ -6,6 +6,8 @@ import VerticalSlider from './VerticalSlides';
 import CheckPlayer from '../../components/CustomButton'
 import ButtonEditDashboard from '../../components/ButtonEditDashboard'
 import { useSelector } from 'react-redux';
+import DashboardBottom from './DashboardBottom'
+import DashboardMain from './DashboardMain'
 const Dashboard = ({navigation}) => {
     // const [loading, setLoading] = useState(false);
     
@@ -25,12 +27,13 @@ const Dashboard = ({navigation}) => {
   return (
     
     <View style={styles.MainContainer}>
-        <ScrollView style={styles.scrollEdit}  backgroundColor={'white'}>
-        <View style={styles.rowContainer}>
+        {/* <ScrollView style={styles.scrollEdit}  backgroundColor={'white'}>
+        <View style={styles.rowContainer}> */}
         <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
-        
+        <DashboardBottom/>
+      
     
-     <View style={styles.ShoeContainer}>
+     {/* <View style={styles.ShoeContainer}>
                     <View style={styles.row}>
                         <View style={styles.ShoeCon}>
                         <TouchableOpacity onPress={()=> navigation.navigate('ReservaFeild')}>
@@ -63,16 +66,16 @@ const Dashboard = ({navigation}) => {
     <CheckPlayer NameFont="signal-cellular-outline" TextButton="Consultar la tabla de clasificación de jugadores" />
     <CheckPlayer NameFont="signal-cellular-outline" TextButton="Check Team Leaderboard" />
    
-    </View>
+    </View> */}
 
    
-     
-                </ScrollView>
+{/*      
+                </ScrollView> */}
 
                 
-                <View style={styles.nextButton}>
+                {/* <View style={styles.nextButton}>
                     <Button  text="Comenzar un partido" Link={handleNavigate} />
-                </View>
+                </View> */}
     </View>
   
   )

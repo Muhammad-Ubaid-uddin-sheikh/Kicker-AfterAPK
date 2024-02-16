@@ -1,142 +1,145 @@
+
 import React, { useState } from 'react';
 import { View,Text,FlatList,TouchableOpacity,Modal,TextInput,Image,Button,StyleSheet,Alert,} from 'react-native';
 import ImageCropPicker from 'react-native-image-crop-picker';
-
+import ReservaFeild from '../../../reservaFeild/ReservaFeild'
 const App = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [todos, setTodos] = useState([]);
-  const [selectedTodo, setSelectedTodo] = useState(null);
-  const [name, setName] = useState('');
-  const [price, setPrice] = useState('');
-  const [image, setImage] = useState(null);
+  // const [modalVisible, setModalVisible] = useState(false);
+  // const [todos, setTodos] = useState([]);
+  // const [selectedTodo, setSelectedTodo] = useState(null);
+  // const [name, setName] = useState('');
+  // const [price, setPrice] = useState('');
+  // const [image, setImage] = useState(null);
 
-  const addTodo = () => {
-    if (!name || !price || !image) {
-      Alert.alert('Please fill in all fields');
-      return;
-    }
+  // const addTodo = () => {
+  //   if (!name || !price || !image) {
+  //     Alert.alert('Please fill in all fields');
+  //     return;
+  //   }
 
-    setTodos((prevTodos) => [
-      ...prevTodos,
-      { id: Math.random().toString(), name, price, image },
-    ]);
-    setModalVisible(false);
-    clearForm();
-  };
+  //   setTodos((prevTodos) => [
+  //     ...prevTodos,
+  //     { id: Math.random().toString(), name, price, image },
+  //   ]);
+  //   setModalVisible(false);
+  //   clearForm();
+  // };
 
-  const editTodo = () => {
-    if (!name || !price || !image) {
-      Alert.alert('Please fill in all fields');
-      return;
-    }
+  // const editTodo = () => {
+  //   if (!name || !price || !image) {
+  //     Alert.alert('Please fill in all fields');
+  //     return;
+  //   }
 
-    setTodos((prevTodos) =>
-      prevTodos.map((todo) =>
-        todo.id === selectedTodo.id ? { ...todo, name, price, image } : todo
-      )
-    );
-    setModalVisible(false);
-    clearForm();
-    setSelectedTodo(null);
-  };
+  //   setTodos((prevTodos) =>
+  //     prevTodos.map((todo) =>
+  //       todo.id === selectedTodo.id ? { ...todo, name, price, image } : todo
+  //     )
+  //   );
+  //   setModalVisible(false);
+  //   clearForm();
+  //   setSelectedTodo(null);
+  // };
 
-  const deleteTodo = (id) => {
-    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
-  };
+  // const deleteTodo = (id) => {
+  //   setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+  // };
 
-  const handleImagePicker = async () => {
-    try {
-      const pickedImage = await ImageCropPicker.openPicker({
-        width: 500,
-        height: 400,
-        cropping: true,
-      });
+  // const handleImagePicker = async () => {
+  //   try {
+  //     const pickedImage = await ImageCropPicker.openPicker({
+  //       width: 500,
+  //       height: 400,
+  //       cropping: true,
+  //     });
 
-      setImage(pickedImage.path);
-    } catch (error) {
-      console.log('Image picking error: ', error);
-    }
-  };
+  //     setImage(pickedImage.path);
+  //   } catch (error) {
+  //     console.log('Image picking error: ', error);
+  //   }
+  // };
 
-  const openEditModal = (todo) => {
-    setSelectedTodo(todo);
-    setName(todo.name);
-    setPrice(todo.price);
-    setImage(todo.image);
-    setModalVisible(true);
-  };
+  // const openEditModal = (todo) => {
+  //   setSelectedTodo(todo);
+  //   setName(todo.name);
+  //   setPrice(todo.price);
+  //   setImage(todo.image);
+  //   setModalVisible(true);
+  // };
 
-  const clearForm = () => {
-    setName('');
-    setPrice('');
-    setImage(null);
-  };
+  // const clearForm = () => {
+  //   setName('');
+  //   setPrice('');
+  //   setImage(null);
+  // };
 
-  const renderTodoItem = ({ item }) => (
-    <TouchableOpacity onPress={() => openEditModal(item)}>
-      <View style={styles.todoItem}>
-        <Image source={{ uri: item.image }} style={styles.todoImage} width={100} height={100}/>
-        <View>
-          <Text style={{color:'black'}}>{item.name}</Text>
-          <Text style={{color:'black'}}>{item.price}</Text>
-        </View>
-        <TouchableOpacity onPress={() => deleteTodo(item.id)}>
-          <Text style={styles.deleteText}>Delete</Text>
-        </TouchableOpacity>
+  // const renderTodoItem = ({ item }) => (
+  //   <TouchableOpacity onPress={() => openEditModal(item)}>
+  //     <View style={styles.todoItem}>
+  //       <Image source={{ uri: item.image }} style={styles.todoImage} width={100} height={100}/>
+  //       <View>
+  //         <Text style={{color:'black'}}>{item.name}</Text>
+  //         <Text style={{color:'black'}}>{item.price}</Text>
+  //       </View>
+  //       <TouchableOpacity onPress={() => deleteTodo(item.id)}>
+  //         <Text style={styles.deleteText}>Delete</Text>
+  //       </TouchableOpacity>
         
-      </View>
-      <View> 
-        <Image source={{ uri: item.image }} style={styles.background} width={100} height={100}/>
-        </View>
+  //     </View>
+  //     <View> 
+  //       <Image source={{ uri: item.image }} style={styles.background} width={100} height={100}/>
+  //       </View>
       
-    </TouchableOpacity>
-  );
+  //   </TouchableOpacity>
+  // );
 
   return (
-    <View style={styles.container}>
-      <FlatList
-        data={todos}
-        keyExtractor={(item) => item.id}
-        renderItem={renderTodoItem}
-      />
+    // <View style={styles.container}>
+    //   <FlatList
+    //     data={todos}
+    //     keyExtractor={(item) => item.id}
+    //     renderItem={renderTodoItem}
+    //   />
   
-      <Modal
-        animationType="slide"
-        transparent={false}
-        visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
-      >
-        <View style={styles.modalContainer}>
-          <TextInput
-            placeholder="Enter name"
-            style={styles.input}
-            value={name}
-            onChangeText={(text) => setName(text)}
-            color='black'
-          />
-          <TextInput
-            placeholder="Enter price"
-            style={styles.input}
-            value={price}
-            onChangeText={(text) => setPrice(text)}
-            color='black'
-          />
+    //   <Modal
+    //     animationType="slide"
+    //     transparent={false}
+    //     visible={modalVisible}
+    //     onRequestClose={() => setModalVisible(false)}
+    //   >
+    //     <View style={styles.modalContainer}>
+    //       <TextInput
+    //         placeholder="Enter name"
+    //         style={styles.input}
+    //         value={name}
+    //         onChangeText={(text) => setName(text)}
+    //         color='black'
+    //       />
+    //       <TextInput
+    //         placeholder="Enter price"
+    //         style={styles.input}
+    //         value={price}
+    //         onChangeText={(text) => setPrice(text)}
+    //         color='black'
+    //       />
 
-          <Button title="Select Image" onPress={handleImagePicker} />
+    //       <Button title="Select Image" onPress={handleImagePicker} />
 
-          {image && <Image source={{ uri: image }} style={styles.selectedImage} />}
+    //       {image && <Image source={{ uri: image }} style={styles.selectedImage} />}
 
-          <Button style={{backgrounColor:'red'}}
-            title={selectedTodo ? 'Edit Todo' : 'Add Todo'}
-            onPress={selectedTodo ? editTodo : addTodo}
-          />
+    //       <Button style={{backgrounColor:'red'}}
+    //         title={selectedTodo ? 'Edit Todo' : 'Add Todo'}
+    //         onPress={selectedTodo ? editTodo : addTodo}
+    //       />
 
-          <Button title="Cancel" onPress={() => setModalVisible(false)} />
-        </View>
-      </Modal>
+    //       <Button title="Cancel" onPress={() => setModalVisible(false)} />
+    //     </View>
+    //   </Modal>
 
-      <Button title="Add Todo" onPress={() => setModalVisible(true)} />
-    </View>
+    //   <Button title="Add Todo" onPress={() => setModalVisible(true)} />
+      <ReservaFeild/>
+      
+    // </View>
   );
 };
 

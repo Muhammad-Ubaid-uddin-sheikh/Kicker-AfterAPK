@@ -115,7 +115,6 @@ const Sigup = ({ navigation }) => {
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
              <StatusBar backgroundColor={'white'} barStyle="dark-content" />
             <Text style={styles.heading}>Registrate</Text>
-            {/* <Text style={styles.headingSub}>Court Owner </Text> */}
 
             <View style={styles.inputContainer}>
                 <TextInput

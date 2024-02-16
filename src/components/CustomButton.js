@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         marginRight: 10,
         flexDirection: 'row',
         alignItems: 'center',
-        width: 345,
+        // width: 345,
         paddingLeft: 12,
         padding: 16,
         paddingRight: 40,

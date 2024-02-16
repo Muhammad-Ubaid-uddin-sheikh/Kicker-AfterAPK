@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import Home from '../screens/home/Home';
 import SplashScreen from '../screens/splashScreen/SplashScreen';
@@ -13,11 +13,8 @@ import Dashboard from '../screens/dashboard/Dashboard';
 import FindGames from '../screens/findGames/FindGames';
 import SettingIcon from 'react-native-vector-icons/AntDesign';
 import ParticularGroundScreen from '../screens/particularGroundScreen/ParticularGroundScreen';
-import Bell from 'react-native-vector-icons/FontAwesome'
-import Chat from 'react-native-vector-icons/MaterialCommunityIcons'
 import Setting from '../screens/setting/Setting'
 import { useNavigation } from '@react-navigation/native';
-import Homeicon from 'react-native-vector-icons/SimpleLineIcons';
 import CourtLogin from '../screens/courtLoginSinup/CourtLogin'
 import CourtSingup from '../screens/courtLoginSinup/CourtSingup'
 import CourtDashboard from '../screens/courtScreenDashboard/CourtScreenDashboard'
@@ -37,7 +34,16 @@ import SlipPage from '../screens/particularGroundScreen/feildNavigations/SlipPag
 import CourtOwnerSetting from '../screens/courtScreenDashboard/courteditprofile/Courteditprofile'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Profile from '../screens/setting/Profile'
+import GameStart from '../screens/gamestartselleted/Gamestartselleted'
+import StartAGame from '../screens/gamestartselleted/StartaGame'
+import StartATeam from '../screens/gamestartselleted/StartAGameTeam'
+import CourtDetails from '../screens/courtScreenDashboard/courtAddFolder/CourtDetails'
+import ImagesAdd from '../screens/courtScreenDashboard/courtAddFolder/ImagesAdd'
+import SoccerSelect from '../screens/courtScreenDashboard/courtAddFolder/SoccerSelect'
+import Display from '../screens/courtScreenDashboard/courtAddFolder/Display'
+import ParticularCourtGround from '../screens/courtScreenDashboard/courtInnerScreen/particularCourtSreen/ParticularCourtSreen'
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getProfile';
+
 const AppNavigator = () => {
   // const userData = useSelector(state => state.user);
   const [userData, setUserData] = useState(null);
@@ -61,21 +67,26 @@ const AppNavigator = () => {
             setUserData(data.data); 
             setName(data.data.name);
           
-          } else {
+          } 
+          else {
             console.error('Error fetching user data:', response.statusText);
           }
         }
-        // } else {
-        //   console.error('Token not available');
-        // }
+  
       } catch (error) {
         console.error('Error fetching and storing user data:', error);
       }
     };
     fetchDataAndStore();
+    const intervalId = setInterval(() => {
+      fetchDataAndStore();
+    }, 1000);
+  
+    // Clear the interval on component unmount to avoid memory leaks
+    return () => clearInterval(intervalId);
   }, []);
 
-
+  
 
 
   
@@ -84,22 +95,27 @@ const navigation= useNavigation()
   const handleNavigate = () => {
     navigation.navigate('Setting');
 }
-  const config = {
-    animation: 'spring',
-    config: {
-      stiffness: 1000,
-      damping: 500,
-      mass: 3,
-      overshootClamping: true,
-      restDisplacementThreshold: 0.01,
-      restSpeedThreshold: 0.01,
-    },
-  };
 
 
   return (
-    <Stack.Navigator initialRouteName='SplashScreen' screenOptions={{ cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS, headerStyle: {
-      backgroundColor: 'white',shadowColor: 'white',} }} >
+    <Stack.Navigator initialRouteName='SplashScreen' screenOptions={{
+      // headerShown: false,
+      cardStyle: { backgroundColor: 'white' }, // Set background color if needed
+      cardStyleInterpolator: ({ current, layouts }) => {
+        return {
+          cardStyle: {
+            transform: [
+              {
+                translateX: current.progress.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [layouts.screen.width, 0],
+                }),
+              },
+            ],
+          },
+        };
+      },}}
+      >
     
     <Stack.Screen name="CreditCard" component={CreditCardScreen} />
     
@@ -109,6 +125,10 @@ const navigation= useNavigation()
       <Stack.Screen options={{ headerShown: false }} name="CourtLogin" component={CourtLogin} />
       <Stack.Screen options={{ headerShown: false }} name="SignupScreen" component={SignupScreen} />
       <Stack.Screen options={{ headerShown: false }} name="CourtSingup" component={CourtSingup} />
+
+
+      <Stack.Screen options={{ headerShown: false }} name="Display" component={Display} />
+
       <Stack.Screen options={{ title: 'Recibo', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
@@ -174,43 +194,21 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="CustomizeProfilePrefferd" component={CustomizeProfilePrefferd} />
-      <Stack.Screen options={{ headerLeft: null,
-      headerRight: () => (
-        <View style={{flexDirection:'row',gap:-10}}>
-        <TouchableOpacity>
-          <View style={styles.headerRight}>
-          <Bell name="bell-o" size={23} color='black' style={{ marginRight: 18 }} />  
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.headerRight}>
-            <Chat name="message-text-outline" size={23} color='black' style={{ marginRight: 18 }} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={handleNavigate}>
-          <View style={styles.headerRight}>
-          <SettingIcon name="setting" size={23} color='black' style={{ marginRight: 18 }} />
-          </View>
-        </TouchableOpacity>
-        </View>
-      ),
-        title: `Hola, ${name}`,
-        headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
-           color: 'rgba(0, 0, 0, 1)', fontSize: 27,fontFamily: Fonts.BOLD, marginLeft: 0 // You can customize the style further
-        },
+      <Stack.Screen options={{ 
+        headerShown: false
       }}  name="Dashboard" component={Dashboard} />
-      <Stack.Screen options={{
+      {/* <Stack.Screen options={{
         headerLeft: null,
         headerRight: () => (
           <View style={{flexDirection:'row',gap:-10}}>
           <TouchableOpacity onPress={()=> navigation.navigate('Dashboard')}>
             <View style={styles.headerRight}>
-            <Homeicon name="home" size={22} color='black' style={{ marginRight: 18 }} />  
+            <Image source={require('../assets/Vector.png')} style={{ width: 20, height: 28,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.headerRight}>
-              <Chat name="message-text-outline" size={23} color='black' style={{ marginRight: 18 }} />
+            <Image source={require('../assets/message.png')} style={{ width: 25, height: 25,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={handleNavigate}>
@@ -225,20 +223,21 @@ const navigation= useNavigation()
         headerTintColor: '#408639', headerTitleStyle: {
           color: 'black', fontSize: 20,fontFamily: Fonts.BOLD, letterSpacing:0.1
         },
-      }} name="FindGames" component={FindGames} />
+      }} name="FindGames" component={FindGames} /> */}
 
 <Stack.Screen options={{
         headerLeft: null,
+     
         headerRight: () => (
           <View style={{flexDirection:'row',gap:-10}}>
           <TouchableOpacity onPress={()=> navigation.navigate('Dashboard')}>
             <View style={styles.headerRight}>
-            <Homeicon name="home" size={22} color='black' style={{ marginRight: 18 }} />  
+            <Image source={require('../assets/Vector.png')} style={{ width: 20, height: 28,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.headerRight}>
-              <Chat name="message-text-outline" size={23} color='black' style={{ marginRight: 18 }} />
+            <Image source={require('../assets/message.png')} style={{ width: 25, height: 25,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={handleNavigate}>
@@ -261,12 +260,12 @@ const navigation= useNavigation()
           <View style={{flexDirection:'row',gap:-10}}>
           <TouchableOpacity onPress={()=> navigation.navigate('Dashboard')}>
             <View style={styles.headerRight}>
-            <Homeicon name="home" size={22} color='black' style={{ marginRight: 18 }} />  
+            <Image source={require('../assets/Vector.png')} style={{ width: 20, height: 28,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.headerRight}>
-              <Chat name="message-text-outline" size={23} color='black' style={{ marginRight: 18 }} />
+            <Image source={require('../assets/message.png')} style={{ width: 25, height: 25,objectFit:'contain',marginRight: 18  }} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={handleNavigate}>
@@ -284,6 +283,7 @@ const navigation= useNavigation()
       }} name="EncuentraFeild" component={EncuentraFeild} />
 
       <Stack.Screen options={{ headerShown: false }} name="ParticularGroundScreen" component={ParticularGroundScreen} />
+      <Stack.Screen options={{ headerShown: false }} name="ParticularCourtGround" component={ParticularCourtGround} />
       <Stack.Screen options={{
         title: 'Ajustes',
         headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
@@ -296,7 +296,6 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="CourtOwnerSetting" component={CourtOwnerSetting} />
-{/* CourtOwnerSetting */}
 <Stack.Screen options={{ headerShown: false }}  name="CourtDashboard" component={CourtDashboard} />
 <Stack.Screen options={{
         title: 'Horario',
@@ -304,6 +303,24 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20, // You can customize the style further
         },
       }} name="Shadule" component={Shadule} />
+      <Stack.Screen options={{headerShown: false,}} name="StartAGame" component={StartAGame} />
+
+<Stack.Screen options={{headerShown:false,}} name="GameStart" component={GameStart} />
+<Stack.Screen options={{headerShown:false,}} name="StartATeam" component={StartATeam} />
+   
+<Stack.Screen options={{ title: 'Detalles de la cancha', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="CourtDetails" component={CourtDetails} />
+      <Stack.Screen options={{ title: 'Imágenes', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="ImagesAdd" component={ImagesAdd} />
+       <Stack.Screen options={{ title: 'Detalles del campo', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="SoccerSelect" component={SoccerSelect} />
+  
     </Stack.Navigator>
   );
 };

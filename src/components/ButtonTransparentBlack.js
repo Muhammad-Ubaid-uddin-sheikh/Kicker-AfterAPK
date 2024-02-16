@@ -19,22 +19,16 @@ export const Button = ({text,Link,ColorIcon,ColorText}) => {
 }
 const styles = StyleSheet.create({
  button: {
-    // backgroundColor: '#212121',
     padding: 15,
     marginTop:20,
     borderRadius:12,
     borderColor:'#212121',
     borderWidth: 1.5, // Set the border width
     fontFamily:Fonts.MEDIUM,
-    // marginLeft:20,
-    // marginRight:28,
-    // width:'auto',
     textAlign:'center'
     
       },
       buttonText:{
-        // paddingLeft:5,
-        // color: '#EFEFF0',
         fontFamily:Fonts.MEDIUM,
         textAlign:'center'
       },

@@ -43,9 +43,6 @@ function MyTabs() {
             console.error('Error fetching user data:', response.statusText);
           }
         }
-        // } else {
-        //   console.error('Token not available');
-        // }
       } catch (error) {
         console.error('Error fetching and storing user data:', error);
       }
@@ -54,14 +51,16 @@ function MyTabs() {
   }, []);
 
   return (
-    <Tab.Navigator screenOptions={{ headerStyle: {
-        backgroundColor: 'white',shadowColor: 'white',} }} tabBarOptions={{
-        activeTintColor: 'rgba(64, 134, 57, 1)', 
-        inactiveTintColor: 'black', 
-        labelStyle: {
-          fontSize: 12,
-        },
-      }}
+    <Tab.Navigator 
+    screenOptions={({ route }) => ({
+      tabBarActiveTintColor: 'rgba(64, 134, 57, 1)',
+      tabBarInactiveTintColor: 'black',
+      tabBarLabelStyle: {
+        fontSize: 12,
+        fontFamily: Fonts.MEDIUM,
+        marginTop:-5
+      }
+      })}
       >
       <Tab.Screen options={{
         title:`Hola, ${name}`,
@@ -83,7 +82,7 @@ function MyTabs() {
            },
         }} name="CalendarScreen" component={CalendarScreen} />
       <Tab.Screen
-      options={{title:'Hola, John',
+      options={{title:`Hola, ${name}`,
       headerRight: () => (
        <View style={{flexDirection:'row',gap:-10}}>
 

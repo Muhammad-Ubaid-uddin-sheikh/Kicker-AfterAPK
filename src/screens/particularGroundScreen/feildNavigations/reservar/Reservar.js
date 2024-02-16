@@ -103,11 +103,6 @@ const Dashboard = ({navigation}) => {
 
 
                 <View style={[styles.inputContainer, { paddingTop: 10 }]}>
-                {/* <TextInput
-        value={inputValue}
-        onChangeText={handleInputChange}
-        placeholder="Enter data"
-      /> */}
                     <Foot visible={iCanchavalVisible}
                    selectedValue={Canchaval ? Canchaval.name : ''}
                     PopupOn={()=>setCanchavalVisible(true)}

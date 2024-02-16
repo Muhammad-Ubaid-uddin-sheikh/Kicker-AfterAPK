@@ -16,7 +16,6 @@ const CustomizeProfile = ({route,navigation}) => {
     return (
         <View style={styles.container}>
             <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
-            {/* <Text> {Canchaval ? Canchaval.name : 'None'}</Text> */}
                 <PaymentComp SecondIcon="arrow-forward-ios"  text="Confirmar pago" Link={Handlepress}/>
         </View>
         

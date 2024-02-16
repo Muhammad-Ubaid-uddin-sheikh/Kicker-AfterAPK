@@ -37,6 +37,8 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
                   }, 200);
                 const accessToken = await AsyncStorage.getItem('accessToken'); // Replace with your actual access token
               const apiUrl = API_URL_POST; // Replace with your actual API endpoint
+             
+            //  console.log(payload,accessToken)
               const response = await axios.post(apiUrl, payload, {
                 headers: {
                   Authorization: `Bearer ${accessToken}`,

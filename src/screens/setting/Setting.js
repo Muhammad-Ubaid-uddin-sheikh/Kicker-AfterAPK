@@ -32,10 +32,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
     }
   }
         
-  const handleLogout = async () => {
-  
-    
-    
+  const handleLogout = async () => { 
     setIsLoggingOut(true);
 
     setTimeout(() => {
@@ -47,8 +44,6 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
    
    
   };
-
-
 
   const [name, setName] = useState('');
   const [email, setemail] = useState('');
@@ -76,14 +71,17 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
             console.error('Error fetching user data:', response.statusText);
           }
         }
-        // } else {
-        //   // console.error('Token not available');
-        // }
+       
       } catch (error) {
         console.error('Error fetching and storing user data:', error);
       }
     };
     fetchDataAndStore();
+    const intervalId = setInterval(() => {
+      fetchDataAndStore();
+    }, 200);
+
+    return () => clearInterval(intervalId);
   }, []);
   return (
 
@@ -91,23 +89,15 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         <View style={styles.MainContainer}>
             <View style={styles.rowContainer}>
             <StatusBar backgroundColor={'white'} barStyle="dark-content" />
-           
-            {/* <Text style={styles.paragraphs}>
-            What would you like to do today?
-         </Text> */}
     
          <View style={styles.ShoeContainer}>
                         <View style={styles.row}>
-                        <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
                             <View style={styles.ShoeCon} >
                             <ImageEdit/>
                             </View>
-                            </TouchableOpacity>
                             <View style={styles.ShoeConText} >
-                            <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
                                 <Text style={styles.textPoints} >{name}</Text>
                                 <Text style={styles.paragraph} >{email}</Text>
-                                </TouchableOpacity>
                             </View>
                         </View>
                         

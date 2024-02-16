@@ -9,12 +9,6 @@ const App = () => {
       onDayPress={day => {
         setSelected(day.dateString);
       }}
-    //   markedDates={{
-    //     [selected]: {selected: true, disableTouchEvent: true, selectedDotColor: 'orange'}
-    //   }}
-    // // markedDates={{
-    //     [selectedDate]: { selected: true, marked: true, selectedColor: 'green' },
-    //   }}
     
       style={{
         borderWidth: 1,
