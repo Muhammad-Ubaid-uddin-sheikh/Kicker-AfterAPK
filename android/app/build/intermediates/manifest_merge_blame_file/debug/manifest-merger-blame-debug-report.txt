@@ -8,170 +8,793 @@
 8        android:minSdkVersion="21"
 9        android:targetSdkVersion="34" />
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:5-67
-11-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:22-64
-12
-13    <queries>
-13-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
-14        <intent>
-14-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
-15            <action android:name="android.media.action.IMAGE_CAPTURE" />
-15-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
-15-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
-16        </intent>
-17    </queries>
-18
-19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
-19-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-78
-20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21    <!--
-22    This manifest file is used only by Gradle to configure debug-only capabilities
-23    for React Native Apps.
-24    -->
-25    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-25-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:16:5-78
-25-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:16:22-75
-26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-26-->[com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
-26-->[com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:22-73
-27
-28    <permission
-28-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-29        android:name="com.kickers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-29-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-30        android:protectionLevel="signature" />
-30-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
-31
-32    <uses-permission android:name="com.kickers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-32-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-32-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-33
-34    <application
-34-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-24:19
-35        android:name="com.kickers.MainApplication"
-35-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:6:7-38
-36        android:allowBackup="false"
-36-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:10:7-34
-37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-38        android:debuggable="true"
-39        android:extractNativeLibs="true"
-40        android:icon="@mipmap/ic_launcher"
-40-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:8:7-41
-41        android:label="@string/app_name"
-41-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:7:7-39
-42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:9:7-52
-43        android:theme="@style/AppTheme"
-43-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:11:7-38
-44        android:usesCleartextTraffic="true" >
-44-->/Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:6:9-44
-45        <activity
-45-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:12:7-23:18
-46            android:name="com.kickers.MainActivity"
-46-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:13:9-37
-47            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-47-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:15:9-118
-48            android:exported="true"
-48-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:18:9-32
-49            android:label="@string/app_name"
-49-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:14:9-41
-50            android:launchMode="singleTask"
-50-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:16:9-40
-51            android:windowSoftInputMode="adjustResize" >
-51-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:17:9-51
-52            <intent-filter>
-52-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:19:9-22:25
-53                <action android:name="android.intent.action.MAIN" />
-53-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:13-65
-53-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:21-62
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:13-73
-55-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:23-70
-56            </intent-filter>
-57        </activity>
-58
-59        <provider
-59-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
-60            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
-60-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
-61            android:authorities="com.kickers.provider"
-61-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
-62            android:exported="false"
-62-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
-63            android:grantUriPermissions="true" >
-63-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
-64            <meta-data
-64-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
-65                android:name="android.support.FILE_PROVIDER_PATHS"
-65-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
-66                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
-66-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
-67        </provider>
-68
-69        <activity
-69-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
-70            android:name="com.yalantis.ucrop.UCropActivity"
-70-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
-71            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-71-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
-72
-73        <provider
-73-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
-74            android:name="com.imagepicker.ImagePickerProvider"
-74-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
-75            android:authorities="com.kickers.imagepickerprovider"
-75-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
-76            android:exported="false"
-76-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
-77            android:grantUriPermissions="true" >
-77-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
-78            <meta-data
-78-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
-79                android:name="android.support.FILE_PROVIDER_PATHS"
-79-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
-80                android:resource="@xml/imagepicker_provider_paths" />
-80-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
-81        </provider>
-82
-83        <activity
-83-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:19:9-21:40
-84            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-84-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:20:13-77
-85            android:exported="false" />
-85-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:21:13-37
-86
-87        <provider
-87-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-88            android:name="androidx.startup.InitializationProvider"
-88-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-89            android:authorities="com.kickers.androidx-startup"
-89-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-90            android:exported="false" >
-90-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-91            <meta-data
-91-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-92-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-93                android:value="androidx.startup" />
-93-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-94            <meta-data
-94-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-95-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-96                android:value="androidx.startup" />
-96-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-97        </provider>
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:2:1-77
+11-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:2:18-74
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:4:1-75
+13-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:4:18-72
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15
+16    <queries>
+16-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
+17        <intent>
+17-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
+18            <action android:name="android.media.action.IMAGE_CAPTURE" />
+18-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
+18-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
+19        </intent>
+20        <!-- Needs to be explicitly declared on Android R+ -->
+21        <package android:name="com.google.android.apps.maps" />
+21-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+21-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+22    </queries>
+23    <!--
+24    This manifest file is used only by Gradle to configure debug-only capabilities
+25    for React Native Apps.
+26    -->
+27    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+27-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:16:5-78
+27-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:16:22-75
+28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+28-->[com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
+28-->[com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:22-73
+29    <permission
+29-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:10:5-12:47
+30        android:name="com.kickers.permission.C2D_MESSAGE"
+30-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:11:9-63
+31        android:protectionLevel="signature" />
+31-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:12:9-44
+32
+33    <uses-permission android:name="com.kickers.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
+33-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:5-79
+33-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:22-76
+34    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required, makes sure notifications are delivered on time. -->
+34-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:17:5-77
+34-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:17:22-74
+35    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+35-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:18:5-68
+35-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:18:22-65
+36    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+36-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:19:5-82
+36-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:19:22-79
+37    <!--
+38 Required so the device vibrates on receiving a push notification.
+39         Vibration settings of the device still apply.
+40    -->
+41    <uses-permission android:name="android.permission.VIBRATE" />
+41-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:24:5-66
+41-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:24:22-63
+42    <!--
+43 Use to restore notifications the user hasn't interacted with.
+44     They could be missed notifications if the user reboots their device if this isn't in place.
+45    -->
+46    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+46-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:29:5-81
+46-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:29:22-78
+47    <!-- Samsung -->
+48    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+48-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:31:5-86
+48-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:31:22-83
+49    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+49-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:32:5-87
+49-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:32:22-84
+50    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+50-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:33:5-81
+50-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:33:22-78
+51    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+51-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:34:5-83
+51-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:34:22-80
+52    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+52-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:35:5-88
+52-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:35:22-85
+53    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+53-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:36:5-92
+53-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:36:22-89
+54    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+54-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:37:5-84
+54-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:37:22-81
+55    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+55-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:38:5-83
+55-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:38:22-80
+56    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+56-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:39:5-91
+56-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:39:22-88
+57    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+57-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:40:5-92
+57-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:40:22-89
+58    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+58-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:41:5-93
+58-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:41:22-90
+59    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+59-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:42:5-73
+59-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:42:22-70
+60    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+60-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:43:5-82
+60-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:43:22-79
+61    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+61-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:44:5-83
+61-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:44:22-80
+62    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+62-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:45:5-88
+62-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:45:22-85
+63    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+63-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:46:5-89
+63-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:46:22-86
+64    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+64-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:10:5-79
+64-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:10:22-76
+65
+66    <uses-feature
+66-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+67        android:glEsVersion="0x00020000"
+67-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+68        android:required="true" />
+68-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+69
+70    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+70-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+70-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+71
+72    <permission
+72-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+73        android:name="com.kickers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+73-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+74        android:protectionLevel="signature" />
+74-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+75
+76    <uses-permission android:name="com.kickers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+76-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+76-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+77
+78    <application
+78-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-28:19
+79        android:name="com.kickers.MainApplication"
+79-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:6:7-38
+80        android:allowBackup="false"
+80-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:10:7-34
+81        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+81-->[androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+82        android:debuggable="true"
+83        android:extractNativeLibs="true"
+84        android:icon="@mipmap/ic_launcher"
+84-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:8:7-41
+85        android:label="@string/app_name"
+85-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:7:7-39
+86        android:roundIcon="@mipmap/ic_launcher_round"
+86-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:9:7-52
+87        android:theme="@style/AppTheme"
+87-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:11:7-38
+88        android:usesCleartextTraffic="true" >
+88-->/Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:6:9-44
+89        <activity
+89-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:13:7-24:18
+90            android:name="com.kickers.MainActivity"
+90-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:14:9-37
+91            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+91-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:16:9-118
+92            android:exported="true"
+92-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:19:9-32
+93            android:label="@string/app_name"
+93-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:15:9-41
+94            android:launchMode="singleTask"
+94-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:17:9-40
+95            android:windowSoftInputMode="adjustResize" >
+95-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:18:9-51
+96            <intent-filter>
+96-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:9-23:25
+97                <action android:name="android.intent.action.MAIN" />
+97-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:13-65
+97-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:21-62
 98
-99        <meta-data
-99-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
-100            android:name="com.facebook.soloader.enabled"
-100-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
-101            android:value="false" />
-101-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
-102    </application>
-103
-104</manifest>
+99                <category android:name="android.intent.category.LAUNCHER" />
+99-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:22:13-73
+99-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:22:23-70
+100            </intent-filter>
+101        </activity>
+102
+103        <meta-data
+103-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:25:8-27:63
+104            android:name="com.google.android.geo.API_KEY"
+104-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:26:6-51
+105            android:value="AIzaSyB_nNvYWSCB2haI7DCgR6chQmsg-T4oj8s" />
+105-->/Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:27:6-61
+106
+107        <provider
+107-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
+108            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+108-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
+109            android:authorities="com.kickers.provider"
+109-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
+110            android:exported="false"
+110-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+111            android:grantUriPermissions="true" >
+111-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
+112            <meta-data
+112-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+113                android:name="android.support.FILE_PROVIDER_PATHS"
+113-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+114                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+114-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+115        </provider>
+116
+117        <activity
+117-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
+118            android:name="com.yalantis.ucrop.UCropActivity"
+118-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
+119            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+119-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
+120
+121        <provider
+121-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+122            android:name="com.imagepicker.ImagePickerProvider"
+122-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
+123            android:authorities="com.kickers.imagepickerprovider"
+123-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
+124            android:exported="false"
+124-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+125            android:grantUriPermissions="true" >
+125-->[:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+126            <meta-data
+126-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+127                android:name="android.support.FILE_PROVIDER_PATHS"
+127-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+128                android:resource="@xml/imagepicker_provider_paths" />
+128-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+129        </provider>
+130        <provider
+130-->[:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+131            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+131-->[:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-83
+132            android:authorities="com.kickers.fileprovider"
+132-->[:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-64
+133            android:exported="false"
+133-->[:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+134            android:grantUriPermissions="true" >
+134-->[:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+135            <meta-data
+135-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+137                android:resource="@xml/file_provider_paths" />
+137-->[:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+138        </provider>
+139
+140        <activity
+140-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:19:9-21:40
+141            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+141-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:20:13-77
+142            android:exported="false" />
+142-->[com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:21:13-37
+143
+144        <receiver
+144-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:49:9-60:20
+145            android:name="com.onesignal.notifications.receivers.FCMBroadcastReceiver"
+145-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:50:13-86
+146            android:exported="true"
+146-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:51:13-36
+147            android:permission="com.google.android.c2dm.permission.SEND" >
+147-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:52:13-73
+148
+149            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+150            <intent-filter android:priority="999" >
+150-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:13-59:29
+150-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:28-50
+151                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+151-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:17-81
+151-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:25-78
+152
+153                <category android:name="com.kickers" />
+153-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:17-61
+153-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:27-58
+154            </intent-filter>
+155        </receiver>
+156
+157        <service
+157-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:62:9-68:19
+158            android:name="com.onesignal.notifications.services.HmsMessageServiceOneSignal"
+158-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:63:13-91
+159            android:exported="false" >
+159-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:64:13-37
+160            <intent-filter>
+160-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:65:13-67:29
+161                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+161-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:66:17-81
+161-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:66:25-78
+162            </intent-filter>
+163        </service>
+164
+165        <activity
+165-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:70:9-78:20
+166            android:name="com.onesignal.notifications.activities.NotificationOpenedActivityHMS"
+166-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:71:13-96
+167            android:exported="true"
+167-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:72:13-36
+168            android:noHistory="true"
+168-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:73:13-37
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+169-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:74:13-72
+170            <intent-filter>
+170-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:75:13-77:29
+171                <action android:name="android.intent.action.VIEW" />
+171-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:76:17-69
+171-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:76:25-66
+172            </intent-filter>
+173        </activity>
+174
+175        <receiver
+175-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:80:9-82:39
+176            android:name="com.onesignal.notifications.receivers.NotificationDismissReceiver"
+176-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:81:13-93
+177            android:exported="true" />
+177-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:82:13-36
+178        <receiver
+178-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:83:9-90:20
+179            android:name="com.onesignal.notifications.receivers.BootUpReceiver"
+179-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:84:13-80
+180            android:exported="true" >
+180-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:85:13-36
+181            <intent-filter>
+181-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:86:13-89:29
+182                <action android:name="android.intent.action.BOOT_COMPLETED" />
+182-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:17-79
+182-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:25-76
+183                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+183-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:88:17-82
+183-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:88:25-79
+184            </intent-filter>
+185        </receiver>
+186        <receiver
+186-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:91:9-97:20
+187            android:name="com.onesignal.notifications.receivers.UpgradeReceiver"
+187-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:92:13-81
+188            android:exported="true" >
+188-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:93:13-36
+189            <intent-filter>
+189-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:94:13-96:29
+190                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+190-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:95:17-84
+190-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:95:25-81
+191            </intent-filter>
+192        </receiver>
+193
+194        <activity
+194-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:99:9-105:75
+195            android:name="com.onesignal.notifications.activities.NotificationOpenedActivity"
+195-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:100:13-93
+196            android:excludeFromRecents="true"
+196-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:101:13-46
+197            android:exported="true"
+197-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:102:13-36
+198            android:noHistory="true"
+198-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:103:13-37
+199            android:taskAffinity=""
+199-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:104:13-36
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+200-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:105:13-72
+201        <activity
+201-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:106:9-111:75
+202            android:name="com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder"
+202-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:107:13-110
+203            android:excludeFromRecents="true"
+203-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:108:13-46
+204            android:exported="true"
+204-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:109:13-36
+205            android:noHistory="true"
+205-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:110:13-37
+206            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+206-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:111:13-72
+207
+208        <service
+208-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:13:9-16:43
+209            android:name="com.onesignal.core.services.SyncService"
+209-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:14:13-67
+210            android:exported="false"
+210-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:15:13-37
+211            android:stopWithTask="true" />
+211-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:16:13-40
+212        <service
+212-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:17:9-20:72
+213            android:name="com.onesignal.core.services.SyncJobService"
+213-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:18:13-70
+214            android:exported="false"
+214-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:19:13-37
+215            android:permission="android.permission.BIND_JOB_SERVICE" />
+215-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:20:13-69
+216
+217        <activity
+217-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:22:9-25:75
+218            android:name="com.onesignal.core.activities.PermissionsActivity"
+218-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:23:13-77
+219            android:exported="false"
+219-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:24:13-37
+220            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+220-->[com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:25:13-72
+221
+222        <receiver
+222-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+223            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+223-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+224            android:exported="true"
+224-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+225            android:permission="com.google.android.c2dm.permission.SEND" >
+225-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+226            <intent-filter>
+226-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:33:13-35:29
+227                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+227-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:17-81
+227-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:25-78
+228            </intent-filter>
+229
+230            <meta-data
+230-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+231                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+231-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+232                android:value="true" />
+232-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+233        </receiver>
+234        <!--
+235             FirebaseMessagingService performs security checks at runtime,
+236             but set to not exported to explicitly avoid allowing another app to call it.
+237        -->
+238        <service
+238-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+239            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+239-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+240            android:directBootAware="true"
+240-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+241            android:exported="false" >
+241-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+242            <intent-filter android:priority="-500" >
+242-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:50:13-52:29
+242-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:50:28-51
+243                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+243-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:51:17-78
+243-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:51:25-75
+244            </intent-filter>
+245        </service>
+246        <service
+246-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:54:9-63:19
+247            android:name="com.google.firebase.components.ComponentDiscoveryService"
+247-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:55:13-84
+248            android:directBootAware="true"
+248-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+249            android:exported="false" >
+249-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:56:13-37
+250            <meta-data
+250-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+251                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+251-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+252                android:value="com.google.firebase.components.ComponentRegistrar" />
+252-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+253            <meta-data
+253-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+254                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+254-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+256            <meta-data
+256-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+257                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+257-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+258                android:value="com.google.firebase.components.ComponentRegistrar" />
+258-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+259            <meta-data
+259-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+260                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+260-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+261                android:value="com.google.firebase.components.ComponentRegistrar" />
+261-->[com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+262            <meta-data
+262-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+263                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+263-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+264                android:value="com.google.firebase.components.ComponentRegistrar" />
+264-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+265            <meta-data
+265-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+266                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+266-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+267                android:value="com.google.firebase.components.ComponentRegistrar" />
+267-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+268            <meta-data
+268-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+269                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+269-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+270                android:value="com.google.firebase.components.ComponentRegistrar" />
+270-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+271        </service>
+272
+273        <provider
+273-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+274            android:name="com.google.firebase.provider.FirebaseInitProvider"
+274-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+275            android:authorities="com.kickers.firebaseinitprovider"
+275-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+276            android:directBootAware="true"
+276-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+277            android:exported="false"
+277-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+278            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+278-->[com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+279        <uses-library
+279-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+280            android:name="org.apache.http.legacy"
+280-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+281            android:required="false" />
+281-->[com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+282
+283        <activity
+283-->[com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+284            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+284-->[com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+285            android:exported="false"
+285-->[com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+286            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+286-->[com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+287
+288        <meta-data
+288-->[com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+289            android:name="com.google.android.gms.version"
+289-->[com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+290            android:value="@integer/google_play_services_version" />
+290-->[com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+291
+292        <provider
+292-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+293            android:name="androidx.startup.InitializationProvider"
+293-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+294            android:authorities="com.kickers.androidx-startup"
+294-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+295            android:exported="false" >
+295-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+296            <meta-data
+296-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+297                android:name="androidx.work.WorkManagerInitializer"
+297-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+298                android:value="androidx.startup" />
+298-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+299            <meta-data
+299-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+300                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+300-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+301                android:value="androidx.startup" />
+301-->[androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+302            <meta-data
+302-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+303                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+303-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+304                android:value="androidx.startup" />
+304-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+305        </provider>
+306
+307        <service
+307-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+308            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+308-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+309            android:directBootAware="false"
+309-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+310            android:enabled="@bool/enable_system_alarm_service_default"
+310-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+311            android:exported="false" />
+311-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+312        <service
+312-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+313            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+313-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+315            android:enabled="@bool/enable_system_job_service_default"
+315-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+316            android:exported="true"
+316-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+317            android:permission="android.permission.BIND_JOB_SERVICE" />
+317-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+318        <service
+318-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+319            android:name="androidx.work.impl.foreground.SystemForegroundService"
+319-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+320            android:directBootAware="false"
+320-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+321            android:enabled="@bool/enable_system_foreground_service_default"
+321-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+322            android:exported="false" />
+322-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+323
+324        <receiver
+324-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+325            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+325-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+326            android:directBootAware="false"
+326-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+327            android:enabled="true"
+327-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+328            android:exported="false" />
+328-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+329        <receiver
+329-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+330            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+330-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+331            android:directBootAware="false"
+331-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+332            android:enabled="false"
+332-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+333            android:exported="false" >
+333-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+334            <intent-filter>
+334-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+335                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+335-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+335-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+336                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+336-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+336-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+337            </intent-filter>
+338        </receiver>
+339        <receiver
+339-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+340            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+340-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+341            android:directBootAware="false"
+341-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+342            android:enabled="false"
+342-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+343            android:exported="false" >
+343-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+344            <intent-filter>
+344-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+345                <action android:name="android.intent.action.BATTERY_OKAY" />
+345-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+345-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+346                <action android:name="android.intent.action.BATTERY_LOW" />
+346-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+346-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+347            </intent-filter>
+348        </receiver>
+349        <receiver
+349-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+350            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+350-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+351            android:directBootAware="false"
+351-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+352            android:enabled="false"
+352-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+353            android:exported="false" >
+353-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+354            <intent-filter>
+354-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+355                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+355-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+355-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+356                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+356-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+356-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+357            </intent-filter>
+358        </receiver>
+359        <receiver
+359-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+360            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+360-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+361            android:directBootAware="false"
+361-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+362            android:enabled="false"
+362-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+363            android:exported="false" >
+363-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+364            <intent-filter>
+364-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+365                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+365-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+365-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+366            </intent-filter>
+367        </receiver>
+368        <receiver
+368-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+369            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+369-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+370            android:directBootAware="false"
+370-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+371            android:enabled="false"
+371-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+372            android:exported="false" >
+372-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+373            <intent-filter>
+373-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+374                <action android:name="android.intent.action.BOOT_COMPLETED" />
+374-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:17-79
+374-->[com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:25-76
+375                <action android:name="android.intent.action.TIME_SET" />
+375-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+375-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+376                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+376-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+376-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+377            </intent-filter>
+378        </receiver>
+379        <receiver
+379-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+380            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+380-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+381            android:directBootAware="false"
+381-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+382            android:enabled="@bool/enable_system_alarm_service_default"
+382-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+383            android:exported="false" >
+383-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+384            <intent-filter>
+384-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+385                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+385-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+385-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+386            </intent-filter>
+387        </receiver>
+388        <receiver
+388-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+389            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+389-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+390            android:directBootAware="false"
+390-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+391            android:enabled="true"
+391-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+392            android:exported="true"
+392-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+393            android:permission="android.permission.DUMP" >
+393-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+394            <intent-filter>
+394-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+395                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+395-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+395-->[androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+396            </intent-filter>
+397        </receiver>
+398
+399        <service
+399-->[androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+400            android:name="androidx.room.MultiInstanceInvalidationService"
+400-->[androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+401            android:directBootAware="true"
+401-->[androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+402            android:exported="false" />
+402-->[androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+403        <service
+403-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+404            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+404-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+405            android:exported="false" >
+405-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+406            <meta-data
+406-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+407                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+407-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+408                android:value="cct" />
+408-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+409        </service>
+410        <service
+410-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+411            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+411-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+412            android:exported="false"
+412-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+413            android:permission="android.permission.BIND_JOB_SERVICE" >
+413-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+414        </service>
+415
+416        <receiver
+416-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+417            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+417-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+418            android:exported="false" />
+418-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+419
+420        <meta-data
+420-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+421            android:name="com.facebook.soloader.enabled"
+421-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+422            android:value="false" />
+422-->[com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+423    </application>
+424
+425</manifest>

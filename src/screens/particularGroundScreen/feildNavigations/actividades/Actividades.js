@@ -9,7 +9,7 @@ const Dashboard = ({navigation}) => {
     <View style={styles.MainContainer}>
         <ScrollView style={styles.scrollEdit}  backgroundColor={'white'}>
         <View style={styles.rowContainer}>
-        <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+        {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
         <Text style={styles.paragraphs}>
         Actividades
      </Text>

@@ -1,43 +1,46 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { useEffect } from 'react'
 import { Image, StatusBar, StyleSheet, View ,ImageBackground} from 'react-native'
+import { useFocusEffect } from '@react-navigation/native'; // Import the useFocusEffect hook
 
 const SplashScreen = ({ navigation }) => {
     useEffect(() => {
         setTimeout(() => {
-            // navigation.replace('Home')
             handleTokenConform()
         }, 3000)
     }, [])
 
+    // useFocusEffect(
+    //     React.useCallback(() => {
+    //         handleTokenConform(); // Call handleTokenConform whenever the screen comes into focus
+    //     }, [])
+    // );
+
     const handleTokenConform= async () => {
-const dataToken = await AsyncStorage.getItem('accessToken')
-const courtToken = await AsyncStorage.getItem('accessTokenCourt')
-// const Userdata = await AsyncStorage.getItem('user')
-if(courtToken){
-  
-    navigation.replace('CourtDashboard')
-}
-else if (dataToken){
-    navigation.replace('Dashboard')
-}
-else {
-    navigation.replace('Home')
-}
+        const dataToken = await AsyncStorage.getItem('accessToken')
+        const courtToken = await AsyncStorage.getItem('accessTokenCourt')
+        // const Userdata = await AsyncStorage.getItem('user')
+        if(courtToken){
+            navigation.replace('CourtDashboard')
+        }
+        else if (dataToken){
+            navigation.replace('Dashboard')
+        }
+        else {
+            navigation.replace('Home')
+        }
     }
 
     return (
-       
-            <ImageBackground
-      source={require('../../assets/SplashBackground.png')}
-      style={styles.backgroundImage}
-    > 
-      <StatusBar barStyle="light-content" translucent={true} backgroundColor={'transparent'}  />
-    <View style={styles.container}>
-            {/* <StatusBar backgroundColor={'#408639'} /> */}
-            <Image style={styles.logo} source={require('../../assets/launch_screen.png')} />
-        
-        </View>
+        <ImageBackground
+            source={require('../../assets/SplashBackground.png')}
+            style={styles.backgroundImage}
+        > 
+            {/* <StatusBar barStyle="light-content" translucent={true} backgroundColor={'transparent'}  /> */}
+            <View style={styles.container}>
+                {/* <StatusBar backgroundColor={'#408639'} /> */}
+                <Image style={styles.logo} source={require('../../assets/launch_screen.png')} />
+            </View>
         </ImageBackground>
     )
 }
@@ -46,7 +49,6 @@ export default SplashScreen
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: '#408639',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
@@ -55,11 +57,10 @@ const styles = StyleSheet.create({
         width: 500,
         height: 400,
         objectFit: 'cover'
-
     },
     backgroundImage: {
         flex: 1,
         resizeMode: 'cover',
         justifyContent: 'center',
-      },
+    },
 });

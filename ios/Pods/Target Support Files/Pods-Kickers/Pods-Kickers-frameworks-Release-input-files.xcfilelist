@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Kickers/Pods-Kickers-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalFramework/OneSignalFramework.framework/OneSignalFramework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalExtension/OneSignalExtension.framework/OneSignalExtension
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalInAppMessages/OneSignalInAppMessages.framework/OneSignalInAppMessages
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalNotifications/OneSignalNotifications.framework/OneSignalNotifications
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalOSCore/OneSignalOSCore.framework/OneSignalOSCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalOutcomes/OneSignalOutcomes.framework/OneSignalOutcomes
+${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes/hermes.framework/hermes

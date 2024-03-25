@@ -1,22 +1,25 @@
 
 import React from 'react'
-import { View, StyleSheet, StatusBar, Text,  } from 'react-native'
+import { View, StyleSheet,Alert,  } from 'react-native'
 import PaymentComp from '../../../components/Paymentcom'
 
 const CustomizeProfile = ({route,navigation}) => {
-    // const inputData = route?.params?.inputData || 'No data available';
-    const {Fechaval} = route.params
-    const { Canchaval } = route.params 
-    const { Horainicio } = route.params 
-    const { finalizacion } = route.params 
+    const { Datarespo,Item,totalAmount,} = route.params
+
+    const Paymnet =  Datarespo.data.paymentLink
     Handlepress=()=>{
-        navigation.navigate('SlipPage', { Canchaval,Fechaval,finalizacion,Horainicio});
+        Alert.alert('Pago exitosa','Transición exitosa ')
+        navigation.navigate('SlipPage', {Item,Datarespo,totalAmount});
     }
   
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
-                <PaymentComp SecondIcon="arrow-forward-ios"  text="Confirmar pago" Link={Handlepress}/>
+
+            {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
+                <PaymentComp SecondIcon="arrow-forward-ios"  text="Confirmar Retiro" Link={Handlepress} Paymnet ={Paymnet}/>
+                {/* <View style={{flex:1,backgroundColor:'red'}}>
+      <WebView source={{ uri: Paymnet }} />
+      </View> */}
         </View>
         
     )

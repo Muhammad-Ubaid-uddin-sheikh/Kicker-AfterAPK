@@ -127,7 +127,7 @@ const Sigup = ({ navigation }) => {
           onChangeText={(text) => handleInputChange('email', text)} />
       </View>
 
-      <View style={[styles.inputContainer, { marginTop: 10 }]}>
+      {/* <View style={[styles.inputContainer, { marginTop: 10 }]}>
         <PhoneInput
           defaultCode="MX"
           layout="first"
@@ -147,7 +147,7 @@ const Sigup = ({ navigation }) => {
             padding: 0 // Change this to the desired color
           }}
         />
-      </View>
+      </View> */}
       <View style={styles.inputContainer}>
         <CustomInputFeild focus={true} labelName='Equipo' value={userData.country}
           onChangeText={(text) => handleInputChange('country', text)} />

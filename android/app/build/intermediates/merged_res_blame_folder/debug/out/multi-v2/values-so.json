@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.kickers.app-mergeDebugResources-35:/values-so/values-so.xml",
+            "outputFile": "com.kickers.app-mergeDebugResources-51:/values-so/values-so.xml",
             "map": [
                 {
                     "source": "/Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/res/values-so/values-so.xml",

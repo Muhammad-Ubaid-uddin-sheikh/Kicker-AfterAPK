@@ -64,6 +64,7 @@ const Sigup = ({ navigation }) => {
             if (response.data.status) {
                 const { accessToken, user } = response.data.data;
                 await AsyncStorage.setItem('accessToken', accessToken);
+                await AsyncStorage.setItem('Token', accessToken);
                 await AsyncStorage.setItem('user', JSON.stringify(user));
               Alert.alert(JSON.stringify(response.data));
               navigation.navigate('CustomizeProfile');
@@ -114,7 +115,7 @@ const Sigup = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
-             <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+             {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
             <Text style={styles.heading}>Registrate</Text>
             {/* <Text style={styles.headingSub}>Court Owner </Text> */}
 

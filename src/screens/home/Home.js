@@ -11,7 +11,7 @@ const App = ({ navigation }) => {
             <View style={styles.container}>
 
                 <Image style={styles.imageStyle} source={require('../../assets/splashSec.png')} width={20} height={50} />
-                <StatusBar translucent={true} backgroundColor={'transparent'} barStyle="light-content"  />
+                {/* <StatusBar translucent={true} backgroundColor={'transparent'} barStyle="light-content"  /> */}
                 <View style={styles.Widthcontainer}>
 
                     <Text style={styles.heading}>Disfruta al máximo el mundo del fútbol cerca de ti</Text>

@@ -1,12 +1,14 @@
-import React from 'react'
-import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View, TextInput } from 'react-native'
+import React, { useEffect } from 'react'
+import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View, TextInput, Alert } from 'react-native'
 import MatchPlayerDetails from '../../components/MatchesPlayerDetails'
 import { Fonts } from '../style'
 import Icons from 'react-native-vector-icons/Ionicons'
 import SearchICon from 'react-native-vector-icons/EvilIcons'
 import ClockICon from 'react-native-vector-icons/AntDesign'
 const FindGames = ({ navigation }) => {
-
+    useEffect(()=>{
+        Alert.alert('This app is still under development and not yet complete.')
+          },[])
     return (
 
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>

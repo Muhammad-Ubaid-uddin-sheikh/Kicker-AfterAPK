@@ -1,69 +1,109 @@
 
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { View, StyleSheet, StatusBar, Text, Image,Alert, Share, Platform } from 'react-native'
 import { Fonts } from '../../style'
 import ButtonslipAndcencel from '../../../components/ButtonslipAndcencel'
-const CustomizeProfile = ({ route }) => {
+import ViewShot from 'react-native-view-shot';
+import RNFS from 'react-native-fs';
+import { captureRef } from 'react-native-view-shot';
+import { useNavigation } from '@react-navigation/native';
+const CustomizeProfile = ({ route}) => {
+const navigation = useNavigation()
+const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
+    return date.toLocaleDateString('en-GB', options);
+  };
+    const {Datarespo,totalAmount,Item} = route.params   
+   console.log('data',Item.images[0])
+    const courtImage = Datarespo.data.courtImage;
+const [firstTime, secondTime] = Datarespo.data.timingRange
+const [firstHour, firstMinute,] = firstTime.split(' ');
+// const [secondHour, secondMinute,] = secondTime.split(' ');
 
-    const { Canchaval } = route.params
-    const { Fechaval } = route.params
-    const { Horainicio } = route.params
-    const { finalizacion } = route.params
-    // const { item } = route.params;
+const firstHourNumber = parseInt(firstHour, 10); 
+const viewShotRef = useRef(null); // Correct reference to useRef
 
-    
+    const takeScreenshotAndSave = async () => {
+        try {
+            const uri = await captureRef(viewShotRef, { // Updated to use viewShotRef
+                format: 'png', // You can choose other formats like png
+                quality: 0.8,
+                backgroundColor: 'white', // Image quality (0 to 1)
+            });
+
+            const directoryPath = RNFS.PicturesDirectoryPath;
+            const fileName = `screenshot_${Date.now()}.png`;
+            const filePath = `${directoryPath}/${fileName}`;
+            await RNFS.copyFile(uri, filePath);
+
+            Alert.alert('Success', 'Screenshot saved to gallery!');
+              navigation.navigate('DashboardMain')
+        } catch (error) {
+            console.error('Error saving screenshot:', error);
+            Alert.alert('Error', 'Failed to save screenshot.');
+        }
+    };
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
+            <ViewShot style={{backgroundColor:'white'}} ref={viewShotRef} options={{  quality: 1 }}>
+           
             <View style={styles.mainContainerSlip}>
-                <Image
-                    source={require('../../../assets/Ground.jpg')}
-                    style={styles.backgroundImage}
-                />
-                <Text style={styles.GroundName}>
-                    Jefferson Park
-                </Text>
+                 <Image
+                        source={{ uri: courtImage.length > 0 ? Item.images[0] : 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' }}
+                        style={styles.backgroundImage}
+                    />
+                    <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
+                    <Text style={styles.GroundName}> {Datarespo.data.courtName}</Text>
+                <Text style={[styles.headingTitle,{paddingTop:10,paddingLeft:40}]}>Rs: {totalAmount}.00</Text>
+                    </View>
+              
                 <View style={styles.rowGroundDetails}>
                     <View>
                         <Text style={styles.profileHeading}>Nombre</Text>
-                        <Text style={styles.headingTitle}>Jake Garcia </Text>
+                        <Text style={styles.headingTitle}>{Datarespo.data.bookedByName}</Text>
                     </View>
                     <View>
-                        <Text style={styles.profileHeading}>Fecha</Text>
-                        <Text style={styles.headingTitle}>{Fechaval ? Fechaval.name : 'None'}</Text>
+                        <Text style={styles.profileHeading}>Fecha 
+                        
+                        </Text>
+                        <Text style={styles.headingTitle}>{Datarespo.data?.date ? formatDate(Datarespo.data.date) : 'N/A'}</Text>
                     </View>
 
                 </View>
                 <View style={styles.rowGroundDetails}>
                     <View>
                         <Text style={styles.profileHeading}>Hora de inicio</Text>
-                        <Text style={styles.headingTitle}>{Horainicio ? Horainicio.name : 'None'} </Text>
+                        <Text style={styles.headingTitle}>{firstHour} {firstMinute}  </Text>
                     </View>
                     <View>
                         <Text style={styles.profileHeading}>Hora de finalización</Text>
-                        <Text style={styles.headingTitle}>{finalizacion ? finalizacion.name : 'None'} </Text>
+                        {/* <Text style={styles.headingTitle}>{secondHour} {secondMinute} </Text> */}
                     </View>
 
                 </View>
                 <View style={styles.rowGroundDetails}>
                     <View>
                         <Text style={styles.profileHeading}>Cancha</Text>
-                        <Text style={styles.headingTitle}>{Canchaval ? Canchaval.name : 'None'} </Text>
+                        <Text style={styles.headingTitle}>{Datarespo.data.fieldName} </Text>
                     </View>
                     <View>
                         <Text style={styles.profileHeading}>Pago</Text>
-                        <Text style={styles.headingTitle}>Completado </Text>
+                        <Text style={styles.headingTitle}>{Datarespo.data.paymentStatus} </Text>
                     </View>
 
                 </View>
             
             </View>
+            </ViewShot>
             <View style={styles.nextButton}>
                 <View style={{marginBottom:10}}> 
-                <ButtonslipAndcencel ColorIcon='white'IconColor="#212121" ColorText="#212121" IconName="share" text="Compartir detalles" Link={()=>navigation.navigate('Discovery')} />
+                <ButtonslipAndcencel ColorIcon='white'IconColor="#408639" ColorText="#408639" IconName="share" text="Compartir detalles" Link={()=>navigation.navigate('Discovery')} />
                 </View>
-           
-                <ButtonslipAndcencel   IconName="save-alt" text="Guardar recibo"  />
+                
+                <ButtonslipAndcencel   IconName="save-alt" text="Guardar recibo" Link={takeScreenshotAndSave}  />
+                
             </View>
         </View>
 
@@ -115,7 +155,7 @@ const styles = StyleSheet.create({
         letterSpacing: 0.2,
         fontSize: 19,
         paddingTop: 10,
-        paddingLeft: 5
+        paddingLeft: 5,
     },
     backgroundImage: {
         width: 320,

@@ -5,6 +5,7 @@ import Button from '../../components/Button';
 import { Fonts } from '../style';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ApiHandler } from '../../apis/axios';
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/court/login';
 const App = ({ navigation }) => {
   const [email, setemail] = useState('');
@@ -25,6 +26,7 @@ const App = ({ navigation }) => {
       if (response.data.status) {
         const { accessToken, user } = response.data.data;
         await AsyncStorage.setItem('accessTokenCourt', accessToken);
+        await AsyncStorage.setItem('Token', accessToken);
         await AsyncStorage.setItem('user', JSON.stringify(user));
         Alert.alert(JSON.stringify(response.data));
         navigation.navigate('CourtDashboard');
@@ -50,9 +52,9 @@ const App = ({ navigation }) => {
   return (
 
     <View style={styles.form}>
-      <StatusBar barStyle="dark-content" />
+      {/* <StatusBar barStyle="dark-content" /> */}
       <View>
-        <Text style={styles.heading}>Inicia sesión</Text>
+        <Text style={styles.heading}>Inicia sesión en una cancha</Text>
         {/* <Text style={styles.headingSub}>Court Owner </Text> */}
         <Text style={styles.paragraphs}>
           Reserva canchas, encuentra partidos, conéctate con la comunidad y más.
@@ -86,7 +88,7 @@ const App = ({ navigation }) => {
 
         <Button loading={loading} text='Inicia sesión' Link={handleLogin} />
       </View>
-      <Text style={styles.informationText}>¿Olvidaste tu contraseña ?</Text>
+      <Text style={styles.informationText}>¿Olvidaste tu contraseña?</Text>
       <View style={styles.SinupText}>
         <TouchableOpacity style={styles.linkText}>
           <Text style={styles.informationText}> ¿No tienes una cuenta? <Text style={styles.TextLink} onPress={() => navigation.navigate('CourtSingup')} >Regístrate hoy!</Text> </Text>

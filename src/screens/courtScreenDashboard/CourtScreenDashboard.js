@@ -6,7 +6,7 @@ const Dashboard = () => {
   return (
     
     <View style={{width:'auto',flex:1,justifyContent:'center'}} >
-       <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+       {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
     <HeaderBottom/>
     </View>
  

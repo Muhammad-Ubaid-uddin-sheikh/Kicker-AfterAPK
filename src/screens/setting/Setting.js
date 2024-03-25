@@ -7,12 +7,13 @@ import ImageEdit from './ImageEdit'
 import Modal from 'react-native-modal';
 import Button from '../../components/ButtonTransparentBlack';
 import { Fonts } from '../style';
+import Skeleton from "@thevsstech/react-native-skeleton";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getProfile';
 const Setting = ({navigation}) => {
     const [isLoggingOut, setIsLoggingOut] = useState(false);
 const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
-
+const [isLoading, setIsLoading] = useState(true);
   const showLogoutModal = () => {
     setLogoutModalVisible(true);
   };
@@ -74,40 +75,68 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
        
       } catch (error) {
         console.error('Error fetching and storing user data:', error);
+      }finally{
+        setIsLoading(false)
       }
     };
     fetchDataAndStore();
-    const intervalId = setInterval(() => {
-      fetchDataAndStore();
-    }, 200);
+    // const intervalId = setInterval(() => {
+    //   fetchDataAndStore();
+    // }, 200);
 
-    return () => clearInterval(intervalId);
+    // return () => clearInterval(intervalId);
   }, []);
   return (
 
         <ScrollView backgroundColor={'white'}>
         <View style={styles.MainContainer}>
             <View style={styles.rowContainer}>
-            <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
     
-         <View style={styles.ShoeContainer}>
-                        <View style={styles.row}>
-                            <View style={styles.ShoeCon} >
-                            <ImageEdit/>
-                            </View>
-                            <View style={styles.ShoeConText} >
-                                <Text style={styles.textPoints} >{name}</Text>
-                                <Text style={styles.paragraph} >{email}</Text>
-                            </View>
-                        </View>
-                        
+            {isLoading ? (
+                    
+        
+                    <Skeleton highlightColor={'rgba(64, 134, 57, 0.25)'} backgroundColor={'rgba(64, 134, 57, 0.05)'} borderRadius={'20'} visible={false}>
+                    
+                              <View style={{ flexDirection: "row", alignItems: "center",justifyContent:'space-between',marginTop:10 }}>
+                    <View style={{ width: 100, height: 100, borderRadius: 50 ,marginBottom:30}} />
+                   
+                  
+                    <View style={{paddingRight:20,marginBottom:30}}>
+                    <View style={{ width: 220, height: 30, borderRadius: 4 }} />
+                    <View style={{ width: '100%', height: 20, borderRadius: 4 ,marginTop:10}} />
                     </View>
+                    </View>
+                    
+                        </Skeleton>
+            
+                            ) : (
+                              
+                              <View style={[styles.ShoeContainer,]}>
+                                    <View style={styles.row}>
+                                    <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
+                                        <View style={styles.ShoeCon} >
+                                        <ImageEdit/>
+                                        </View>
+                                        </TouchableOpacity>
+                                        <View style={styles.ShoeConText} >
+                                        <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
+                                            <Text style={styles.textPoints} >{name}</Text>
+                                            <Text style={styles.paragraph} >{email}</Text>
+                                            </TouchableOpacity>
+                                        </View>
+                                    </View>
+                                    
+                                </View>
+                               
+                  
+                                )}
                    
          </View>
     <View style={styles.buttonContainer}>
        
         <ButtonEditDashboard TextButton="Editar perfil" FontName="person-outline" Link={()=>navigation.navigate('EditProfile')}/>
-        <ButtonEditDashboard TextButton="Pago" FontName="card-outline" Link={()=>navigation.navigate('Pago')}/>
+        <ButtonEditDashboard TextButton="Retiro" FontName="card-outline" Link={()=>navigation.navigate('Pago')}/>
         <CheckPlayer NameFont="bell-outline" TextButton="Notificaciones" Link={()=>navigation.navigate('Notification')} />
         <ButtonEditDashboard TextButton="Privacidad" FontName="shield-checkmark-outline" Link={()=>navigation.navigate('Privacy')}/>
          <ButtonEditDashboard TextButton="Seguridad" FontName="lock-closed-outline" Link={()=>navigation.navigate('Security')}/> 
@@ -124,11 +153,11 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.paragraphsHeadingMain}>¿Quieres cerrar sesión?</Text>
-            <Text style={styles.paragraphspoup}>Agradecem os tu visita. Nos vemos pronto.</Text>
+            <Text style={styles.paragraphspoup}>Agradecemos tu visita. Nos vemos pronto.</Text>
 
             <View style={styles.containerButton}>
             <View style={styles.mainContent}> 
-                <Button text="Cancelar"  ColorIcon="white" Link={hideLogoutModal} ColorText="#212121" />
+                <Button text="Cancelar"  ColorIcon="white" Link={hideLogoutModal} ColorText="#408639" />
                 </View>
             <View style={styles.mainContent} >
                  <Button text="Cerrar sesión"  Link={handleLogout} />
@@ -150,9 +179,6 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
          </View>
         
         </View>
-         <View style={styles.nextButton}>
-                     
-                    </View>
         </View>
         </ScrollView>
       )
@@ -173,7 +199,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         mainContent: {
             textAlign: 'center',
         justifyContent: 'center',
-      //  width:150,
+       width:150,
           },
         ShoeConText:{
             paddingTop:20

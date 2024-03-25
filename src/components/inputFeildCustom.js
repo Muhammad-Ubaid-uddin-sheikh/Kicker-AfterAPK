@@ -80,7 +80,8 @@ const styles = StyleSheet.create({
     fontFamily:Fonts.MEDIUM,
     backgroundColor: 'rgba(64, 134, 57, 0.05)',
     height: 60,
-    paddingTop: 27
+    paddingTop: 27,
+    width:'100%'
   },
   label: {
     position: 'absolute',

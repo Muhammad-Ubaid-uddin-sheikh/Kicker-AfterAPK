@@ -57,10 +57,10 @@ const CustomizeProfile = ({ navigation }) => {
     };
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
             <ColoredLine flex={4} />
             <View style={styles.MainContainer}>
-                <Text style={styles.MainHeading} >¿ Qué posición juegas?</Text>
+                <Text style={styles.MainHeading} >¿Qué posición juegas?</Text>
                 <Image source={selectedImage} style={styles.image} />
 
                 {/* Text 1 */}

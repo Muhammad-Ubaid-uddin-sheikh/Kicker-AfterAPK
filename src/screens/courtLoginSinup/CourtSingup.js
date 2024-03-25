@@ -63,18 +63,22 @@ const Sigup = ({ navigation }) => {
             if (response.data.status) {
                 const { accessToken, user } = response.data.data;
                 await AsyncStorage.setItem('accessTokenCourt', accessToken);
+                await AsyncStorage.setItem('Token', accessToken);
                 await AsyncStorage.setItem('user', JSON.stringify(user));
+                console.log(response.data.data)
               Alert.alert(JSON.stringify(response.data));
-              navigation.navigate('CourtDashboard');
+              navigation.navigate('CourtNameLoc');
             }
           } catch (error) {
             
             Alert.alert(JSON.stringify(error.response));  
-          }
-          setTimeout(() => {
-     
+          }finally{
             setLoading(false);
-          }, 2000);
+          }
+        //   setTimeout(() => {
+     
+            
+        //   }, 2000);
         }
       };
     
@@ -113,7 +117,7 @@ const Sigup = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.form} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
-             <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+             {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
             <Text style={styles.heading}>Registrate</Text>
 
             <View style={styles.inputContainer}>

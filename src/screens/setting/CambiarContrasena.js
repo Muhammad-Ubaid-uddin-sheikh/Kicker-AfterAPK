@@ -86,7 +86,7 @@ const CambiarContrasena = ({ navigation }) => {
           <View style={styles.inputContainer}>
             <View style={styles.buttoncontainer} >
               <View style={styles.mainContent}>
-                <Button text="Cancelar" ColorIcon="white" Link={() => navigation.goBack()} ColorText="#212121" />
+                <Button text="Cancelar" ColorIcon="white" Link={() => navigation.goBack()} ColorText="#408639" />
               </View>
               <View style={styles.mainContent} >
                 <Button text="Guardar contraseña" Link={handleLogout} />

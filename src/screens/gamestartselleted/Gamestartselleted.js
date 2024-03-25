@@ -190,7 +190,7 @@ const CustomizeProfile = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+      {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
       <View style={styles.MainContainer}>
         <Text style={styles.MainHeading}>¿Qué buscas?</Text>
         <View style={styles.ShoeContainer}>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { Alert, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import MatchPlayerDetails from '../../components/MatchesPlayerDetails'
 import { Fonts } from '../style'
 import Button from '../../components/Button';
@@ -8,6 +8,9 @@ const FindGames = ({ navigation }) => {
   const handleNavigate = () => {
     navigation.navigate('GameStart')
   }
+  useEffect(()=>{
+Alert.alert('This app is still under development and not yet complete.')
+  },[])
   return (
 
 

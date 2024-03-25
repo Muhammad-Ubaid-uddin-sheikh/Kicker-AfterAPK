@@ -12,16 +12,6 @@ const YourComponent = () => {
 }
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
-  useEffect(() => {
- 
-    const intervalId = setInterval(() => {
-      setCurrentDateTime(new Date());
-    }, 1000);
-
-    
-    return () => clearInterval(intervalId);
-  }, []);
-
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const monthsInThreeWords = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 

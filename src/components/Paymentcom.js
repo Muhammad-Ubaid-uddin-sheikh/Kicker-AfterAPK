@@ -7,21 +7,25 @@ import Google from '../assets/google.png'
 import Apple from '../assets/apple.png'
 import { Fonts } from '../screens/style';
 import ButtonImg from './ButtonImage'
-const CustomizeProfile = ({Link,SecondIcon,text,center,FirstIcon}) => {
+import {WebView} from 'react-native-webview';
+const CustomizeProfile = ({Link,SecondIcon,text,center,FirstIcon,Paymnet}) => {
 
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
            
             <View style={styles.MainContainer}>
-            <Text style={styles.Heading}>Por favor, selecciona un método de pago</Text>
+            <Text style={styles.Heading}>Por favor, selecciona un método de Retiro</Text>
                 
-                    <ScrollView showsHorizontalScrollIndicator={false} style={styles.containerButton}>
-        <ButtonImg TextButton="Paypal" ImageName={Paypal} />
+                    {/* <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={styles.containerButton}> */}
+        {/* <ButtonImg TextButton="Paypal" ImageName={Paypal} />
         <ButtonImg TextButton="Google Pay" ImageName={Google} />
-       <ButtonImg TextButton="Apple Pay" ImageName={Apple} />
-       </ScrollView>
-     
+       <ButtonImg TextButton="Apple Pay" ImageName={Apple} /> */}
+ 
+       {/* </ScrollView> */}
+       {/* <View > */}
+      <WebView source={{ uri: Paymnet }} />
+      {/* </View> */}
             </View>
                 <View style={styles.nextButton}>
                 
@@ -32,7 +36,9 @@ const CustomizeProfile = ({Link,SecondIcon,text,center,FirstIcon}) => {
     )
 }
 const styles = StyleSheet.create({
-   
+  courtName:{
+width:'100%'
+  },
   containerButton:{
     marginTop:30,
     padding:0
@@ -41,15 +47,11 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
-        marginRight:10,
-       marginLeft:10,
+      //   marginRight:10,
+      //  marginLeft:10,
         
     }, 
-    MainContainer: {
-      
-       
-    },
-    Heading: {
+ Heading: {
                   fontSize:20,
                   color:'#212121',
                   letterSpacing:0.1,

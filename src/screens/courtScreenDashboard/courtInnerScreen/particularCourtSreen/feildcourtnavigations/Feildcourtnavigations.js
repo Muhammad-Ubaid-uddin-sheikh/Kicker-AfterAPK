@@ -1,43 +1,39 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import HomeScreen from './courtnavigations/HomeGround'
 import SettingsScreen from './ReserverCourt'
-import HoraiosCourt from './Horioir'
 import ActividadesCourt from './Actividades'
 const Tab = createMaterialTopTabNavigator();
 
-function MyTabs() {
+function MyTabs({PerHour,SecHour,ThirdHour,item}) {
   return (
     <Tab.Navigator
    
-      tabBarOptions={{
-        style: {
-          borderTopWidth: 0,  
-        },
-        activeTintColor: "#408639", 
-        inactiveTintColor: "black", 
-        pressOpacity: 0, 
-      
-        labelStyle: { textTransform: 'Capitalize' },
-        indicatorStyle: { backgroundColor: "#408639" } 
+      screenOptions={{
+        tabBarActiveTintColor: "#408639",
+        tabBarInactiveTintColor: "black",
+        tabBarPressOpacity: 0,
+        tabBarLabelStyle: { textTransform: 'capitalize' },
+        tabBarIndicatorStyle: { backgroundColor: "#408639" },
+        tabBarStyle: { borderTopWidth: 0 }
       }}
     >
       <Tab.Screen options={{ tabBarLabel: 'Hogar', headerShown: false , headerTitleStyle: {
          
         },
-      }} name="Home" component={HomeScreen} />
+      }} name="Home"
+       component={HomeScreen} initialParams={
+        {
+         PerHour:PerHour,SecHour:SecHour,ThirdHour:ThirdHour,item
+        }
+         
+         }/>
       <Tab.Screen options={{
           tabBarLabel: 'Libro',
          headerShown: false , headerTitleStyle: {
          
         },
       }}
-       name="Reservar" component={SettingsScreen} />
-        {/* <Tab.Screen options={{
-          tabBarLabel: 'HoraiosCourt',
-         headerShown: false , 
-      }}
-      
-       name="HoraiosCourt" component={HoraiosCourt} /> */}
+       name="Reservar" component={SettingsScreen}  />
         <Tab.Screen options={{
           tabBarLabel: 'Actividades',
          headerShown: false , 

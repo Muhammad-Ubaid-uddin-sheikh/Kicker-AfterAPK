@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useEffect, useRef, useState} from 'react';
 import { Text, View, StatusBar, StyleSheet, Image, ScrollView, TouchableOpacity} from 'react-native'
 import { Fonts } from '../style';
 import Button from '../../components/Button';
@@ -6,22 +6,31 @@ import VerticalSlider from './VerticalSlides';
 import CheckPlayer from '../../components/CustomButton'
 import ButtonEditDashboard from '../../components/ButtonEditDashboard'
 import { useSelector } from 'react-redux';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 const Dashboard = ({navigation}) => {
  
     const userData = useSelector(state => state.user);
     const handlePrefrences = () => {
         navigation.navigate('CustomizeProfile');
     }
+    const handleLocationSelect = (data, details) => {
+        const { location } = details.geometry;
+        console.log('Latitude:', location.lat);
+        console.log('Longitude:', location.lng);
+      };
     
   return (
     
     // <View style={styles.MainContainer}>
-        <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}  backgroundColor={'white'}>
+    <>
+ 
+        <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}  backgroundColor={'white'} >
         <View style={styles.rowContainer}>
-        <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+        {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
        
      <View style={styles.ShoeContainer}>
      <Text style={styles.mainparagraph}> ¿Qué te gustaría hacer hoy?</Text>
+    
                     <View style={styles.row}>
                         
                         <View style={styles.ShoeCon}>
@@ -54,17 +63,18 @@ const Dashboard = ({navigation}) => {
      </View>
      <View ><VerticalSlider/></View>
 <View style={styles.buttonContainer}>
-    <ButtonEditDashboard Link={handlePrefrences} TextButton="Ajusta tus preferencia s" FontName="football-outline"/>
+    <ButtonEditDashboard Link={handlePrefrences} TextButton="Ajusta tus preferencias" FontName="football-outline"/>
     <CheckPlayer NameFont="signal-cellular-outline" TextButton="Consultar la tabla de clasificación de jugadores" />
     <CheckPlayer NameFont="signal-cellular-outline" TextButton="Check Team Leaderboard" />
-   
+    <CheckPlayer NameFont="wallet" TextButton="Reservas de cancha activas" Link={()=> navigation.navigate('PlayerBookingPage')} />
+    
     </View>
 
    
      
                 </ScrollView>
-
-                
+ 
+             </>
                 /* <View style={styles.nextButton}>
                     <Button  text="Comenzar un partido" Link={handleNavigate} />
                 </View> */
@@ -134,8 +144,8 @@ marginTop:0
     },
     buttonContainer:{
         marginTop:30,
-        paddingLeft: 15,
-        paddingRight:15,
+        paddingLeft: 10,
+        paddingRight:10,
        margin:0,
        padding:0
     },

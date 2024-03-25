@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.kickers.app-mergeDebugResources-35:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.kickers.app-mergeDebugResources-51:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "/Users/rubxsol/.gradle/caches/transforms-3/caa67db31f26a54970d468c9cb4eb785/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",

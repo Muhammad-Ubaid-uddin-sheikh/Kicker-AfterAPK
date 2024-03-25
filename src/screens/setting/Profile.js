@@ -67,7 +67,7 @@ const Setting = ({ navigation }) => {
     <ScrollView backgroundColor={'white'}>
       <View style={styles.MainContainer}>
         
-          <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+          {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
 
           <View style={styles.ShoeContainer}>
             <View style={styles.row}>

@@ -11,6 +11,7 @@ import CustomizeProfilePrefferd from '../screens/customiseProfile/CustomizeProfi
 import CustomizeProfileNationlity from '../screens/customiseProfile/CustomizeProfileNationlity';
 import Dashboard from '../screens/dashboard/Dashboard';
 import FindGames from '../screens/findGames/FindGames';
+import EditCourtFeilds from '../screens/courtScreenDashboard/courtInnerScreen/particularCourtSreen/feildcourtnavigations/courtnavigations/EditCourtFeild'
 import SettingIcon from 'react-native-vector-icons/AntDesign';
 import ParticularGroundScreen from '../screens/particularGroundScreen/ParticularGroundScreen';
 import Setting from '../screens/setting/Setting'
@@ -26,6 +27,7 @@ import Privacy from '../screens/setting/Privacy'
 import Security from '../screens/setting/Security'
 import { Fonts } from '../screens/style';
 import CambiarContrasena from '../screens/setting/CambiarContrasena';
+import NotificationCourt from '..//screens/courtScreenDashboard/courteditprofile/NotificationCourt'
 import CreditCardScreen from '../screens/setting/card/AddCardScree';
 import ReservaFeild from '../screens/reservaFeild/ReservaFeild'
 import EncuentraFeild from '../screens/encuentraFeild/EncuentraFeild'
@@ -42,6 +44,12 @@ import ImagesAdd from '../screens/courtScreenDashboard/courtAddFolder/ImagesAdd'
 import SoccerSelect from '../screens/courtScreenDashboard/courtAddFolder/SoccerSelect'
 import Display from '../screens/courtScreenDashboard/courtAddFolder/Display'
 import ParticularCourtGround from '../screens/courtScreenDashboard/courtInnerScreen/particularCourtSreen/ParticularCourtSreen'
+import CourtLocationDetailsc from '../screens/courtLoginSinup/CourtNameLoc'
+import EditProfileCourt from '../screens/courtScreenDashboard/courteditprofile/EditProfileCourt'
+import PlayerBookingPage from '../screens/dashboard/ProfileBookingPage'
+import SecurityCourt from '../screens/courtScreenDashboard/courteditprofile/SecurityCourt'
+import CourtPayment from '../screens/courtScreenDashboard/courteditprofile/PaymentCourt'
+import PasswordChangeCourt from '../screens/courtScreenDashboard/courteditprofile/PasswordChangeCourt';
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getProfile';
 
 const AppNavigator = () => {
@@ -78,12 +86,8 @@ const AppNavigator = () => {
       }
     };
     fetchDataAndStore();
-    const intervalId = setInterval(() => {
-      fetchDataAndStore();
-    }, 1000);
-  
     // Clear the interval on component unmount to avoid memory leaks
-    return () => clearInterval(intervalId);
+  
   }, []);
 
   
@@ -125,8 +129,16 @@ const navigation= useNavigation()
       <Stack.Screen options={{ headerShown: false }} name="CourtLogin" component={CourtLogin} />
       <Stack.Screen options={{ headerShown: false }} name="SignupScreen" component={SignupScreen} />
       <Stack.Screen options={{ headerShown: false }} name="CourtSingup" component={CourtSingup} />
-
-
+      <Stack.Screen options={{
+        title: 'Detalles de la cancha ',
+        headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="CourtNameLoc" component={CourtLocationDetailsc} />
+ <Stack.Screen options={{ title: 'Privacidad', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="PlayerBookingPage" component={PlayerBookingPage } />
       <Stack.Screen options={{ headerShown: false }} name="Display" component={Display} />
 
       <Stack.Screen options={{ title: 'Recibo', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
@@ -135,19 +147,26 @@ const navigation= useNavigation()
       }} name="SlipPage" component={SlipPage} />
 
 
-      <Stack.Screen options={{ title: 'Pago', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+      <Stack.Screen options={{ title: 'Retiro', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Paymnet" component={Payment} />
-      
-      <Stack.Screen options={{ title: 'Pago', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+       <Stack.Screen options={{ title: 'Pagar', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="CourtPayment" component={CourtPayment} />
+      <Stack.Screen options={{ title: 'Retiro', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Pago" component={Pago} />
-<Stack.Screen options={{ title: 'Notificacion es', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+<Stack.Screen options={{ title: 'Notificaciones', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily:Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Notification" component={Notification} />
+      <Stack.Screen options={{ title: 'Notificaciones', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily:Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="NotificationCourt" component={NotificationCourt} />
       <Stack.Screen options={{ title: 'Privacidad', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
@@ -156,19 +175,31 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Security" component={Security} />
+      <Stack.Screen options={{ title: 'Seguridad', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="SecurityCourt" component={SecurityCourt} />
       <Stack.Screen options={{ title: 'Editar perfil', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="EditProfile" component={EditProfile} />
+      <Stack.Screen options={{ title: 'Editar perfil', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="EditProfileCourt" component={EditProfileCourt} />
 
 <Stack.Screen options={{ title: 'perfil', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="Profile" component={Profile} />
-<Stack.Screen options={{ title: 'CambiarContraseña', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+<Stack.Screen options={{ title: 'cambiar contraseña', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="CambiarContrasena" component={CambiarContrasena} />
+      <Stack.Screen options={{ title: 'cambiar contraseña', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="PasswordChangeCourt" component={PasswordChangeCourt} />
       <Stack.Screen options={{
         title: 'Perfil del jugador',
 
@@ -197,33 +228,6 @@ const navigation= useNavigation()
       <Stack.Screen options={{ 
         headerShown: false
       }}  name="Dashboard" component={Dashboard} />
-      {/* <Stack.Screen options={{
-        headerLeft: null,
-        headerRight: () => (
-          <View style={{flexDirection:'row',gap:-10}}>
-          <TouchableOpacity onPress={()=> navigation.navigate('Dashboard')}>
-            <View style={styles.headerRight}>
-            <Image source={require('../assets/Vector.png')} style={{ width: 20, height: 28,objectFit:'contain',marginRight: 18  }} />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={styles.headerRight}>
-            <Image source={require('../assets/message.png')} style={{ width: 25, height: 25,objectFit:'contain',marginRight: 18  }} />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={handleNavigate}>
-            <View style={styles.headerRight}>
-            <SettingIcon name="setting" size={23} color='black' style={{ marginRight: 18 }} />
-            </View>
-          </TouchableOpacity>
-          </View>
-        ),
-
-        title: 'Comienza un partido',
-        headerTintColor: '#408639', headerTitleStyle: {
-          color: 'black', fontSize: 20,fontFamily: Fonts.BOLD, letterSpacing:0.1
-        },
-      }} name="FindGames" component={FindGames} /> */}
 
 <Stack.Screen options={{
         headerLeft: null,
@@ -312,6 +316,10 @@ const navigation= useNavigation()
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },
       }} name="CourtDetails" component={CourtDetails} />
+      <Stack.Screen options={{ title: 'Editar campo de la cancha', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
+          fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
+        },
+      }} name="EditCourtFeild" component={EditCourtFeilds} />
       <Stack.Screen options={{ title: 'Imágenes', headerTitleAlign: 'start', headerTintColor: '#408639', headerTitleStyle: {
           fontWeight: 400, color: 'rgba(0, 0, 0, 1)', fontSize: 18,fontFamily: Fonts.MEDIUM, marginLeft: -20 // You can customize the style further
         },

@@ -71,7 +71,7 @@ const CustomizeProfilePrefferd = ({ navigation }) => {
     return (
        
             <View style={styles.container}>
-                <StatusBar backgroundColor={'white'}  barStyle="dark-content"/>
+                {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content"/> */}
 
                 <View style={styles.MainContainer}>
                     <ColoredLine flex={0} />

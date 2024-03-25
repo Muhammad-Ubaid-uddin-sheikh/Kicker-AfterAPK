@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import  Icon  from 'react-native-vector-icons/MaterialIcons';
 import  Icons  from 'react-native-vector-icons/AntDesign';
@@ -8,23 +8,22 @@ import { Fonts } from '../style';
 import LocationIcon from 'react-native-vector-icons/FontAwesome6'
 import StarIcons from 'react-native-vector-icons/Fontisto'
 const ParticularGroundScreen = ({ route }) => {
-  const { item } = route.params;
+  const { item,dataFeild} = route.params;
   const navigation = useNavigation();
+  console.log("feildDataasdasdad",item)
+  const addressParts = item.address.split(',').slice(0, 5).join(',');
  const [color , SetColor] = useState(false)
  const handlePress=()=>{
   SetColor(!color)
  }
- const [availability, setAvailability] = useState(true);
-
   return (
     
     <View style={styles.container}>
-       <StatusBar backgroundColor={'white'} barStyle="light-content" />
        <View style={styles.imageconta}></View>
-    <Image 
-      source={{ uri: item.source }}
-      style={styles.backgroundImage}
-   />
+       <Image
+                        source={{ uri: item.images.length > 0 ? item.images[0] : 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' }}
+                        style={styles.backgroundImage}
+                    />
       <View style={{ flexDirection: 'row', justifyContent:"space-between", padding: 16 ,width:'100%',alignItems:'center',position:'absolute',top:25}}>
       
         <TouchableOpacity onPress={()=>navigation.goBack()} >
@@ -37,18 +36,19 @@ const ParticularGroundScreen = ({ route }) => {
    <View style={styles.TitleGroundDiv}>
    
 <Text style={styles.textGroundTitle}>{item.name}</Text>
-<Text style={[styles.buttonText, { color: item.available ? 'green' : '#A0A0A0' }]}>
-                        {item.available ? 'Disponible' : 'No disponible'}
+{/* <Text style={styles.textGroundTitle}>{item.turfType}</Text> */}
+<Text style={[styles.buttonText, { color: item.isActive ? '#408639' : '#408639' }]}>
+                        {item.isActive ? 'Disponible' : 'Disponible'}
                     </Text>
 
 </View>
 <View style={styles.locationTextContainer}>
 <LocationIcon name='location-dot' style={{color:'#408639'}} size={15} />
-<Text style={styles.textLocation}> {item.address} </Text>
+<Text numberOfLines={1} ellipsizeMode="tail" style={[styles.textLocation,{width:300,}]}> {addressParts} </Text>
 <StarIcons name='star' style={{color:'#FCC767',marginLeft:10}} size={12} />
-<Text style={styles.textLocation}> {item.rating}</Text>
+<Text style={styles.textLocation}> 4.5</Text>
 </View>
-   <FeildNavigation/>
+<FeildNavigation Feilds={dataFeild} Item={item} />
     </View>
   )
 }

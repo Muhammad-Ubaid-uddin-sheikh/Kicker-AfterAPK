@@ -4,7 +4,7 @@ import { Fonts } from '../screens/style'
 export const Button = ({text,Link,ColorIcon,ColorText}) => {
   
     const ButtonStyle={
-        backgroundColor: ColorIcon || '#212121',
+        backgroundColor: ColorIcon || '#408639',
     }
     const ButtonTextColor={
         color: ColorText || '#EFEFF0',
@@ -22,10 +22,11 @@ const styles = StyleSheet.create({
     padding: 15,
     marginTop:20,
     borderRadius:12,
-    borderColor:'#212121',
+    borderColor:'#408639',
     borderWidth: 1.5, // Set the border width
     fontFamily:Fonts.MEDIUM,
-    textAlign:'center'
+    textAlign:'center',
+    width:'100%'
     
       },
       buttonText:{

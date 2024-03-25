@@ -7,7 +7,7 @@ const CustomizeProfile = () => {
 
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
                 <PaymentComp FirstIcon="plus-box-outline" center="center" text="Agregar nueva tarjeta"/>
         </View>
         

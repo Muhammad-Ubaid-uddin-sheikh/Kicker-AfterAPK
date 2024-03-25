@@ -1,12 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:1:1-25:12
-MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:1:1-25:12
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:1:1-29:12
+MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:1:1-29:12
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:flipper-integration:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/678c4104e0043565a97bc11101defa71/transformed/jetified-flipper-integration-0.73.1-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-onesignal] /Users/rubxsol/Documents/Kickers/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-maps] /Users/rubxsol/Documents/Kickers/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-async-storage_async-storage] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-community_geolocation] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-community/geolocation/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-date-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-fs] /Users/rubxsol/Documents/Kickers/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /Users/rubxsol/Documents/Kickers/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-31:12
 MERGED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
@@ -15,6 +20,8 @@ MERGED from [:react-native-pager-view] /Users/rubxsol/Documents/Kickers/node_mod
 MERGED from [:react-native-safe-area-context] /Users/rubxsol/Documents/Kickers/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] /Users/rubxsol/Documents/Kickers/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-vector-icons] /Users/rubxsol/Documents/Kickers/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-view-shot] /Users/rubxsol/Documents/Kickers/node_modules/react-native-view-shot/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:2:1-24:12
 MERGED from [com.facebook.fresco:flipper-fresco-plugin:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/075bfe51b133aacced8e28eb95bd9fad/transformed/jetified-flipper-fresco-plugin-3.1.3/AndroidManifest.xml:8:1-13:12
 MERGED from [com.facebook.fresco:flipper:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/b55f5f1f9a93c4b5ea05d8d31cbe33a1/transformed/jetified-flipper-3.1.3/AndroidManifest.xml:2:1-7:12
@@ -31,10 +38,18 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:3.1.3] /Users/rubxsol/.gr
 MERGED from [com.facebook.fresco:imagepipeline-base:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/5713b277e4fffc42fbf8a3f31391fd1e/transformed/jetified-imagepipeline-base-3.1.3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.fresco:middleware:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/c6bc4e450dfb5c9d2182a80bc0664a17/transformed/jetified-middleware-3.1.3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.fresco:ui-common:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/bc5c1cc321cb86b9525095b3248d6259/transformed/jetified-ui-common-3.1.3/AndroidManifest.xml:2:1-7:12
-MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:2:1-7:12
-MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/a30a89742078365872de5620f0813a7f/transformed/jetified-flipper-network-plugin-0.201.0/AndroidManifest.xml:8:1-13:12
 MERGED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:8:1-16:12
+MERGED from [com.onesignal:OneSignal:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/39573a5b1cd89925e26126dcf024cb74/transformed/jetified-OneSignal-5.1.4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.onesignal:in-app-messages:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4256bdf41db61387ff61734d7d3d4ce6/transformed/jetified-in-app-messages-5.1.4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:2:1-114:12
+MERGED from [com.onesignal:location:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/d0a43820008de759ce0679bc5873396d/transformed/jetified-location-5.1.4/AndroidManifest.xml:2:1-12:12
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:2:1-28:12
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:17:1-66:12
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/rubxsol/.gradle/caches/transforms-3/ac3894dd80c20eb4d8c9dd2585f2e23d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/rubxsol/.gradle/caches/transforms-3/84e20a56d19fec5174a9eb1084e79a93/transformed/jetified-ucrop-2.2.6-native/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/39aaf61d57402c36a49d17c49ec5be90/transformed/material-1.9.0/AndroidManifest.xml:17:1-26:12
@@ -42,13 +57,24 @@ MERGED from [com.facebook.stetho:stetho:1.6.0] /Users/rubxsol/.gradle/caches/tra
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/rubxsol/.gradle/caches/transforms-3/f39d0a74520baae1d635953c2743390f/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/rubxsol/.gradle/caches/transforms-3/caa67db31f26a54970d468c9cb4eb785/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/647d81dea185c833266c8ddefa39df09/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/rubxsol/.gradle/caches/transforms-3/a06f36795a51cd7ce17cf64b898e3cd5/transformed/jetified-play-services-location-21.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/4555bf658bc1a247f5c5ba5c096abf0f/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/0919e710fea25d93bf6271f884f863c5/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/rubxsol/.gradle/caches/transforms-3/7fd9932cc75ca92670a8774dc3c1c4ae/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.6.0] /Users/rubxsol/.gradle/caches/transforms-3/f4992b0050363db550fb8bdfd24c40f0/transformed/jetified-activity-1.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/646b369a47af4327377f89fd3b156510/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/93092fca0a792db5935d96f33d441622/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/6d478da388e970562cdbace9ced46c8c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5d5c8d7873272b687b8c8a9670e383df/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/d36ddd53b74dde142f67e38d56dadb13/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/4fbded383928d6eeef2dc9dc6f7ac045/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/47c52e785a1b5be2efc3e0f284fdb952/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:2:1-7:12
+MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.react:hermes-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/c15e7b7026aa8a9b9e1256c7b6e00530/transformed/jetified-hermes-android-0.73.1-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/b028049827feb914b1a2edf4149716b9/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/62ba2a8696b5a074e18bd9945dd40a7f/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -59,6 +85,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/rubxsol/.gradle/cach
 MERGED from [androidx.tracing:tracing:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/de1671c9bd3747bcf69390bd357741e4/transformed/jetified-tracing-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/rubxsol/.gradle/caches/transforms-3/7c2dd3c5b4cc27996aa703b120771b85/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/73c2b95ef55952be680db0ce5e028e28/transformed/coordinatorlayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/rubxsol/.gradle/caches/transforms-3/1917b2881296c65e9c8950ea257c0921/transformed/webkit-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/4f7abc6c66c76b87822e42c43347b227/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/aa7d1eb1fb4e29d6a588b6d7edbff90c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/4ca509ca276fe05a45dee790fab77697/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -67,25 +94,42 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/rubxsol/.gradle/caches/t
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/acf89b9078178ca97ae6bf5e1a823e46/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/976f7a7aa3dfaaf5c41024bdccba8f92/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/a0822e3b74a7a4c90cdefeeb0321ce81/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.browser:browser:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/eb9733953e3d591126b1f20623f5d80a/transformed/browser-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f428ee33fbf96dc44adf3b27ae9a4b8d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d8163a0e18f2f1b4353a756dc9ea22b2/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/d2d5ab3bec7732a1bdf1c5c595fb003f/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/edbe145fe56005cce79ca41d69626f48/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/e63720bc56d7f8154df9f3d5b5f52777/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/f4119b660cac60f3324891b41a3f6cbe/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/63a977f749031a1786cf5ceee82ebff7/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c60fcdfce3ec697c6d8e168f0b289a33/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/b48e95665d1006615918d9d277147920/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/f9bdba82be3cb0f974dfa7c5a2409055/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f6fa75d4cca675bd27f1dd9d188e163c/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5f65b6ee0d6ab1c0d713b3b0a32ecf67/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/784eeb6866d7c0cb851c1378b2a013bf/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/f063a59919b27f86580a99d329bdf4ac/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d6025c0bc634c2939381d581069ad185/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/12cd2d703ac5b8b4df58dd33a8c9199a/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/rubxsol/.gradle/caches/transforms-3/9937a076aad1748a768f865b6dd68998/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5604b6179d841facfe14b4226e2ca5e0/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/cbf6cbe357acca9e111e00961ed6f852/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c0b644ddd3b8ff9b14023e956daece40/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/91d618ce26d76a2289508003c212e927/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.1.5] /Users/rubxsol/.gradle/caches/transforms-3/9694d65a779964b5dbfa525252a6754e/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/cef2b9be1822ca9249fb0102fe59e5f9/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/f7b7d1ef6134128fe9ebfa418a9296e6/transformed/sqlite-2.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/555c06ee2fcedb5c9fffb4efc0537723/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fbjni:fbjni:0.5.1] /Users/rubxsol/.gradle/caches/transforms-3/5f593f61325e2750f35915cdb58f167a/transformed/jetified-fbjni-0.5.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/rubxsol/.gradle/caches/transforms-3/745d10e53d9490840e3ea427ae90865b/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/rubxsol/.gradle/caches/transforms-3/776ae91c406685683e9956953e33e424/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:15:1-19:12
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/rubxsol/.gradle/caches/transforms-3/725709e9f44c599acf3339cdd62252ac/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:2:1-11:12
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/rubxsol/.gradle/caches/transforms-3/e98357a5ff2b8a12ccebd6e5648ff599/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/rubxsol/.gradle/caches/transforms-3/a77616aef5caea175c5878138b8efb40/transformed/jetified-openssl-1.1.1l-beta-1/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/rubxsol/.gradle/caches/transforms-3/49da69906232f06e3412cbc01e563a6b/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
 	package
 		INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 	android:versionName
@@ -96,29 +140,77 @@ MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/rubxsol/.g
 		INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:2:1-77
+MERGED from [:react-native-fs] /Users/rubxsol/Documents/Kickers/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-81
+MERGED from [:react-native-fs] /Users/rubxsol/Documents/Kickers/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-81
+MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
+MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:2:18-74
 uses-permission#android.permission.INTERNET
 ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:5-67
 MERGED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:13:5-67
 MERGED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:13:5-67
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:9:5-67
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 	android:name
 		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:4:1-75
+	android:name
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:4:18-72
 application
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-24:19
-MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-24:19
-MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-24:19
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:5:5-28:19
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:5:5-8:50
 MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-29:19
 MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-29:19
 MERGED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:18:5-22:19
 MERGED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:18:5-22:19
+MERGED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:48:5-112:19
+MERGED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:48:5-112:19
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:12:5-26:19
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:12:5-26:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.material:material:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/39aaf61d57402c36a49d17c49ec5be90/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/39aaf61d57402c36a49d17c49ec5be90/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.facebook.stetho:stetho:1.6.0] /Users/rubxsol/.gradle/caches/transforms-3/80dfaa15abf973b3a99f36dc012a460d/transformed/jetified-stetho-1.6.0/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.stetho:stetho:1.6.0] /Users/rubxsol/.gradle/caches/transforms-3/80dfaa15abf973b3a99f36dc012a460d/transformed/jetified-stetho-1.6.0/AndroidManifest.xml:11:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/rubxsol/.gradle/caches/transforms-3/f39d0a74520baae1d635953c2743390f/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/rubxsol/.gradle/caches/transforms-3/f39d0a74520baae1d635953c2743390f/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/rubxsol/.gradle/caches/transforms-3/a06f36795a51cd7ce17cf64b898e3cd5/transformed/jetified-play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/rubxsol/.gradle/caches/transforms-3/a06f36795a51cd7ce17cf64b898e3cd5/transformed/jetified-play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/4555bf658bc1a247f5c5ba5c096abf0f/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/4555bf658bc1a247f5c5ba5c096abf0f/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
@@ -129,8 +221,22 @@ MERGED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-
 MERGED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/f9bdba82be3cb0f974dfa7c5a2409055/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/f9bdba82be3cb0f974dfa7c5a2409055/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:25:5-39:19
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:11:5-15:19
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/rubxsol/.gradle/caches/transforms-3/745d10e53d9490840e3ea427ae90865b/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/rubxsol/.gradle/caches/transforms-3/745d10e53d9490840e3ea427ae90865b/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:7:5-11:19
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/rubxsol/.gradle/caches/transforms-3/e98357a5ff2b8a12ccebd6e5648ff599/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:11:5-20
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/rubxsol/.gradle/caches/transforms-3/e98357a5ff2b8a12ccebd6e5648ff599/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/rubxsol/.gradle/caches/transforms-3/49da69906232f06e3412cbc01e563a6b/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/rubxsol/.gradle/caches/transforms-3/49da69906232f06e3412cbc01e563a6b/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
 	android:extractNativeLibs
 		INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
@@ -160,37 +266,53 @@ MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/cache
 		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:6:7-38
 		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:6:7-38
 activity#com.kickers.MainActivity
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:12:7-23:18
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:13:7-24:18
 	android:label
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:15:9-41
 	android:launchMode
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:17:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:18:9-51
 	android:exported
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:18:9-32
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:19:9-32
 	android:configChanges
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:15:9-118
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:16:9-118
 	android:name
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:13:9-37
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:14:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:19:9-22:25
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:9-23:25
 action#android.intent.action.MAIN
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:13-65
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:13-65
 	android:name
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:20:21-62
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:13-73
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:22:13-73
 	android:name
-		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:21:23-70
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:22:23-70
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:25:8-27:63
+	android:value
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:27:6-61
+	android:name
+		ADDED from /Users/rubxsol/Documents/Kickers/android/app/src/main/AndroidManifest.xml:26:6-51
 uses-sdk
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 MERGED from [com.facebook.react:flipper-integration:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/678c4104e0043565a97bc11101defa71/transformed/jetified-flipper-integration-0.73.1-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:flipper-integration:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/678c4104e0043565a97bc11101defa71/transformed/jetified-flipper-integration-0.73.1-debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-onesignal] /Users/rubxsol/Documents/Kickers/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-onesignal] /Users/rubxsol/Documents/Kickers/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-maps] /Users/rubxsol/Documents/Kickers/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-maps] /Users/rubxsol/Documents/Kickers/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-async-storage_async-storage] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-async-storage_async-storage] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_geolocation] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-community/geolocation/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_geolocation] /Users/rubxsol/Documents/Kickers/node_modules/@react-native-community/geolocation/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-date-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-date-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] /Users/rubxsol/Documents/Kickers/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] /Users/rubxsol/Documents/Kickers/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-gesture-handler] /Users/rubxsol/Documents/Kickers/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-gesture-handler] /Users/rubxsol/Documents/Kickers/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
@@ -207,6 +329,10 @@ MERGED from [:react-native-screens] /Users/rubxsol/Documents/Kickers/node_module
 MERGED from [:react-native-screens] /Users/rubxsol/Documents/Kickers/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-vector-icons] /Users/rubxsol/Documents/Kickers/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-vector-icons] /Users/rubxsol/Documents/Kickers/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-view-shot] /Users/rubxsol/Documents/Kickers/node_modules/react-native-view-shot/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-view-shot] /Users/rubxsol/Documents/Kickers/node_modules/react-native-view-shot/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:10:5-44
 MERGED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:10:5-44
 MERGED from [com.facebook.fresco:flipper-fresco-plugin:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/075bfe51b133aacced8e28eb95bd9fad/transformed/jetified-flipper-fresco-plugin-3.1.3/AndroidManifest.xml:11:5-44
@@ -239,14 +365,30 @@ MERGED from [com.facebook.fresco:middleware:3.1.3] /Users/rubxsol/.gradle/caches
 MERGED from [com.facebook.fresco:middleware:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/c6bc4e450dfb5c9d2182a80bc0664a17/transformed/jetified-middleware-3.1.3/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fresco:ui-common:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/bc5c1cc321cb86b9525095b3248d6259/transformed/jetified-ui-common-3.1.3/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fresco:ui-common:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/bc5c1cc321cb86b9525095b3248d6259/transformed/jetified-ui-common-3.1.3/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/a30a89742078365872de5620f0813a7f/transformed/jetified-flipper-network-plugin-0.201.0/AndroidManifest.xml:11:5-44
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/a30a89742078365872de5620f0813a7f/transformed/jetified-flipper-network-plugin-0.201.0/AndroidManifest.xml:11:5-44
 MERGED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:11:5-44
 MERGED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:11:5-44
+MERGED from [com.onesignal:OneSignal:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/39573a5b1cd89925e26126dcf024cb74/transformed/jetified-OneSignal-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:OneSignal:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/39573a5b1cd89925e26126dcf024cb74/transformed/jetified-OneSignal-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:in-app-messages:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4256bdf41db61387ff61734d7d3d4ce6/transformed/jetified-in-app-messages-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:in-app-messages:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4256bdf41db61387ff61734d7d3d4ce6/transformed/jetified-in-app-messages-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.onesignal:location:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/d0a43820008de759ce0679bc5873396d/transformed/jetified-location-5.1.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.onesignal:location:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/d0a43820008de759ce0679bc5873396d/transformed/jetified-location-5.1.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:4:5-6:41
+MERGED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:4:5-6:41
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/rubxsol/.gradle/caches/transforms-3/ac3894dd80c20eb4d8c9dd2585f2e23d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/rubxsol/.gradle/caches/transforms-3/ac3894dd80c20eb4d8c9dd2585f2e23d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/rubxsol/.gradle/caches/transforms-3/84e20a56d19fec5174a9eb1084e79a93/transformed/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
@@ -261,12 +403,24 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/rubxsol/.gradle/caches/t
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/rubxsol/.gradle/caches/transforms-3/caa67db31f26a54970d468c9cb4eb785/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/647d81dea185c833266c8ddefa39df09/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/647d81dea185c833266c8ddefa39df09/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/rubxsol/.gradle/caches/transforms-3/a06f36795a51cd7ce17cf64b898e3cd5/transformed/jetified-play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/rubxsol/.gradle/caches/transforms-3/a06f36795a51cd7ce17cf64b898e3cd5/transformed/jetified-play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/4555bf658bc1a247f5c5ba5c096abf0f/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/4555bf658bc1a247f5c5ba5c096abf0f/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/0919e710fea25d93bf6271f884f863c5/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/0919e710fea25d93bf6271f884f863c5/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/rubxsol/.gradle/caches/transforms-3/7fd9932cc75ca92670a8774dc3c1c4ae/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/rubxsol/.gradle/caches/transforms-3/7fd9932cc75ca92670a8774dc3c1c4ae/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.6.0] /Users/rubxsol/.gradle/caches/transforms-3/f4992b0050363db550fb8bdfd24c40f0/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.6.0] /Users/rubxsol/.gradle/caches/transforms-3/f4992b0050363db550fb8bdfd24c40f0/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/646b369a47af4327377f89fd3b156510/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/646b369a47af4327377f89fd3b156510/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/93092fca0a792db5935d96f33d441622/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/93092fca0a792db5935d96f33d441622/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/6d478da388e970562cdbace9ced46c8c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/6d478da388e970562cdbace9ced46c8c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5d5c8d7873272b687b8c8a9670e383df/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
@@ -275,6 +429,16 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/rubxsol/.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/d36ddd53b74dde142f67e38d56dadb13/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/4fbded383928d6eeef2dc9dc6f7ac045/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/4fbded383928d6eeef2dc9dc6f7ac045/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/47c52e785a1b5be2efc3e0f284fdb952/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/47c52e785a1b5be2efc3e0f284fdb952/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.fresco:soloader:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/10d9d093826a68d99cf5868d89c23674/transformed/jetified-soloader-3.1.3/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.fresco:fbcore:3.1.3] /Users/rubxsol/.gradle/caches/transforms-3/45c90da6e1d7e558d740d61f189810da/transformed/jetified-fbcore-3.1.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
 MERGED from [com.facebook.react:hermes-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/c15e7b7026aa8a9b9e1256c7b6e00530/transformed/jetified-hermes-android-0.73.1-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/c15e7b7026aa8a9b9e1256c7b6e00530/transformed/jetified-hermes-android-0.73.1-debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/b028049827feb914b1a2edf4149716b9/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -295,6 +459,8 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/rubxsol/.gradle/
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/rubxsol/.gradle/caches/transforms-3/7c2dd3c5b4cc27996aa703b120771b85/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/73c2b95ef55952be680db0ce5e028e28/transformed/coordinatorlayout-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/73c2b95ef55952be680db0ce5e028e28/transformed/coordinatorlayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/rubxsol/.gradle/caches/transforms-3/1917b2881296c65e9c8950ea257c0921/transformed/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/rubxsol/.gradle/caches/transforms-3/1917b2881296c65e9c8950ea257c0921/transformed/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/4f7abc6c66c76b87822e42c43347b227/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/4f7abc6c66c76b87822e42c43347b227/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/aa7d1eb1fb4e29d6a588b6d7edbff90c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -311,60 +477,94 @@ MERGED from [androidx.transition:transition:1.2.0] /Users/rubxsol/.gradle/caches
 MERGED from [androidx.transition:transition:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/976f7a7aa3dfaaf5c41024bdccba8f92/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/a0822e3b74a7a4c90cdefeeb0321ce81/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/a0822e3b74a7a4c90cdefeeb0321ce81/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/eb9733953e3d591126b1f20623f5d80a/transformed/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/eb9733953e3d591126b1f20623f5d80a/transformed/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f428ee33fbf96dc44adf3b27ae9a4b8d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f428ee33fbf96dc44adf3b27ae9a4b8d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d8163a0e18f2f1b4353a756dc9ea22b2/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d8163a0e18f2f1b4353a756dc9ea22b2/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/d2d5ab3bec7732a1bdf1c5c595fb003f/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/d2d5ab3bec7732a1bdf1c5c595fb003f/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/edbe145fe56005cce79ca41d69626f48/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/edbe145fe56005cce79ca41d69626f48/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/e63720bc56d7f8154df9f3d5b5f52777/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/e63720bc56d7f8154df9f3d5b5f52777/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/f4119b660cac60f3324891b41a3f6cbe/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/f4119b660cac60f3324891b41a3f6cbe/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/63a977f749031a1786cf5ceee82ebff7/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/63a977f749031a1786cf5ceee82ebff7/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c60fcdfce3ec697c6d8e168f0b289a33/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c60fcdfce3ec697c6d8e168f0b289a33/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/b48e95665d1006615918d9d277147920/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/b48e95665d1006615918d9d277147920/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/f9bdba82be3cb0f974dfa7c5a2409055/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/f9bdba82be3cb0f974dfa7c5a2409055/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f6fa75d4cca675bd27f1dd9d188e163c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/f6fa75d4cca675bd27f1dd9d188e163c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5f65b6ee0d6ab1c0d713b3b0a32ecf67/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5f65b6ee0d6ab1c0d713b3b0a32ecf67/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/784eeb6866d7c0cb851c1378b2a013bf/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/784eeb6866d7c0cb851c1378b2a013bf/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/f063a59919b27f86580a99d329bdf4ac/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/rubxsol/.gradle/caches/transforms-3/f063a59919b27f86580a99d329bdf4ac/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d6025c0bc634c2939381d581069ad185/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/rubxsol/.gradle/caches/transforms-3/d6025c0bc634c2939381d581069ad185/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/12cd2d703ac5b8b4df58dd33a8c9199a/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/rubxsol/.gradle/caches/transforms-3/12cd2d703ac5b8b4df58dd33a8c9199a/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/rubxsol/.gradle/caches/transforms-3/9937a076aad1748a768f865b6dd68998/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/rubxsol/.gradle/caches/transforms-3/9937a076aad1748a768f865b6dd68998/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5604b6179d841facfe14b4226e2ca5e0/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/rubxsol/.gradle/caches/transforms-3/5604b6179d841facfe14b4226e2ca5e0/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/cbf6cbe357acca9e111e00961ed6f852/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/cbf6cbe357acca9e111e00961ed6f852/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c0b644ddd3b8ff9b14023e956daece40/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/c0b644ddd3b8ff9b14023e956daece40/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/91d618ce26d76a2289508003c212e927/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/rubxsol/.gradle/caches/transforms-3/91d618ce26d76a2289508003c212e927/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] /Users/rubxsol/.gradle/caches/transforms-3/9694d65a779964b5dbfa525252a6754e/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] /Users/rubxsol/.gradle/caches/transforms-3/9694d65a779964b5dbfa525252a6754e/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/cef2b9be1822ca9249fb0102fe59e5f9/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/cef2b9be1822ca9249fb0102fe59e5f9/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/f7b7d1ef6134128fe9ebfa418a9296e6/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/rubxsol/.gradle/caches/transforms-3/f7b7d1ef6134128fe9ebfa418a9296e6/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/555c06ee2fcedb5c9fffb4efc0537723/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/rubxsol/.gradle/caches/transforms-3/555c06ee2fcedb5c9fffb4efc0537723/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fbjni:fbjni:0.5.1] /Users/rubxsol/.gradle/caches/transforms-3/5f593f61325e2750f35915cdb58f167a/transformed/jetified-fbjni-0.5.1/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fbjni:fbjni:0.5.1] /Users/rubxsol/.gradle/caches/transforms-3/5f593f61325e2750f35915cdb58f167a/transformed/jetified-fbjni-0.5.1/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/rubxsol/.gradle/caches/transforms-3/745d10e53d9490840e3ea427ae90865b/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/rubxsol/.gradle/caches/transforms-3/745d10e53d9490840e3ea427ae90865b/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/rubxsol/.gradle/caches/transforms-3/776ae91c406685683e9956953e33e424/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/rubxsol/.gradle/caches/transforms-3/776ae91c406685683e9956953e33e424/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:5:5-44
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/rubxsol/.gradle/caches/transforms-3/725709e9f44c599acf3339cdd62252ac/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/rubxsol/.gradle/caches/transforms-3/725709e9f44c599acf3339cdd62252ac/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/rubxsol/.gradle/caches/transforms-3/e98357a5ff2b8a12ccebd6e5648ff599/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/rubxsol/.gradle/caches/transforms-3/e98357a5ff2b8a12ccebd6e5648ff599/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/rubxsol/.gradle/caches/transforms-3/a77616aef5caea175c5878138b8efb40/transformed/jetified-openssl-1.1.1l-beta-1/AndroidManifest.xml:2:2-70
 MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/rubxsol/.gradle/caches/transforms-3/a77616aef5caea175c5878138b8efb40/transformed/jetified-openssl-1.1.1l-beta-1/AndroidManifest.xml:2:2-70
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/rubxsol/.gradle/caches/transforms-3/49da69906232f06e3412cbc01e563a6b/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/rubxsol/.gradle/caches/transforms-3/49da69906232f06e3412cbc01e563a6b/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
 		INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:2:1-9:12 reason: com.rnfs requested WRITE_EXTERNAL_STORAGE
 queries
 ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
 ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
 action#android.media.action.IMAGE_CAPTURE
 ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
 	android:name
 		ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
-	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-78
 provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
 ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
 	android:grantUriPermissions
@@ -387,8 +587,6 @@ ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/no
 		ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
 	android:name
 		ADDED from [:react-native-image-crop-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/rubxsol/Documents/Kickers/android/app/src/debug/AndroidManifest.xml:2:1-9:12 reason: com.reactnative.ivpusic.imagepicker requested WRITE_EXTERNAL_STORAGE
 provider#com.imagepicker.ImagePickerProvider
 ADDED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
@@ -399,6 +597,16 @@ ADDED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_mo
 		ADDED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
 	android:name
 		ADDED from [:react-native-image-picker] /Users/rubxsol/Documents/Kickers/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-64
+	android:exported
+		ADDED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:react-native-webview] /Users/rubxsol/Documents/Kickers/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-83
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from [com.facebook.react:react-android:0.73.1] /Users/rubxsol/.gradle/caches/transforms-3/bcd78f88dd2e44abbe0f5ec6d3ec6eb7/transformed/jetified-react-android-0.73.1-debug/AndroidManifest.xml:16:5-78
 	android:name
@@ -413,20 +621,640 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.201.0] /Users/rubxsol/.gradle/caches/transforms-3/88face1319722e1b64e5104db1b7af6e/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:22-73
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:10:5-12:47
+	android:protectionLevel
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:11:9-63
+permission#com.kickers.permission.C2D_MESSAGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:10:5-12:47
+	android:protectionLevel
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:11:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:22-76
+uses-permission#com.kickers.permission.C2D_MESSAGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:14:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:17:5-77
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:5-77
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:5-77
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:17:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:18:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:5-68
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:18:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:19:5-82
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:19:22-79
+uses-permission#android.permission.VIBRATE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:24:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:29:5-81
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:29:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:31:5-86
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:31:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:32:5-87
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:32:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:33:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:34:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:35:5-88
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:35:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:36:5-92
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:36:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:37:5-84
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:37:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:38:5-83
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:38:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:39:5-91
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:39:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:40:5-92
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:40:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:41:5-93
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:41:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:43:5-82
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:43:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:44:5-83
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:44:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:45:5-88
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:45:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:46:5-89
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:46:22-86
+receiver#com.onesignal.notifications.receivers.FCMBroadcastReceiver
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:49:9-60:20
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:51:13-36
+	android:permission
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:52:13-73
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:50:13-86
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:13-59:29
+	android:priority
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:28-50
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.kickers
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:13-59:29
+	android:priority
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:55:28-50
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:17-81
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:56:25-78
+category#${applicationId}
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:17-61
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:27-58
+category#com.kickers
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:17-61
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:58:27-58
+service#com.onesignal.notifications.services.HmsMessageServiceOneSignal
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:62:9-68:19
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:64:13-37
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:63:13-91
+intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:65:13-67:29
+action#com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:66:17-81
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:66:25-78
+activity#com.onesignal.notifications.activities.NotificationOpenedActivityHMS
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:70:9-78:20
+	android:noHistory
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:73:13-37
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:72:13-36
+	android:theme
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:74:13-72
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:71:13-96
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:75:13-77:29
+action#android.intent.action.VIEW
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:76:17-69
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:76:25-66
+receiver#com.onesignal.notifications.receivers.NotificationDismissReceiver
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:80:9-82:39
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:82:13-36
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:81:13-93
+receiver#com.onesignal.notifications.receivers.BootUpReceiver
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:83:9-90:20
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:85:13-36
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:84:13-80
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:86:13-89:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:17-79
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:87:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:88:17-82
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:88:25-79
+receiver#com.onesignal.notifications.receivers.UpgradeReceiver
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:91:9-97:20
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:93:13-36
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:92:13-81
+intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:94:13-96:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:95:17-84
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:95:25-81
+activity#com.onesignal.notifications.activities.NotificationOpenedActivity
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:99:9-105:75
+	android:excludeFromRecents
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:101:13-46
+	android:noHistory
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:103:13-37
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:102:13-36
+	android:theme
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:105:13-72
+	android:taskAffinity
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:104:13-36
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:100:13-93
+activity#com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder
+ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:106:9-111:75
+	android:excludeFromRecents
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:108:13-46
+	android:noHistory
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:110:13-37
+	android:exported
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:109:13-36
+	android:theme
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:111:13-72
+	android:name
+		ADDED from [com.onesignal:notifications:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/4b3cc249c7921ad969a29b9b314945e0/transformed/jetified-notifications-5.1.4/AndroidManifest.xml:107:13-110
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:10:22-76
+service#com.onesignal.core.services.SyncService
+ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:13:9-16:43
+	android:exported
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:15:13-37
+	android:stopWithTask
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:16:13-40
+	android:name
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:14:13-67
+service#com.onesignal.core.services.SyncJobService
+ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:17:9-20:72
+	android:exported
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:19:13-37
+	android:permission
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:20:13-69
+	android:name
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:18:13-70
+activity#com.onesignal.core.activities.PermissionsActivity
+ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:22:9-25:75
+	android:exported
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:24:13-37
+	android:theme
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:25:13-72
+	android:name
+		ADDED from [com.onesignal:core:5.1.4] /Users/rubxsol/.gradle/caches/transforms-3/5d9ca415c1aeca3ccae6d8bbd12a4144/transformed/jetified-core-5.1.4/AndroidManifest.xml:23:13-77
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:33:13-35:29
+meta-data#com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:50:13-52:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:50:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:51:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:51:25-75
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:56:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:55:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /Users/rubxsol/.gradle/caches/transforms-3/0db2460305ba81442af4933f7902d72e/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /Users/rubxsol/.gradle/caches/transforms-3/6aac38f26fb25d239863bf9564dd4c81/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/4703560f81df781862dd187f0501aae2/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/rubxsol/.gradle/caches/transforms-3/87716f6e26b334ebc34053046b80326d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/rubxsol/.gradle/caches/transforms-3/1156e0b9b7b712f9268b1404c76169c2/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/719670c81288ce37d61b8e460c8a42b8/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:3.8.2] /Users/rubxsol/.gradle/caches/transforms-3/f961af74a77bcdc8efecd9f1d644f865/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/rubxsol/.gradle/caches/transforms-3/524b0525a70b02831f7f19a464401044/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/rubxsol/.gradle/caches/transforms-3/26ea7059afcca3a5c185a2c495356ef6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/cfd7042b638b63ae45693de1287fcbde/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/rubxsol/.gradle/caches/transforms-3/cfd7042b638b63ae45693de1287fcbde/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:33:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/rubxsol/.gradle/caches/transforms-3/d0d1449393f10930ee15ee05c307d023/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/rubxsol/.gradle/caches/transforms-3/d5a5338e42851f38ff9842cb2e546e8c/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
 ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/rubxsol/.gradle/caches/transforms-3/5c63d73ba6b2c8ae93ce345a18b60ba7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 	android:value
@@ -459,6 +1287,40 @@ uses-permission#com.kickers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] /Users/rubxsol/.gradle/caches/transforms-3/93d48fe7b1cdc4168e2f5d4ddb236fc5/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /Users/rubxsol/.gradle/caches/transforms-3/7bccef0fc8e728e9028e216f0d222527/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/5c8d577e464270e6b3d44916b4785f75/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/rubxsol/.gradle/caches/transforms-3/155b516e909b309cb90ad024ebc1940a/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
 meta-data#com.facebook.soloader.enabled
 ADDED from [com.facebook.soloader:soloader:0.10.5] /Users/rubxsol/.gradle/caches/transforms-3/db10ca6a226d6b7389844196ac154ca8/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
 	android:value

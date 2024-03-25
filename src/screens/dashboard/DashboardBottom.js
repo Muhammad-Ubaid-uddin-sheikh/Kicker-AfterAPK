@@ -7,7 +7,7 @@ import Entypo from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import DashboardMain from './DashboardMain';
-import AnalyticsScreen from '../courtScreenDashboard/courtInnerScreen/Menu';
+import AnalyticsScreen from '../followPage/FollowPage';
 import Profile from '../setting/Profile';
 import FindGames from '../findGames/FindGames'
 import { Fonts } from '../style';
@@ -19,8 +19,8 @@ const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   const [name, setName] = useState('');
+ 
 const navigation= useNavigation()
-  useEffect(() => {
     const fetchDataAndStore = async () => {
       try {
         const token = await AsyncStorage.getItem('accessToken');
@@ -36,6 +36,7 @@ const navigation= useNavigation()
           if (response.ok) {
             const data = await response.json();
             setName(data.data.name);
+            
           } 
           else {
             console.error('Error fetching user data:', response.statusText);
@@ -45,10 +46,9 @@ const navigation= useNavigation()
         console.error('Error fetching and storing user data:', error);
       }
     };
-
+  useEffect(() => {
     fetchDataAndStore();
   }, []);
-
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({

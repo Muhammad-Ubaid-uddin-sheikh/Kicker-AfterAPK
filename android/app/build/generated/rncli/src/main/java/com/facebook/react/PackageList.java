@@ -13,6 +13,12 @@ import java.util.ArrayList;
 
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/geolocation
+import com.reactnativecommunity.geolocation.GeolocationPackage;
+// react-native-date-picker
+import com.henninghall.date_picker.DatePickerPackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-image-crop-picker
@@ -21,6 +27,10 @@ import com.reactnative.ivpusic.imagepicker.PickerPackage;
 import com.imagepicker.ImagePickerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-maps
+import com.rnmaps.maps.MapsPackage;
+// react-native-onesignal
+import com.onesignal.rnonesignalandroid.ReactNativeOneSignalPackage;
 // react-native-pager-view
 import com.reactnativepagerview.PagerViewPackage;
 // react-native-safe-area-context
@@ -29,6 +39,10 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// react-native-view-shot
+import fr.greweb.reactnativeviewshot.RNViewShotPackage;
+// react-native-webview
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 
 public class PackageList {
   private Application application;
@@ -75,14 +89,21 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
+      new GeolocationPackage(),
+      new DatePickerPackage(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new PickerPackage(),
       new ImagePickerPackage(),
       new LinearGradientPackage(),
+      new MapsPackage(),
+      new ReactNativeOneSignalPackage(),
       new PagerViewPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
-      new VectorIconsPackage()
+      new VectorIconsPackage(),
+      new RNViewShotPackage(),
+      new RNCWebViewPackage()
     ));
   }
 }

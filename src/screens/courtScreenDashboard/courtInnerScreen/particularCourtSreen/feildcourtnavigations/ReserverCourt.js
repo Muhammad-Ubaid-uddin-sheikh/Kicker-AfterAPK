@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import { Text, View, StatusBar, StyleSheet,  ScrollView, } from 'react-native'
+
 import Button from '../../../../../components/Button';
 import Foot from '../../../../setting/Foot'
 import { Fonts } from '../../../../style';
 
-const Dashboard = ({navigation}) => {
-    
-    // const [inputValue, setInputValue] = useState('');
-    // const handleInputChange = (text) => {
-    //     setInputValue(text);
-    //   };
+const Dashboard = ({navigation,route}) => {
+   
     const [loading, setLoading] = useState(false);
     const Hora = [
         {id:1, name:'1:00 PM'},
@@ -92,7 +89,7 @@ const Dashboard = ({navigation}) => {
         <View style={styles.MainContainer}>
             <ScrollView style={styles.scrollEdit} backgroundColor={'white'}>
                 <View style={styles.rowContainer}>
-                    <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+                    {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
                     <Text style={styles.paragraphs}>
                         Detalles de reserva
                     </Text>
@@ -102,7 +99,7 @@ const Dashboard = ({navigation}) => {
                 </View>
 
 
-                <View style={[styles.inputContainer, { paddingTop: 10 }]}>
+                {/* <View style={[styles.inputContainer, { paddingTop: 10 }]}>
                     <Foot visible={iCanchavalVisible}
                    selectedValue={Canchaval ? Canchaval.name : ''}
                     PopupOn={()=>setCanchavalVisible(true)}
@@ -135,28 +132,17 @@ const Dashboard = ({navigation}) => {
         onClose={() => finalizacionVisibleVisible(false)}
          onSelect={handleSelectFourth} options={Finalizacion} placeHolder="Hora de finalización" />
                 
-                </View>
+                </View> */}
                
 
             </ScrollView>
-            <View style={styles.nextButton}>
-                
-                <Button loading={loading} text="Reservar" Link={handleNavigate} />
-            </View>
+            
         </View>
 
     )
 }
 const styles = StyleSheet.create({
-    inputContainer: {
-        position: 'relative',
-        marginBottom: 10,
-        // width: 345,
-        marginLeft: 15,
-        marginRight: 20,
-
-
-    },
+   
     scrollcontainer: {
         flex: 1,
         justifyContent: 'center',
@@ -191,14 +177,7 @@ const styles = StyleSheet.create({
         paddingRight: 10,
         paddingTop: 15
     },
-    nextButton: {
-        // position: 'absolute',
-        // bottom: -20,
-        marginBottom: 20,
-        paddingLeft: 15,
-        paddingRight: 15,
-        backgroundColor: 'white'
-    },
+    
 
 })
 

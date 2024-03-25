@@ -34,10 +34,10 @@ const CustomizeProfile = ({navigation}) => {
         <View style={styles.container}>
             
             
-            <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+            {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
             <View style={styles.MainContainer}>
                 <ColoredLine flex={1.8} />
-                <Text style={styles.MainHeading} >¿ Cuál es tu pie</Text>
+                <Text style={styles.MainHeading} >¿Cuál es tu pie dominate?</Text>
                 <View style={styles.ShoeContainer}>
                     <View style={styles.row}>
                         <View style={styles.ShoeCon}>

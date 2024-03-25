@@ -26,7 +26,7 @@ const FindGames = ({ navigation }) => {
 
 
         <View style={styles.MainContainer}>
-           <StatusBar backgroundColor={'white'}  barStyle="dark-content" />
+           {/* <StatusBar backgroundColor={'white'}  barStyle="dark-content" /> */}
             <View style={styles.rowContainer}>
 
                 <Text style={styles.headingMain}>

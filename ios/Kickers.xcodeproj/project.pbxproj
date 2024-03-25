@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* KickersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KickersTests.m */; };
+		02C5D542FBF04ACDA59213C7 /* Satoshi-VariableItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72E0D55477B4437DB8C7ECE7 /* Satoshi-VariableItalic.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Kickers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Kickers.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-Kickers-KickersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kickers-KickersTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		652BAB9D621349DE8F62607B /* Satoshi-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A62A8866F9FD4AD39D61E1C6 /* Satoshi-Black.ttf */; };
-		CD515D1963A649E68A51CA13 /* Satoshi-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4148C30CF5841598469E6ED /* Satoshi-BlackItalic.ttf */; };
-		9AA8D877B0B74BCB977AAA75 /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F89A87D798C44D74B87BD866 /* Satoshi-Bold.ttf */; };
 		4F31DD68F05F44739DCC92BA /* Satoshi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 372874199E82413C803C157F /* Satoshi-BoldItalic.ttf */; };
+		652BAB9D621349DE8F62607B /* Satoshi-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A62A8866F9FD4AD39D61E1C6 /* Satoshi-Black.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-Kickers-KickersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kickers-KickersTests.a */; };
+		78207AAB4AD54DF8ADD05B35 /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1176E829F2B4E2F87E994C5 /* Satoshi-Regular.ttf */; };
 		7D65F8589C3A4A17AABB6AFC /* Satoshi-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F435192070C4B5DBFF5A29B /* Satoshi-Italic.ttf */; };
-		FC658FBC3A024F0BAD05A96D /* Satoshi-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DC68B5B37451AB28C61FE /* Satoshi-Light.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8BE037D3D2674C91BE619D19 /* Satoshi-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42572EF64B1F4275BD7C5CFE /* Satoshi-Variable.ttf */; };
+		9AA8D877B0B74BCB977AAA75 /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F89A87D798C44D74B87BD866 /* Satoshi-Bold.ttf */; };
+		CD515D1963A649E68A51CA13 /* Satoshi-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4148C30CF5841598469E6ED /* Satoshi-BlackItalic.ttf */; };
 		CEAD59996DE2448AA3631B0E /* Satoshi-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFDF5D39D054D549D00AD0C /* Satoshi-LightItalic.ttf */; };
 		F4212915BAFE4B7F9E5FD810 /* Satoshi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B4D47E69CCD4E8AA3F971DB /* Satoshi-Medium.ttf */; };
 		F8521E22691B4AACA61095F8 /* Satoshi-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB09566C229A48DEAEBF92D1 /* Satoshi-MediumItalic.ttf */; };
-		78207AAB4AD54DF8ADD05B35 /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1176E829F2B4E2F87E994C5 /* Satoshi-Regular.ttf */; };
-		8BE037D3D2674C91BE619D19 /* Satoshi-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42572EF64B1F4275BD7C5CFE /* Satoshi-Variable.ttf */; };
-		02C5D542FBF04ACDA59213C7 /* Satoshi-VariableItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72E0D55477B4437DB8C7ECE7 /* Satoshi-VariableItalic.ttf */; };
+		FC658FBC3A024F0BAD05A96D /* Satoshi-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DC68B5B37451AB28C61FE /* Satoshi-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,25 +49,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kickers/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Kickers/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kickers-KickersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kickers-KickersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372874199E82413C803C157F /* Satoshi-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-BoldItalic.ttf"; path = "../src/assets/fonts/Satoshi-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Kickers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kickers.debug.xcconfig"; path = "Target Support Files/Pods-Kickers/Pods-Kickers.debug.xcconfig"; sourceTree = "<group>"; };
+		42572EF64B1F4275BD7C5CFE /* Satoshi-Variable.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Variable.ttf"; path = "../src/assets/fonts/Satoshi-Variable.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Kickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kickers.release.xcconfig"; path = "Target Support Files/Pods-Kickers/Pods-Kickers.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Kickers-KickersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kickers-KickersTests.debug.xcconfig"; path = "Target Support Files/Pods-Kickers-KickersTests/Pods-Kickers-KickersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Kickers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kickers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFDF5D39D054D549D00AD0C /* Satoshi-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-LightItalic.ttf"; path = "../src/assets/fonts/Satoshi-LightItalic.ttf"; sourceTree = "<group>"; };
+		72E0D55477B4437DB8C7ECE7 /* Satoshi-VariableItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-VariableItalic.ttf"; path = "../src/assets/fonts/Satoshi-VariableItalic.ttf"; sourceTree = "<group>"; };
+		7E2DC68B5B37451AB28C61FE /* Satoshi-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Light.ttf"; path = "../src/assets/fonts/Satoshi-Light.ttf"; sourceTree = "<group>"; };
+		7F435192070C4B5DBFF5A29B /* Satoshi-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Italic.ttf"; path = "../src/assets/fonts/Satoshi-Italic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Kickers/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Kickers-KickersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kickers-KickersTests.release.xcconfig"; path = "Target Support Files/Pods-Kickers-KickersTests/Pods-Kickers-KickersTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B4D47E69CCD4E8AA3F971DB /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Medium.ttf"; path = "../src/assets/fonts/Satoshi-Medium.ttf"; sourceTree = "<group>"; };
+		A62A8866F9FD4AD39D61E1C6 /* Satoshi-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Black.ttf"; path = "../src/assets/fonts/Satoshi-Black.ttf"; sourceTree = "<group>"; };
+		B1176E829F2B4E2F87E994C5 /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Regular.ttf"; path = "../src/assets/fonts/Satoshi-Regular.ttf"; sourceTree = "<group>"; };
+		BB09566C229A48DEAEBF92D1 /* Satoshi-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-MediumItalic.ttf"; path = "../src/assets/fonts/Satoshi-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C4148C30CF5841598469E6ED /* Satoshi-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-BlackItalic.ttf"; path = "../src/assets/fonts/Satoshi-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E3D45EA72B81D58A00B7D8BE /* Kickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Kickers.entitlements; path = Kickers/Kickers.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		A62A8866F9FD4AD39D61E1C6 /* Satoshi-Black.ttf */ = {isa = PBXFileReference; name = "Satoshi-Black.ttf"; path = "../src/assets/fonts/Satoshi-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C4148C30CF5841598469E6ED /* Satoshi-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Satoshi-BlackItalic.ttf"; path = "../src/assets/fonts/Satoshi-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F89A87D798C44D74B87BD866 /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; name = "Satoshi-Bold.ttf"; path = "../src/assets/fonts/Satoshi-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		372874199E82413C803C157F /* Satoshi-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Satoshi-BoldItalic.ttf"; path = "../src/assets/fonts/Satoshi-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7F435192070C4B5DBFF5A29B /* Satoshi-Italic.ttf */ = {isa = PBXFileReference; name = "Satoshi-Italic.ttf"; path = "../src/assets/fonts/Satoshi-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7E2DC68B5B37451AB28C61FE /* Satoshi-Light.ttf */ = {isa = PBXFileReference; name = "Satoshi-Light.ttf"; path = "../src/assets/fonts/Satoshi-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5DFDF5D39D054D549D00AD0C /* Satoshi-LightItalic.ttf */ = {isa = PBXFileReference; name = "Satoshi-LightItalic.ttf"; path = "../src/assets/fonts/Satoshi-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B4D47E69CCD4E8AA3F971DB /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; name = "Satoshi-Medium.ttf"; path = "../src/assets/fonts/Satoshi-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BB09566C229A48DEAEBF92D1 /* Satoshi-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Satoshi-MediumItalic.ttf"; path = "../src/assets/fonts/Satoshi-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B1176E829F2B4E2F87E994C5 /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; name = "Satoshi-Regular.ttf"; path = "../src/assets/fonts/Satoshi-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		42572EF64B1F4275BD7C5CFE /* Satoshi-Variable.ttf */ = {isa = PBXFileReference; name = "Satoshi-Variable.ttf"; path = "../src/assets/fonts/Satoshi-Variable.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		72E0D55477B4437DB8C7ECE7 /* Satoshi-VariableItalic.ttf */ = {isa = PBXFileReference; name = "Satoshi-VariableItalic.ttf"; path = "../src/assets/fonts/Satoshi-VariableItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F89A87D798C44D74B87BD866 /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satoshi-Bold.ttf"; path = "../src/assets/fonts/Satoshi-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		13B07FAE1A68108700A75B9A /* Kickers */ = {
 			isa = PBXGroup;
 			children = (
+				E3D45EA72B81D58A00B7D8BE /* Kickers.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -162,19 +164,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-Kickers.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-Kickers.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-Kickers-KickersTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-Kickers-KickersTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9A87AB0A2FF14C44A05F1EDA /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				A62A8866F9FD4AD39D61E1C6 /* Satoshi-Black.ttf */,
 				C4148C30CF5841598469E6ED /* Satoshi-BlackItalic.ttf */,
@@ -191,7 +182,17 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-Kickers.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-Kickers.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-Kickers-KickersTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-Kickers-KickersTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -244,7 +245,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -522,12 +523,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Kickers/Kickers.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5RVJ2SX2N;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Kickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"<Multiple",
+					"values>",
+					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -535,8 +547,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.Kickers;
 				PRODUCT_NAME = Kickers;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -549,11 +562,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Kickers/Kickers.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5RVJ2SX2N;
 				INFOPLIST_FILE = Kickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"<Multiple",
+					"values>",
+					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -561,8 +585,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.Kickers;
 				PRODUCT_NAME = Kickers;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -601,7 +626,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -629,6 +654,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -636,7 +662,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -673,7 +702,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -693,6 +722,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -700,7 +730,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

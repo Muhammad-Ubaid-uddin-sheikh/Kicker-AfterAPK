@@ -3,35 +3,36 @@ import { View, FlatList, Image, Text, Dimensions, TouchableOpacity, Modal, Style
 import { ScrollView } from 'react-native-gesture-handler';
 import { Fonts } from '../../../style';
 
-const Gallery = () => {
+const Gallery = ({GroundImageGalary}) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
-  const images = [
-    { id: '1', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg', text: 'Fútbol 7' },
-    { id: '2', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg', text: 'Fútbol 11' },
-    { id: '3', source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg', text: 'Fútbol rápido' },
-    { id: '4', source: 'https://5.imimg.com/data5/XM/YM/JY/SELLER-54500078/football-ground-flooring.jpg', text: 'Fútbol 10' },
-    // Add more images as needed
-  ];
-
   const handleImagePress = (index) => {
     setSelectedImageIndex(index);
     setModalVisible(true);
   };
-
+console.log('geildasd',GroundImageGalary)
   return (
     <View style={styles.container}>
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
-        data={images}
-        keyExtractor={(item) => item.id}
+        data={GroundImageGalary}
+        keyExtractor={(item) => item._id}
         renderItem={({ item, index }) => (
           <TouchableOpacity onPress={() => handleImagePress(index)}>
-            <View style={styles.imageContainer}>
-              <Image source={{ uri: item.source }} style={styles.imageThumbnail} />
-              <Text style={styles.imageText}>{item.text}</Text>
+            <View style={[styles.imageContainer,{textAlign:"left"}]}>
+           <View>
+            <Image
+                        source={{ uri: item.images.length > 0 ? item.images[0] : 'https://5.imimg.com/data5/XM/YM/JY/SELLER-54500078/football-ground-flooring.jpg' }}
+                        style={styles.imageThumbnail}
+                    />
+                     <Text style={[styles.imageText,{position:'absolute',backgroundColor:'rgba(64, 134, 57, 0.25)',top:100,right:80,color:'white',fontFamily:Fonts.BOLD}]}>{item.turfType}</Text>
+                    </View>
+             <View style={{width:'80%',textAlign:'left',marginTop:-5}}>
+             <Text style={[styles.imageText,]}>{item.name}</Text>
+              {/* <Text style={styles.imageText}>{item.turfType}</Text> */}
+             </View>
+          
             </View>
           </TouchableOpacity>
         )}
@@ -48,10 +49,14 @@ const Gallery = () => {
             setSelectedImageIndex(page);
           }}
         >
-          {images.map((image, index) => (
-            <TouchableOpacity key={image.id} onPress={() => setModalVisible(false)}>
-              <Image source={{ uri: image.source }} style={styles.modalImage} />
-              <Text style={styles.modalText}>{image.text}</Text>
+          {GroundImageGalary.map((image, index) => (
+            <TouchableOpacity key={image._id} onPress={() => setModalVisible(false)}>
+             <Image
+                        source={{ uri: image.images.length > 0 ? image.images[0] : 'https://5.imimg.com/data5/XM/YM/JY/SELLER-54500078/football-ground-flooring.jpg' }}
+                        style={styles.modalImage}
+                    />
+              {/* <Image source={{ uri: image.source }} style={styles.modalImage} /> */}
+              <Text style={styles.modalText}>{image.name}</Text>
             </TouchableOpacity>
           ))}
         </ScrollView>

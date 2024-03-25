@@ -1,25 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Text, View, StatusBar, StyleSheet, Image, ScrollView, } from 'react-native'
 import { Fonts } from '../../../style';
 import Gallery from './Galary';
-import GalarySecond from './GalarySecond'
-const Dashboard = ({ navigation }) => {
-   
-
-    const scheduleTimings = [
-        { day: 'Una hora', timing: '$49.00' },
-        { day: 'Dos horas', timing: '$75.00' },
-        { day: 'Tres horas', timing: '$120.00' },
-        
-
-       
-      ];
+import CourtImageGalary from './CourtImagesGalary'
+const Dashboard = ({ navigation,route }) => {
+  const  {Feilds,Item}  = route.params;
+console.log("dasdasdaItem",Item.images)
     return (
 
         <View style={styles.MainContainer}>
             <ScrollView style={styles.scrollEdit} backgroundColor={'white'}>
                 <View style={styles.rowContainer}>
-                    <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+                    {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
                     <Text style={styles.paragraphs}>
                     Canchas disponibles
                     </Text>
@@ -29,26 +21,14 @@ const Dashboard = ({ navigation }) => {
                 </View>
 
 <View style={styles.mainContainerShedule}>
-<Gallery/>
+<Gallery GroundImageGalary={Feilds}/>
 <View >
                       <Text style={styles.paragraphs}>
                     Galería
                     </Text>
 
                 </View>
-                <GalarySecond/>
-</View>
-<Text style={[styles.paragraphs,{paddingTop:0,marginTop:-20}]}>
-Precios
-                    </Text>
-<View style={styles.mainContainerSheduleTiming}>
-    
-{scheduleTimings.map((schedule, index) => (
-        <View key={index} style={styles.timingContainer}>
-          <Text style={styles.day}>{schedule.day}</Text>
-          <Text style={styles.timing}>{schedule.timing}</Text>
-        </View>
-      ))}
+                <CourtImageGalary GroundImageGalary={[...Item.images]}/>
 </View>
 
             </ScrollView>

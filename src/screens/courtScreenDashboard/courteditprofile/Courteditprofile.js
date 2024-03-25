@@ -1,15 +1,17 @@
 import React, { useState ,useEffect} from 'react';
 import { Text, View, StatusBar, StyleSheet, ScrollView,TouchableOpacity } from 'react-native'
 import Spinner from 'react-native-loading-spinner-overlay';
-// import CheckPlayer from '../../components/CustomButton'
+import CheckPlayer from '../../../components/CustomButton'
 import ButtonEditDashboard from '../../../components/ButtonEditDashboard'
-import ImageEdit from '../../setting/ImageEdit'
+import ImageEditProfile from './ImageEditProfileImg'
 import Modal from 'react-native-modal';
 import Button from '../../../components/ButtonTransparentBlack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Fonts } from '../../style';
+import Skeleton from "@thevsstech/react-native-skeleton";
 const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/court/getProfile';
 const Setting = ({navigation}) => {
+  const [isLoading, setIsLoading] = useState(true);
     const [isLoggingOut, setIsLoggingOut] = useState(false);
 const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
 
@@ -25,7 +27,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
     try {
   
       await AsyncStorage.removeItem('accessTokenCourt');
-      await AsyncStorage.removeItem('accessTokenCourt');
+      // await AsyncStorage.removeItem('accessTokenCourt');
       navigation.navigate('Home');
     } catch (error) {
       console.error('Error deleting data:', error);
@@ -75,6 +77,8 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         }
       } catch (error) {
         console.error('Error fetching and storing user data:', error);
+      }finally{
+        setIsLoading(false)
       }
     };
     fetchDataAndStore();
@@ -82,16 +86,34 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
   return (
 
         <ScrollView backgroundColor={'white'}>
+           {/* <StatusBar backgroundColor={'white'} barStyle="dark-content" /> */}
         <View style={styles.MainContainer}>
             <View style={styles.rowContainer}>
-            <StatusBar backgroundColor={'white'} barStyle="dark-content" />
            
-    
-         <View style={styles.ShoeContainer}>
+            {isLoading ? (
+                    
+        
+        <Skeleton highlightColor={'rgba(64, 134, 57, 0.25)'} backgroundColor={'rgba(64, 134, 57, 0.05)'} borderRadius={'20'} visible={false}>
+        
+                  <View style={{ flexDirection: "row", alignItems: "center",justifyContent:'space-between',marginTop:10 }}>
+        <View style={{ width: 100, height: 100, borderRadius: 50 ,marginBottom:30}} />
+       
+      
+        <View style={{paddingRight:20,marginBottom:30}}>
+        <View style={{ width: 220, height: 30, borderRadius: 4 }} />
+        <View style={{ width: '100%', height: 20, borderRadius: 4 ,marginTop:10}} />
+        </View>
+        </View>
+        
+            </Skeleton>
+
+                ) : (
+                  
+                  <View style={[styles.ShoeContainer,]}>
                         <View style={styles.row}>
-                        <TouchableOpacity onPress={()=> navigation.navigate('Profile')}>
+                        <TouchableOpacity>
                             <View style={styles.ShoeCon} >
-                            <ImageEdit/>
+                            <ImageEditProfile title="Editar foto"/>
                             </View>
                             </TouchableOpacity>
                             <View style={styles.ShoeConText} >
@@ -104,14 +126,15 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
                         
                     </View>
                    
+      
+                    )}
+                   
          </View>
-    <View style={styles.buttonContainer}>
-       
-        {/* <ButtonEditDashboard TextButton="Editar perfil" FontName="person-outline" Link={()=>navigation.navigate('EditProfile')}/>
-        <ButtonEditDashboard TextButton="Pago" FontName="card-outline" Link={()=>navigation.navigate('Pago')}/>
-        <CheckPlayer NameFont="bell-outline" TextButton="Notificaciones" Link={()=>navigation.navigate('Notification')} />
-        <ButtonEditDashboard TextButton="Privacidad" FontName="shield-checkmark-outline" Link={()=>navigation.navigate('Privacy')}/>
-         <ButtonEditDashboard TextButton="Seguridad" FontName="lock-closed-outline" Link={()=>navigation.navigate('Security')}/>  */}
+    <View style={[styles.buttonContainer,{paddingTop:10}]}>
+    <ButtonEditDashboard TextButton="Editar perfil" FontName="person-outline" Link={()=>navigation.navigate('EditProfileCourt')}/>
+    <ButtonEditDashboard TextButton="Retiro" FontName="card-outline" Link={()=>navigation.navigate('CourtPayment')}/>
+    <CheckPlayer NameFont="bell-outline" TextButton="Notificaciones" Link={()=>navigation.navigate('NotificationCourt')} />
+    <ButtonEditDashboard TextButton="Seguridad" FontName="lock-closed-outline" Link={()=>navigation.navigate('SecurityCourt')}/>
          <View>
          <ButtonEditDashboard TextButton="Cerrar sesión" FontName="log-out-outline" Link={showLogoutModal}/> 
          
@@ -125,7 +148,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.paragraphsHeadingMain}>¿Quieres cerrar sesión?</Text>
-            <Text style={styles.paragraphspoup}>Agradecem os tu visita. Nos vemos pronto.</Text>
+            <Text style={styles.paragraphspoup}>Agradecemos tu visita. Nos vemos pronto.</Text>
 
             <View style={styles.containerButton}>
             <View style={styles.mainContent}> 
@@ -166,7 +189,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         containerButton:{// Arrange points and text horizontally
             alignItems: 'center', // Center content vertically
             justifyContent:'space-between',
-            width:'auto',
+            // width:200,
             position:'relative',
             flexDirection: 'row',
             gap:10
@@ -174,7 +197,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
         mainContent: {
             textAlign: 'center',
         justifyContent: 'center',
-      //  width:150,
+       width:150,
           },
         ShoeConText:{
             paddingTop:20
@@ -207,7 +230,7 @@ const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
             backgroundColor:'white',
             flex:1,
             paddingLeft:15,
-            paddingRight:15
+            paddingRight:15,
            
         },
         buttonContainer:{

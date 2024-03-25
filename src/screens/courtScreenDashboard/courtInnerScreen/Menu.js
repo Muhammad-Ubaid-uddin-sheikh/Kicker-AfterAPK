@@ -1,148 +1,96 @@
-// import React from 'react'
-// import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
-// import { Fonts } from '../../style';
-// import Icons from 'react-native-vector-icons/EvilIcons'
-// // import TodoGround from './todoGroud/TodoGround'
-// import ReservaFeild from '../../reservaFeild/ReservaFeild'
-// const Clender = ({navigation}) => {
-//   return (
-//     <View style={styles.MainContainer}>
-//  <View style={styles.inputMainContainner}>
-//                         <View style={styles.searchbarContainer}>
-//                             <Icons name='search' style={styles.Searchicon} size={30} />
-//                             <TextInput
-//                                 style={styles.input}
-//                                 placeholder="Tipo de superficie, nombre"
-//                                 placeholderTextColor="rgba(33, 33, 33, 0.60)"
-//                             />
-//                         </View>
-//                         <View style={styles.divaddButton}>
-//                         <Text style={styles.buttonTextHeading}>Tus canchas</Text>
-// <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CourtDetails')}>
-//               <Text style={styles.buttonText}>Añadir cancha</Text>
-//             </TouchableOpacity>
-// </View>
-//                         {/* <FlatList
-//                             data={filteredCountries}
-//                             renderItem={renderItem}
-//                             keyExtractor={(item) => item.cca3}
-//                         /> */}
-
-//                     </View>
-//                     <ReservaFeild/>
-//                     {/* <TodoGround/> */}
-//     <View >
-//         <Text style={styles.textHeading}>Filtrar por fecha</Text>
-//     </View>
-//     </View>
-//   )
-// }
-// const styles= StyleSheet.create({
-
-//     textHeading: {
-//         fontSize: 20,
-//         color: '#000',
-//         marginTop: 20,
-//         fontFamily: Fonts.BOLD,
-//         marginLeft:20,
-        
-       
-//     },
-//     MainContainer:{
-//         width:'auto',
-//         backgroundColor:'white',
-//         flex:1,
-       
-//     },
-//     buttonContainer:{
-//       marginTop:10
-//     },
-//     Searchicon: {
-//       position: 'absolute',
-//       top: 27,
-//       left: 10,
-//       color: 'black'
-//   },
-//   input: {
-//       marginTop: 12,
-//       paddingLeft: 42,
-//       padding: 16,
-//       marginBottom: 10,
-//       paddingRight: 40,
-//       fontSize: 14,
-//       lineHeight: 20,
-//       width: 360,
-//       borderRadius: 12,
-//       borderWidth: 0.25,
-//       borderColor: 'rgba(0, 0, 0, 0.25)',
-//       shadowOffset: { width: 0, height: 1 },
-//       shadowRadius: 2,
-//       shadowOpacity: 1,
-//       color: '#212121',
-//       fontFamily: Fonts.BOLD,
-//       backgroundColor: 'rgba(64, 134, 57, 0.05)',
-
-//   },
-//   searchbarContainer: {
-//       position: 'relative',
-//       width: 360,
-//       flexDirection: 'row',
-//       marginLeft: 0
-//   },
-//   inputMainContainner: {
-//       paddingLeft:15,
-//       paddingTop:5
-//   },
-//   divaddButton:{
-// flexDirection:'row',
-// justifyContent:'space-between'
-//   },
-//   buttonTextHeading:{
-//     fontSize: 20,
-//     color: '#000',
-//     fontFamily: Fonts.BOLD,
-//     paddingLeft:5
-//   },
-//   button:{
-//     marginRight:25,
-//     backgroundColor:'rgba(64, 134, 57, 0.15)',
-//     borderRadius:42,
-//     borderColor:'rgba(64, 134, 57, 0.25)',
-//     borderWidth:0.5,
-//     paddingTop:5,
-//     paddingBottom:5,
-//     paddingRight:10,
-//     paddingLeft:10
-//   },
-//   buttonText:{
-//     color:'#408639',
-//     fontFamily:Fonts.REGULAR,
-//     fontSize:12
-//   }
-// })
-// export default Clender
-import React, { useState } from 'react';
-import { ScrollView, StatusBar, Image, StyleSheet, Text, TouchableOpacity, View, TextInput, FlatList, } from 'react-native'
+import React, { useCallback, useEffect, useState } from 'react';
+import {  Image, StyleSheet, Text,RefreshControl, TouchableOpacity, View, TextInput, FlatList, } from 'react-native'
 import SearchICon from 'react-native-vector-icons/EvilIcons'
 import { Fonts } from '../../style';
-const FindGames = ({ navigation }) => {
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import Skeleton from "@thevsstech/react-native-skeleton";
+const API_URL_GET = 'https://kickers-backend-5e360941484b.herokuapp.com/api/court/getMyCourts'
+const FindGames = ({ navigation }) => { 
+    const [refreshing, setRefreshing] = React.useState(false);
+    const [courtId , SetCourtId] = useState(null)
+const GetCourtId = async () =>{
+  const court = await AsyncStorage.getItem('Court')
+  const ID = JSON.parse(court)._id
+  SetCourtId(ID)
+  console.log(courtId)
+}
+  useEffect(() =>{
+    GetCourtId()
+  },[])
+
+  const [courtData, setCourtData] = useState([]);
+  const [loading, setLoading] = useState(true);
+//   console.log("use state courtData" , courtData)
+  
+    const fetchCourtData = async () => {
+        try {
+            const accessToken = await AsyncStorage.getItem('accessTokenCourt');
+            const response = await fetch(API_URL_GET, {
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                },
+            });
+
+            if (response.ok) {
+                
+                const responseData = await response.json();
+                // delete responseData.data[0].fields
+                console.log('fatchadata',responseData.data[0])
+                
+                const newFeilds = responseData.data[0].fields?.map((feild)=>{
+            feild.location = responseData.data[0].address
+      
+                    return  feild
+
+                   
+                })
+                setCourtData(newFeilds);
+                console.log('setDataNEwfeild',newFeilds)
+                
+            } else {
+                console.error('Error fetching court data:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error fetching court data:', error);
+        }finally {
+            setLoading(false);
+        }
+    };
+
+ 
+
+
+const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    fetchCourtData(); // Call your fetch function to refresh the data
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 500);
+  }, []);
+  useEffect(() => {
+    fetchCourtData();
+  }, []);
+
+
     const [searchText, setSearchText] = useState('');
     const [filteredData, setFilteredData] = useState([]);
     const data = [
-        { id: 1, name: 'Jefferson Parkasdasd', rating: '4.5', available: true, address: 'E. 112th St & First Ave', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' },
-        { id: 2, name: 'Ben Vitale Fieldsasdas', rating: '4.8', available: false, address: 'D. 112th St & First Ave', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg' },
-        { id: 3, name: 'Ground 3', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg' },
-        { id: 4, name: 'Ground 4', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjBzdGFkaXVtfGVufDB8fDB8fHww' },
-        { id: 5, name: 'Ground 5', rating: '4.2', available: true, address: 'F. 112th St & First Aase', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyk2rqCaUDs1ygXLLxjlymyBGe-fZtvZtqVTdAdpsq4eeyRjPRtbGKS4OgFMAXug10vI&usqp=CAU' },
-        { id: 6, name: 'Ground 6', rating: '4.2', available: true, address: 'F. 112th St & First Aveaaa', source: 'https://www.pommietravels.com/wp-content/uploads/2023/11/camp-nou-spain.jpg' },
-        { id: 7, name: 'Ground 7', rating: '4.2', available: true, address: 'F. 112th St & First Aveasdas', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtrdH13yvwwmZ5rcStztHz8lfEPyft5SAH5nBAYqjzBQVi9S4MN0LhCaWb2gZQvk02lY&usqp=CAU' },
+        { id: 1, name: 'Jefferson Parkasdasd', rating: '4.5', available: true, address: 'E. 112th St & First Ave', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg',PerHour:100,ThirdHour:50,SecHour:20 },
+        { id: 2, name: 'Ben Vitale Fieldsasdas', rating: '4.8', available: false, address: 'D. 112th St & First Ave', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg',PerHour:90,ThirdHour:50,SecHour:60 },
+        { id: 3, name: 'Ground 3', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg',PerHour:90,ThirdHour:50,SecHour:60 },
+        { id: 4, name: 'Ground 4', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjBzdGFkaXVtfGVufDB8fDB8fHww',PerHour:'30' },
+        { id: 5, name: 'Ground 5', rating: '4.2', available: true, address: 'F. 112th St & First Aase', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyk2rqCaUDs1ygXLLxjlymyBGe-fZtvZtqVTdAdpsq4eeyRjPRtbGKS4OgFMAXug10vI&usqp=CAU',PerHour:50 },
+        { id: 6, name: 'Ground 6', rating: '4.2', available: true, address: 'F. 112th St & First Aveaaa', source: 'https://www.pommietravels.com/wp-content/uploads/2023/11/camp-nou-spain.jpg',PerHour:'60' },
+        { id: 7, name: 'Ground 7', rating: '4.2', available: true, address: 'F. 112th St & First Aveasdas', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtrdH13yvwwmZ5rcStztHz8lfEPyft5SAH5nBAYqjzBQVi9S4MN0LhCaWb2gZQvk02lY&usqp=CAU',PerHour:'200' },
 
         // Add more data as needed
     ];
     const handleItemClick = (item) => {
-        navigation.navigate('ParticularCourtGround', { item });
+        navigation.navigate('ParticularCourtGround', { item,fetchCourtData });
 
     };
+    
     const handleSearch = (text) => {
         setSearchText(text);
         const filtered = data.filter(
@@ -153,101 +101,129 @@ const FindGames = ({ navigation }) => {
         setFilteredData(filtered);
     };
 
-    const renderItem = ({ item }) => (
-        <TouchableOpacity onPress={() => handleItemClick(item)} style={{ marginBottom: 20 }}>
-            <Image source={{ uri: item.source }} style={{ width: 355, height: 170, borderRadius: 15, objectFit: 'cover' }} />
-            <View style={styles.TextContainerImage}>
-                <Text style={styles.GroundName}>{item.name}</Text>
-                <View style={styles.locationTextContainer}>
-                  <Image source={require('../../../assets/AvalibleIcon.png')} style={{width:16,height:16,objectFit:'contain',paddingRight:25}} />
+ 
+    const renderItem = ({ item }) => { 
+        console.log('render Item' , item)
+
+        
+        return (
+    
+    
+        <View style={{ marginBottom: 20 }}>
+          
+                
+                <TouchableOpacity key={item._id} onPress={() => handleItemClick(item)}>
+                  
+                    <Image
+                        source={{ uri: item.images.length > 0 ? item.images[0] : 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' }}
+                        style={{ width: 'auto', height: 170, borderRadius: 15, objectFit: 'cover' }}
+                    />
+                    <View style={styles.TextContainerImage} key={item._id}>
+                   
+                    <Text style={styles.GroundName}>{item.name}</Text>
+                   <View style={[styles.locationTextContainer,]}>
+                <Image source={require('../../../assets/AvalibleIcon.png')} style={{width:16,height:16,objectFit:'contain',paddingRight:25}} />
                 <Text style={[styles.availability, { color: '#454545', }]}>
-                    {item.available ? 'Disponible' : 'No disponible'}
-                </Text>
-                </View>
-                {/* <Text style={styles.GroundPrice}>{item.available}</Text> */}
+               {item.turfType && <Text  numberOfLines={1} ellipsizeMode="tail" style={[styles.availability, { color: '#454545',width:'20%' }]}>{item.turfType}</Text>}
+               </Text>
+               </View>
             </View>
-            <View style={styles.locationTextContainer}>
-                {/* <LocationIcon name='location-dot' style={{ color: '#408639' }} size={15} /> */}
-                {/* <Text style={styles.textLocation}> {item.address}</Text>
-                <StarIcons name='star' style={{ color: '#FCC767', marginLeft: 10 }} size={12} /> */}
-                {/* <Text style={styles.textLocation}> {item.rating}</Text> */}
-            </View>
-        </TouchableOpacity>
-    );
+                </TouchableOpacity>
+            {/* ))} */}
+        </View>
+    ) }
+   
 
     return (
 
-        <View style={styles.form}>
-            {/* <StatusBar translucent={true} backgroundColor={'transparent'} /> */}
+        <View style={styles.form} >
             <View style={styles.MainContainer}>
                 <View style={styles.rowContainer}>
-                    {/* Your other components */}
+                    
 
                     <View style={styles.searchbarContainer}>
                         <SearchICon name='search' style={styles.Searchicon} size={30} />
                         <TextInput
                             style={styles.input}
                             placeholder="Tipo de superficie, nombre"
-
                             placeholderTextColor="rgba(33, 33, 33, 0.60)"
                             onChangeText={handleSearch}
                             value={searchText}
                         />
                     </View>
-                    {/* <View style={styles.flexPropertyInput}>
-                        <View style={styles.ColmInput}>
-                            <View style={styles.searchbarContainer}>
-                                <SearchICon name='search' style={styles.Searchicon} size={25} />
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder="Tipo de cancha"
-
-                                    placeholderTextColor="rgba(33, 33, 33, 0.60)"
-                                />
-                            </View>
-                        </View>
-                        <View style={styles.ColmInput}>
-                            <View style={styles.searchbarContainer}>
-                                <ClockICon name='clockcircleo' style={[styles.Searchicon, { top: 23 }]} size={18} />
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder="Hora"
-                                    // value={searchText}
-                                    // onChangeText={handleSearch}
-                                    placeholderTextColor="rgba(33, 33, 33, 0.60)"
-                                />
-                            </View>
-                        </View> */}
+                    
 
 
                     {/* </View> */}
                     <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
                     <Text style={styles.MainHeading}>Tus canchas</Text>
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CourtDetails')}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CourtDetails',{fetchCourtData})}>
               <Text style={styles.buttonText}>Añadir cancha</Text>
             </TouchableOpacity>
                     </View>
                     
 
-                    <View style={{height:600, paddingTop: 20,paddingBottom:40 }}>
+                    <View style={{height:640, paddingTop: 20,paddingBottom:20 }}>
+                    {loading ? (
+               <FlatList
+               data={[1, 2, 3,4]} 
+               renderItem={() => (
+   
+   <Skeleton highlightColor={'rgba(64, 134, 57, 0.25)'} backgroundColor={'rgba(64, 134, 57, 0.05)'} borderRadius={'20'} visible={false}>
+             <View style={{  height: 150, borderRadius: 10,marginTop:10 }} />
+             <View style={{ flexDirection: "row", alignItems: "center",justifyContent:'space-between',marginTop:10 }}>
+   <View style={{ width: 120, height: 20, borderRadius: 4 }} />
+   
+   <View style={{ marginLeft: 20 }}>
+     <View style={{ width: 120, height: 20, borderRadius: 4 }} />
+   </View>
+ </View>
+ {/* <View style={{ width: 120, height: 20, borderRadius: 4 ,marginTop:5}} />       */}
+       </Skeleton>
+               )}
+               
+               // keyExtractor={(item, index) => index.toString()}
+               showsVerticalScrollIndicator={false}
+               showsHorizontalScrollIndicator={false}
+             />
+            ) : courtData.length === 0 ? (
+                <View style={{justifyContent:'center',alignItems:'center',height:350}}>
 
+                    <Ionicons name='football-outline' style={{fontSize:60,color:'#408639'}}/>
+                    <Text style={styles.MainHeading}>No courts available</Text>
+                    <TouchableOpacity style={[styles.button,{marginTop:20}]} onPress={() => navigation.navigate('CourtDetails',{fetchCourtData})}>
+              <Text style={styles.buttonText}>Añadir cancha</Text>
+            </TouchableOpacity>
+                    </View>
+            
+            ) : (
                         <FlatList
+                        refreshControl={
+                            <RefreshControl
+                              refreshing={refreshing}
+                              onRefresh={onRefresh}
+                              colors={['#9Bd35A', '#689F38']}
+                              progressBackgroundColor="#ffffff"
+                            />
+                          }
                                showsVerticalScrollIndicator={false}
-                            data={searchText ? filteredData : data}
-                            renderItem={renderItem}
-                            keyExtractor={(item) => item.id.toString()}
+                               data={courtData}
+                               renderItem={renderItem}
+                               keyExtractor={(item) => item._id.toString()}
                             contentContainerStyle={{ flexGrow: 1, paddingBottom: 10, }}
                         />
+            )}
                     </View>
                 </View>
             </View>
         </View>
-
+        // </ScrollView>
 
 
 
     )
 }
+
 const styles = StyleSheet.create({
     GroundName: {
         fontSize: 17,

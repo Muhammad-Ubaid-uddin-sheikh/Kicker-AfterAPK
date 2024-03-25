@@ -21,11 +21,11 @@ export const Button = ({text,Link,FirstIcon,SecondIcon,Center}) => {
 }
 const styles = StyleSheet.create({
  button: {
-    backgroundColor: '#212121',
+    backgroundColor: '#408639',
     padding: 15,
     // marginTop:10,
     borderRadius:12,
-    borderColor:'#212121',
+    borderColor:'#408639',
     borderWidth: 0.5, // Set the border width
     fontFamily:Fonts.MEDIUM,
     flexDirection:'row',

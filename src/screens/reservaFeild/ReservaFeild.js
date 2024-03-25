@@ -1,134 +1,366 @@
-import React, { useState } from 'react';
-import { ScrollView, StatusBar, Image, StyleSheet, Text, TouchableOpacity, View, TextInput, FlatList, } from 'react-native'
-import MatchPlayerDetails from '../../components/MatchesPlayerDetails'
-import { Fonts } from '../style'
+import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { Image, StyleSheet, RefreshControl,PermissionsAndroid, Text, TouchableOpacity, View, TextInput, FlatList, Dimensions } from 'react-native'
 import Icons from 'react-native-vector-icons/Ionicons'
-import SearchICon from 'react-native-vector-icons/EvilIcons'
-import ClockICon from 'react-native-vector-icons/AntDesign'
+import Clock from 'react-native-vector-icons/MaterialCommunityIcons'
 import LocationIcon from 'react-native-vector-icons/FontAwesome6'
 import StarIcons from 'react-native-vector-icons/Fontisto'
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Fonts } from '../style';
+import Skeleton from "@thevsstech/react-native-skeleton";
+import Geolocation from '@react-native-community/geolocation';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+const API_URL_GETLOCATION = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getCourtsByLocation';
+const API_URL_GET = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getAvailableCourts';
+const API_URL = 'https://kickers-backend-5e360941484b.herokuapp.com/api/player/getCourtFields';
 const FindGames = ({ navigation }) => {
+    const [refreshing, setRefreshing] = useState(false);
     const [searchText, setSearchText] = useState('');
+    const [groundsData, setGroundsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-    const data = [
-        { id: 1, name: 'Jefferson Park', rating: '4.5', available: true, address: 'E. 112th St & First Ave', source: 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' },
-        { id: 2, name: 'Ben Vitale Fields', rating: '4.8', available: false, address: 'D. 112th St & First Ave', source: 'https://en.reformsports.com/oxegrebi/2023/07/why-do-they-sprinkle-football-pitches.jpg' },
-        { id: 3, name: 'Ground 3', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://c4.wallpaperflare.com/wallpaper/892/527/605/football-pitch-wallpaper-preview.jpg' },
-        { id: 4, name: 'Ground 4', rating: '4.2', available: true, address: 'F. 112th St & First Ave', source: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjBzdGFkaXVtfGVufDB8fDB8fHww' },
-        { id: 5, name: 'Ground 5', rating: '4.2', available: true, address: 'F. 112th St & First Aase', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyk2rqCaUDs1ygXLLxjlymyBGe-fZtvZtqVTdAdpsq4eeyRjPRtbGKS4OgFMAXug10vI&usqp=CAU' },
-        { id: 6, name: 'Ground 6', rating: '4.2', available: true, address: 'F. 112th St & First Aveaaa', source: 'https://www.pommietravels.com/wp-content/uploads/2023/11/camp-nou-spain.jpg' },
-        { id: 7, name: 'Ground 7', rating: '4.2', available: true, address: 'F. 112th St & First Aveasdas', source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtrdH13yvwwmZ5rcStztHz8lfEPyft5SAH5nBAYqjzBQVi9S4MN0LhCaWb2gZQvk02lY&usqp=CAU' },
+    const [isLoading, setIsLoading] = useState(false);
+    const [isSearchFocused, setIsSearchFocused] = useState(false);
+    const [data , setData] = useState()
+    const [latitude ,setlatitude] = useState()
+    const [longitude ,setlongitude] = useState()
+console.log(data)
+    const [currentLocation, setCurrentLocation] = useState(null);
+  const [permissionDenied, setPermissionDenied] = useState(false);
+  
+  const [selectedLocation, setSelectedLocation] = useState('');
+  const [selectedCoordinates, setSelectedCoordinates] = useState(null);
+console.log(selectedCoordinates)
+const requestLocationPermission = async () => {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          title: 'Location Permission',
+          message: 'This app needs access to your location.',
+          buttonPositive: 'OK',
+        },
+      );
+      if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
+        console.log('Location permission denied');
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  };
+  useEffect(() => {
+    requestLocationPermission();
+  }, []);
+  const fetchCourtData = async (latitude, longitude, radius = 5000) => {
+    setIsLoading(true);
+    try {
+      const accessToken = await AsyncStorage.getItem('accessToken');
+      const response = await fetch(`${API_URL_GETLOCATION}?lat=${latitude}&long=${longitude}&radius=${radius}`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
 
-        // Add more data as needed
-    ];
-    const handleItemClick = (item) => {
-        navigation.navigate('ParticularGroundScreen', { item });
+      if (response.ok) {
+        const responseData = await response.json();
+        setGroundsData(responseData.data);
+        console.log('responseData', responseData.images);
+      } else {
+        console.log('Error fetching court data:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error fetching court data:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-    };
-    const handleSearch = (text) => {
-        setSearchText(text);
-        const filtered = data.filter(
-            (item) =>
-                item.name.toLowerCase().includes(text.toLowerCase()) ||
-                item.address.toString().includes(text)
-        );
-        setFilteredData(filtered);
-    };
+  const handleLocationSelect = (data, details) => {
+    setSelectedLocation(details.description);
+    setSelectedCoordinates({
+      latitude: details.geometry.location.lat,
+      longitude: details.geometry.location.lng,
+    });
+    // Fetch court data for the selected location
+    fetchCourtData(details.geometry.location.lat, details.geometry.location.lng);
+  };
 
-    const renderItem = ({ item }) => (
-        <TouchableOpacity onPress={() => handleItemClick(item)} style={{ marginBottom: 20 }}>
-            <Image source={{ uri: item.source }} style={{ width: 355, height: 170, borderRadius: 15, objectFit: 'cover' }} />
-            <View style={styles.TextContainerImage}>
-                <Text style={styles.GroundName}>{item.name}</Text>
-                <Text style={[styles.availability, { color: item.available ? 'green' : '#A0A0A0' }]}>
-                    {item.available ? 'Disponible' : 'No disponible'}
-                </Text>
-                {/* <Text style={styles.GroundPrice}>{item.available}</Text> */}
-            </View>
-            <View style={styles.locationTextContainer}>
-                <LocationIcon name='location-dot' style={{ color: '#408639' }} size={15} />
-                <Text style={styles.textLocation}> {item.address}</Text>
-                <StarIcons name='star' style={{ color: '#FCC767', marginLeft: 10 }} size={12} />
-                <Text style={styles.textLocation}> {item.rating}</Text>
-            </View>
-        </TouchableOpacity>
+  const getCurrentLocation = useCallback(() => {
+    Geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        console.log('Current latitude:', latitude);
+        console.log('Current longitude:', longitude);
+        fetchCourtData(latitude, longitude);
+      },
+      (error) => {
+        console.log('Error getting location:', error.message);
+        setIsLoading(false);
+      },
     );
+  }, []);
 
+  useEffect(() => {
+    requestLocationPermission();
+    getCurrentLocation();
+  }, []);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    getCurrentLocation();
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 500);
+  }, [getCurrentLocation]);
+useEffect(() => {
+    fetchCourtData();
+}, []);
+
+useEffect(() => {
+    const filtered = groundsData.filter(item =>
+        item.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+    setFilteredData(filtered);
+}, [searchText, groundsData]);
+
+
+
+
+  const renderDescription = (row) => row.description;
+
+   const renderItem = ({ item }) => {
+    const addressParts = item.address.split(',').slice(0, 5).join(',');
+   return(
+  
+    <TouchableOpacity onPress={() => handleItemClick(item)} style={{ marginBottom: 20 }}>
+        <Image
+            source={{ uri: item.images.length > 0 ? item.images[0] : 'https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/61b5911c9d37d0449acee390_soccer-ball-on-grass-in-corner-kick-position-on-so-2021-08-29-10-46-54-utc-min.jpg' }}
+            style={{ width: '100%', height: 170, borderRadius: 15, objectFit: 'cover' }}
+        />
+        <View style={styles.TextContainerImage}>
+            <Text style={styles.GroundName}>{item.name}</Text>
+            <Text style={[styles.buttonText, { color: item.isActive ? '#408639' : '#408639' }]}>
+                        {item.isActive ? 'No disponible' : 'Disponible'}
+                    </Text>
+        </View>
+        <View style={styles.locationTextContainer}>
+        
+            <LocationIcon name='location-dot' style={{ color: '#408639' }} size={15} />
+            <Text numberOfLines={1} ellipsizeMode="tail" style={[styles.textLocation,{width:'80%'}]}> {addressParts}</Text>
+            <StarIcons name='star' style={{ color: '#FCC767', marginLeft: 10 }} size={12} />
+            <Text style={[styles.textLocation,]}> 4.5</Text>
+        </View>
+    </TouchableOpacity>
+);
+
+}
+
+const handleItemClick = async (item) => {
+    try {
+        const accessToken = await AsyncStorage.getItem('accessToken');
+        const response = await fetch(`${API_URL}?courtId=${item._id}`, {
+            headers: {
+                Authorization: `Bearer ${accessToken}`,
+            },
+        });
+
+        if (response.ok) {
+            const responseData = await response.json();
+            setData(responseData.data) // Save clicked ground data in state
+            navigation.navigate('ParticularGroundScreen', { item, dataFeild: responseData.data });
+        } else {
+            console.log('Error fetching court data:', response.statusText);
+        }
+    } catch (error) {
+        console.error('Error fetching court data:', error);
+    }
+};
     return (
-
-        <View style={styles.form}>
-            {/* <StatusBar translucent={true} backgroundColor={'transparent'} /> */}
+        <View style={styles.container}>
             <View style={styles.MainContainer}>
+            
+           
+                    
+                       
+                        <View style={{zIndex:1}}>
+                        <View style={styles.searchbarContainer}>
+                            <Icons name='location-outline' style={styles.Searchicon} size={25}/>
+                        <GooglePlacesAutocomplete
+                         textInputStyle={{ color: 'black' }}
+        placeholder="Enter Location"
+        onPress={handleLocationSelect}
+        defaultValue={selectedLocation}
+        query={{
+          key: 'AIzaSyB_nNvYWSCB2haI7DCgR6chQmsg-T4oj8s',
+          language: 'en',
+          components: 'country:MX',
+        }}
+        
+        fetchDetails={true}
+        enablePoweredByContainer={false}
+        renderDescription={renderDescription}
+        styles={{
+            textInputContainer: {
+              borderTopWidth: 0,
+              borderBottomWidth: 0,
+              zIndex: 99,
+            },
+            textInput: {
+          fontFamily:Fonts.MEDIUM,
+              marginTop: 2,
+        paddingLeft: 40,
+        height:60,
+        marginBottom: 10,
+        paddingRight: 10,
+        fontSize: 14,
+        borderRadius: 8,
+        borderWidth: 0.25,
+        borderColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOffset: { width: 0, height: 1 },
+        shadowRadius: 2,
+        shadowOpacity: 1,
+        color: '#212121',
+        backgroundColor: 'rgba(64, 134, 57, 0.05)',
+        zIndex:99,
+            },
+            listView: {
+              position: 'absolute',
+              top:63,
+              color: 'blue',
+              zIndex:99
+            },
+            row: {
+                backgroundColor: '#408639', 
+                color: 'blue',
+                zIndex:99
+              },
+              text: {
+                color: 'blue',
+                fontSize:30 ,
+                zIndex:99
+              },
+          }}
+      />
+                        </View>
+                        </View>
+               
+                <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+                <View style={[styles.searchbarContainer,{width:'48%',marginRight:7}]}>
+                    <Icons name='search-outline' style={styles.Searchicon} size={25} />
+                    <TextInput
+                        style={styles.input}
+                        placeholder="Tipo de campo "
+                        placeholderTextColor="rgba(33, 33, 33, 0.60)"
+                        onChangeText={setSearchText}
+                        value={searchText}
+                    />
+                </View>
+                <View style={[styles.searchbarContainer,{width:'48%',}]}>
+                    <Clock name='clock-outline' style={styles.Searchicon} size={25} />
+                    <TextInput
+                        style={styles.input}
+                        placeholder="Tiempo"
+                        placeholderTextColor="rgba(33, 33, 33, 0.60)"
+                        onChangeText={setSearchText}
+                        value={searchText}
+                    />
+                </View>
+                </View>  
+                  
                 <View style={styles.rowContainer}>
-                    {/* Your other components */}
-
-                    <View style={styles.searchbarContainer}>
-                        <Icons name='location-outline' style={styles.Searchicon} size={25} />
-                        <TextInput
-                            style={styles.input}
-                            placeholder="Ubicación"
-
-                            placeholderTextColor="rgba(33, 33, 33, 0.60)"
-                            onChangeText={handleSearch}
-                            value={searchText}
-                        />
-                    </View>
-                    <View style={styles.flexPropertyInput}>
-                        <View style={styles.ColmInput}>
-                            <View style={styles.searchbarContainer}>
-                                <SearchICon name='search' style={styles.Searchicon} size={25} />
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder="Tipo de cancha"
-
-                                    placeholderTextColor="rgba(33, 33, 33, 0.60)"
-                                />
-                            </View>
-                        </View>
-                        <View style={styles.ColmInput}>
-                            <View style={styles.searchbarContainer}>
-                                <ClockICon name='clockcircleo' style={[styles.Searchicon, { top: 23 }]} size={18} />
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder="Hora"
-                                    // value={searchText}
-                                    // onChangeText={handleSearch}
-                                    placeholderTextColor="rgba(33, 33, 33, 0.60)"
-                                />
-                            </View>
-                        </View>
-
-
-                    </View>
-                    <Text style={styles.MainHeading}>Canchas cercanas</Text>
-
-                    <View style={{height:600, paddingTop: 20,paddingBottom:20 }}>
-
-                        <FlatList
-                               showsVerticalScrollIndicator={false}
-                            data={searchText ? filteredData : data}
-                            renderItem={renderItem}
-                            keyExtractor={(item) => item.id.toString()}
-                            contentContainerStyle={{ flexGrow: 1, paddingBottom: 10, }}
-                        />
+    <Text style={styles.MainHeading}>Canchas cercanas</Text>
+    {isLoading ? (
+    <FlatList
+        data={[1, 2, 3, 4]} 
+        renderItem={() => (
+            <Skeleton 
+                highlightColor={'rgba(64, 134, 57, 0.25)'} 
+                backgroundColor={'rgba(64, 134, 57, 0.05)'} 
+                borderRadius={'20'} 
+                visible={false}
+            >
+                <View style={{ height: 150, borderRadius: 10, marginTop: 10 }} />
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent:'space-between', marginTop: 10 }}>
+                    <View style={{ width: 120, height: 20, borderRadius: 4 }} />
+                    <View style={{ marginLeft: 20 }}>
+                        <View style={{ width: 120, height: 20, borderRadius: 4 }} />
                     </View>
                 </View>
+                <View style={{ width: 120, height: 20, borderRadius: 4, marginTop: 5 }} />      
+            </Skeleton>
+        )}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
+    />
+) : (
+    // Show data when loaded
+    (groundsData && groundsData.length > 0) ? (
+        <FlatList
+            height={580}
+            paddingBottom={40}
+            data={groundsData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item._id}
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+            refreshControl={
+                <RefreshControl
+                    refreshing={refreshing}
+                    onRefresh={onRefresh}
+                    colors={['#9Bd35A', '#689F38']}
+                    tintColor="#9Bd35A"
+                    title="Loading..."
+                    titleColor="#9Bd35A"
+                />
+            }
+        />
+    ) : (
+        // Show message if no courts are available at the current location
+        <View style={{justifyContent:'center',alignItems:'center',height:350}}>
+
+                    <Icons name='football-outline' style={{fontSize:60,color:'#408639'}}/>
+                    <Text style={styles.MainHeading}>No courts available</Text>
+    
+        </View>
+    )
+)}
+</View>
+
             </View>
         </View>
+    );
+};
 
-
-
-
-    )
-}
 const styles = StyleSheet.create({
+    suggestionText: {
+        color: 'blue', // Change this to the desired color
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        fontSize: 16,
+      },
+      textInput: {
+        borderWidth: 1,
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        fontSize: 16,
+        color:'black'
+      },
+    map: {
+        width: '100%',
+        height: 300,
+        marginTop: 20,
+      },
+    container: {
+        flex: 1,
+        backgroundColor: 'white',
+        paddingTop: 10,
+        paddingBottom: 30,
+    },
     GroundName: {
         fontSize: 17,
         color: 'black',
         letterSpacing: 0.1,
         lineHeight: 36,
         fontFamily: Fonts.MEDIUM,
-
         paddingTop: 2
     },
     TextContainerImage: {
@@ -141,9 +373,8 @@ const styles = StyleSheet.create({
     locationTextContainer: {
         flexDirection: 'row',
         justifyContent: "flex-start",
-        alignItems: "center",
+        // alignItems: "center",
         paddingLeft: 3,
-
     },
     textLocation: {
         fontSize: 14,
@@ -151,18 +382,6 @@ const styles = StyleSheet.create({
         color: '#A0A0A0',
         alignItems: 'center',
         flexDirection: 'row'
-    },
-    ColmInput: {
-        width: "50%",
-
-    },
-    flexPropertyInput: {
-        flexDirection: 'row', // Arrange points and text horizontally
-        alignItems: 'center', // Center content vertically
-        justifyContent: 'space-between',
-        gap: 10,
-        //    paddingLeft:10,
-        paddingRight: 10
     },
     MainHeading: {
         fontSize: 19,
@@ -172,40 +391,13 @@ const styles = StyleSheet.create({
         marginTop: 10,
         fontFamily: Fonts.BOLD,
         marginLeft: 2,
-
     },
-    MainGroundContainer: {
-        flex: 1,
-        // paddingBottom: 15
-    },
-    GroundContainer: {
-        flexDirection: 'row',
-        justifyContent: "space-between",
-        alignItems: 'flex-start',
-        paddingLeft: 5,
-        paddingRight: 5,
-        paddingTop: 10
-    },
-    Groundname: {
-        fontSize: 16,
-        color: '#61646B',
-        fontFamily: Fonts.MEDIUM,
-    },
-    DistanceTExt: {
-        fontFamily: 'Satoshi-Medium',
-        fontSize: 14,
-        color: '#AFB1B6'
-
-    },
-
     MainContainer: {
         width: 'auto',
         backgroundColor: 'white',
         flex: 1,
         paddingLeft: 15,
         paddingRight: 20,
-        // paddingBottom: 20,
-
     },
     form: {
         backgroundColor: 'white',
@@ -218,7 +410,6 @@ const styles = StyleSheet.create({
         top: 20,
         left: 10,
         color: 'rgba(33, 33, 33, 1)',
-
     },
     input: {
         marginTop: 2,
@@ -238,7 +429,6 @@ const styles = StyleSheet.create({
         color: '#212121',
         fontFamily: 'Satoshi-Medium',
         backgroundColor: 'rgba(64, 134, 57, 0.05)',
-
     },
     searchbarContainer: {
         position: 'relative',
@@ -246,6 +436,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginLeft: 0
     },
-})
+      map: {
+        ...StyleSheet.absoluteFillObject,
+      },
+});
 
-export default FindGames
+export default FindGames;

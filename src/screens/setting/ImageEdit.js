@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, Button, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ImageCropPicker from 'react-native-image-crop-picker';
 
@@ -8,7 +8,6 @@ const EditImageScreen = ({title}) => {
   const [isImageEdited, setIsImageEdited] = useState(false);
 
   useEffect(() => {
-    // Load the edited image from AsyncStorage when the component mounts
     loadEditedImage();
   }, []);
 

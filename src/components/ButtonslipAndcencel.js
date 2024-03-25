@@ -4,7 +4,7 @@ import Icons from 'react-native-vector-icons/MaterialIcons'
 import { Fonts } from '../screens/style';
 export const Buttons = ({text,Link,loading,ColorIcon,ColorText,IconColor,IconName}) => {
   const ButtonStyle={
-    backgroundColor: ColorIcon || '#212121',
+    backgroundColor: ColorIcon || '#408639',
 }
 const ButtonTextColor={
     color: ColorText || '#EFEFF0',
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#212121',
     padding: 15,
     borderRadius:12,
-    borderColor:'#212121',
+    borderColor:'#408639',
     borderWidth: 0.5, // Set the border width
     fontFamily:Fonts.MEDIUM,
     

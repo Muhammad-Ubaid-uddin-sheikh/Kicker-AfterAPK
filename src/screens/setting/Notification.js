@@ -51,7 +51,7 @@ const Notificaciones= () => {
     <View style={styles.MainContainer}>
 
     <View style={styles.containerToggle}>
-      <Text style={styles.leftText}>Notificacion es generales</Text>
+      <Text style={styles.leftText}>Notificaciones generales</Text>
       <Text style={styles.rightToggle}>
    <ToggleSwitch
    onPress={() => postNotificationSettings()}
@@ -96,7 +96,7 @@ const Notificaciones= () => {
     </View>
    
     <View style={[styles.containerToggle,{marginTop:28}]}>
-      <Text style={styles.leftText}>Actualizacio nes de la app</Text>
+      <Text style={styles.leftText}>Actualizaciones de la app</Text>
       <Text style={styles.rightToggle}>
    <ToggleSwitch
    onPress={() => postNotificationSettings()}
@@ -111,7 +111,7 @@ const Notificaciones= () => {
 
     </View>
     <View style={[styles.containerToggle,{marginTop:28}]}>
-      <Text style={styles.leftText}>Recibir notificacion es vía</Text>
+      <Text style={styles.leftText}>Recibir notificaciones vía</Text>
       <Text style={styles.rightToggle}>
    <ToggleSwitch
    onPress={() => postNotificationSettings()}
@@ -126,7 +126,7 @@ const Notificaciones= () => {
 
     </View>
     <View style={[styles.containerToggle,{marginTop:28}]}>
-      <Text style={styles.leftText}>No recibir notificacion es</Text>
+      <Text style={styles.leftText}>No recibir notificaciones</Text>
       <Text style={styles.rightToggle}>
    <ToggleSwitch
    onPress={() => postNotificationSettings()}

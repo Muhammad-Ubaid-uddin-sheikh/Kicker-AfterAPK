@@ -1,63 +1,54 @@
-// const initialState = {
-//     soccerList: [],
-//     selectedDays: [],
-//     openingHour: '',
-//     openingMinute: '',
-//     openingPeriod: 'AM',
-//     closingHour: '',
-//     closingMinute: '',
-//     closingPeriod: 'AM',
-//   };
-  
-//   const soccerReducer = (state = initialState, action) => {
-//     switch (action.type) {
-//       case 'ADD_SOCCER':
-//         return {
-//           ...state,
-//           soccerList: [...state.soccerList, action.payload],
-//           selectedDays: action.payload.selectedDays || [],
-//           openingHour: action.payload.openingHour || '',
-//           openingMinute: action.payload.openingMinute || '',
-//           openingPeriod: action.payload.openingPeriod || 'AM',
-//           closingHour: action.payload.closingHour || '',
-//           closingMinute: action.payload.closingMinute || '',
-//           closingPeriod: action.payload.closingPeriod || 'AM',
-//         };
-//       case 'DELETE_SOCCER':
-//         return {
-//           ...state,
-//           soccerList: state.soccerList.filter((item, index) => index !== action.payload),
-//         };
-//       default:
-//         return state;
-//     }
-//   };
-  
-//   export default soccerReducer;
 const initialState = {
-  soccerList: [],
-  
-  
+  selectedImages: [],
+  favoriteImageIndex: 0,
 };
 
-const soccerReducer = (state = initialState, action) => {
+const imageReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_SOCCER':
+    case 'SET_SELECTED_IMAGES':
       return {
         ...state,
-                  soccerList: [...state.soccerList, action.payload],
+        selectedImages: action.payload,
       };
-    case 'DELETE_SOCCER':
+    case 'SET_FAVORITE_IMAGE_INDEX':
       return {
         ...state,
-        soccerList: state.soccerList.filter((item, index) => index !== action.payload),
-
+        favoriteImageIndex: action.payload,
       };
     default:
       return state;
   }
 };
 
-export default soccerReducer;
+export const setSelectedImages = (images) => ({
+  type: 'SET_SELECTED_IMAGES',
+  payload: images,
+});
+
+export const setFavoriteImageIndex = (index) => ({
+  type: 'SET_FAVORITE_IMAGE_INDEX',
+  payload: index,
+});
+
+export default imageReducer;
+// export const ADD_IMAGE = 'ADD_IMAGE';
+// export const REMOVE_IMAGE = 'REMOVE_IMAGE';
+// export const SET_FAVORITE_IMAGE = 'SET_FAVORITE_IMAGE';
+
+// // Action creators
+// export const addImage = (imagePath) => ({
+//   type: ADD_IMAGE,
+//   payload: imagePath,
+// });
+
+// export const removeImage = (index) => ({
+//   type: REMOVE_IMAGE,
+//   payload: index,
+// });
+
+// export const setFavoriteImage = (index) => ({
+//   type: SET_FAVORITE_IMAGE,
+//   payload: index,
+// });
 
 
